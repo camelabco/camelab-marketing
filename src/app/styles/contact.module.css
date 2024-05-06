@@ -1,0 +1,25 @@
+.contact-section-content{
+    margin-top: 80px;
+    width:50%
+}
+
+.contact-section-content p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px ;
+    color: #637381;
+    letter-spacing: 2%;
+}
+.contact-img-section{
+    padding: 20px;
+}
+.contact-img{
+    width: 100%;
+    height: 100%;
+}
+.contact-form-section{
+    margin-top: 50px;
+}
+.contact-card-section{
+    margin-top: 50px;
+}
