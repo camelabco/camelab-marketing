@@ -27,7 +27,7 @@ function Header() {
             </Nav>
             <Nav className="ms-auto align-items-center">
               <Nav.Link className={`${headerStyles['header-links']}`} href="#home">Become a creator</Nav.Link>
-              <Nav.Link className={`${headerStyles['header-links']}`} href="#link"> <Button className="primary-btn" variant="primary">Login</Button></Nav.Link>
+              <Nav.Link className={`${headerStyles['header-links']}`} href="#link"> <Button className="primary-button" variant="primary">Login</Button></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,0 +1,22 @@
+.brands-img {
+    justify-content: center;
+}
+
+.all-brands {
+    row-gap: 48px;
+}
+
+.brands-content {
+    padding: 0 25%;
+}
+
+@media screen and (max-width: 991px) {
+    .brands-content {
+        padding: 0 10%;
+    }
+
+    .brands-img{
+        display: flex;
+        justify-content: center;
+    }
+}

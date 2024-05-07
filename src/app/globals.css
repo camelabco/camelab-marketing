@@ -1,8 +1,8 @@
 :root {
     --text-primary: #212B36;
-    --text-secondary:#637381;
+    --text-secondary: #637381;
     --purple: #8224E3;
-    --background-paper:#FFFFFF;
+    --background-paper: #FFFFFF;
 }
 
 @import "./fonts.css";
@@ -11,23 +11,82 @@ body {
     font-family: "Public Sans" !important;
 }
 
-.primary-btn{
+.primary-button {
+    padding: 9px 22px;
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
     border-radius: 5px;
-    background-color:var(--purple);
-    color:var(--background-paper);
+    background-color: var(--purple);
+    color: var(--background-paper);
     border: 1px solid var(--purple);
 }
 
-.primary-btn:hover{
-    background-color:var(--background-paper);
-    color:var(--purple);
-    border: 1px solid var(--purple);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 22px;
-    border-radius: 5px;
+.primary-button:hover {
+    background-color: var(--background-paper);
+    color: var(--purple);
 }
 
+.text-part {
+    text-align: center;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.secondary-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--text-secondary);
+    width: 90%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+.secondary-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main-heading {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 48px;
+}
+}
+
+@media screen and (max-width: 991px) {
+    .main-heading {
+        font-size: 38px;
+        margin-bottom: 15px;
+        line-height: 44px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .secondary-text {
+        width: 95%;
+
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main-heading {
+        font-size: 32px;
+        margin-bottom: 0px;
+        line-height: 42px;
+    }
+    .secondary-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+}
