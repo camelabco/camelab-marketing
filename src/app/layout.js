@@ -1,5 +1,6 @@
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import rtlPlugin from 'stylis-plugin-rtl';
 
 export const metadata = {
   title: "Create Next App",

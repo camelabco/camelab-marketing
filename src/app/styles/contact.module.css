@@ -40,6 +40,8 @@
     margin-bottom: 30px;
 }
 
+/* responsive  */
+
 @media only screen and (max-width: 991px) {
     .contact-section-content{
         width: 100%;

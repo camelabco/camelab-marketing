@@ -1,5 +1,3 @@
-// "use client"
-
 import Header from '../component/header'
 import '../globals.css'
 import contactStyles from '../styles/contact.module.css'
@@ -7,13 +5,12 @@ import Image from "next/image";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import TextField from '@mui/material/TextField';
 import Link from 'next/link';
-
+import ContactForm from '../component/contactForm'
 
 export default function Contact() {
+
   return (
     <>
       <Header />
@@ -35,150 +32,7 @@ export default function Contact() {
               <Row>
                 <Col lg={6}>
                   <div className={`${contactStyles['contact-form-section']}`}>
-                    <Form>
-                      <Row>
-                        <Col lg={6} sm={12}>
-                          <TextField id="outlined-basic"
-                            label="First Name"
-                            variant="outlined"
-                            placeholder="Enter your first name"
-                            className={`${contactStyles['form-text-field']}`}
-                            sx={{
-                              width: '100%',
-                              '& .MuiInputLabel-root': {
-                                color: '#637381 !important',
-                              },
-                              '& .MuiOutlinedInput-root': {
-                                '& fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&:hover fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&.Mui-focused fieldset': {
-                                  borderColor: '#637381 !important',
-                                  borderWidth: '0.5px',
-                                  borderRadius: '5px',
-                                },
-                              },
-                            }}
-                          />
-                        </Col>
-                        <Col lg={6} sm={12}>
-                          <TextField id="outlined-basic"
-                            label="Last Name"
-                            variant="outlined"
-                            placeholder="Enter your last name"
-                            className={`${contactStyles['form-text-field']}`}
-                            sx={{
-                              width: '100%',
-                              '& .MuiInputLabel-root': {
-                                color: '#637381  !important',
-                              },
-                              '& .MuiOutlinedInput-root': {
-                                '& fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&:hover fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&.Mui-focused fieldset': {
-                                  borderColor: '#637381 !important',
-                                  borderWidth: '0.5px',
-                                  borderRadius: '5px',
-                                },
-                              },
-                            }}
-                          />
-                        </Col>
-                        <Col lg={6} sm={12}>
-                          <TextField id="outlined-basic"
-                            label="Phone number"
-                            variant="outlined"
-                            placeholder="Enter phone number"
-                            className={`${contactStyles['form-text-field']}`}
-                            sx={{
-                              width: '100%',
-                              '& .MuiInputLabel-root': {
-                                color: '#637381  !important',
-                              },
-                              '& .MuiOutlinedInput-root': {
-                                '& fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&:hover fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&.Mui-focused fieldset': {
-                                  borderColor: '#637381 !important',
-                                  borderWidth: '0.5px',
-                                  borderRadius: '5px'
-                                },
-                              },
-                            }}
-                          />
-                        </Col>
-                        <Col lg={6} sm={12}>
-                          <TextField id="outlined-basic"
-                            label="Email address"
-                            variant="outlined"
-                            placeholder="Enter email"
-                            className={`${contactStyles['form-text-field']}`}
-                            sx={{
-                              width: '100%',
-                              '& .MuiInputLabel-root': {
-                                color: '#637381  !important',
-                              },
-                              '& .MuiOutlinedInput-root': {
-                                '& fieldset': {
-                                  borderRadius: '5px'
-                                },
-                                '&:hover fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&.Mui-focused fieldset': {
-                                  borderColor: '#637381 !important',
-                                  borderColor: '#637381',
-                                  borderWidth: '0.5px'
-                                },
-                              },
-                            }}
-                          />
-                        </Col>
-                        <Col lg={12} sm={12}>
-                          <TextField id="outlined-basic"
-                            label="Send Message"
-                            variant="outlined"
-                            placeholder='write something here..'
-                            multiline
-                            rows={3}
-                            className={`${contactStyles['form-text-field']} mb-5`}
-                            sx={{
-                              width: '100%',
-                              '& .MuiInputLabel-root': {
-                                color: '#637381  !important',
-                              },
-                              '& .MuiOutlinedInput-root': {
-                                '& fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&:hover fieldset': {
-                                  borderColor: '#637381',
-                                },
-                                '&.Mui-focused fieldset': {
-                                  borderColor: '#637381 !important',
-                                  borderWidth: '0.5px',
-                                  borderRadius: '5px',
-                                },
-                              },
-                            }}
-                          />
-                        </Col>
-                      </Row>
-                      <Button type="submit" className='primary-button'>
-                        Submit Now
-                      </Button>
-                    </Form>
+                    <ContactForm />
                   </div>
                 </Col>
                 <Col lg={6}>
