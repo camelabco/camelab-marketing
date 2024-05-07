@@ -1,0 +1,33 @@
+:root {
+    --text-primary: #212B36;
+    --text-secondary:#637381;
+    --purple: #8224E3;
+    --background-paper:#FFFFFF;
+}
+
+@import "./fonts.css";
+
+body {
+    font-family: "Public Sans" !important;
+}
+
+.primary-btn{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 5px;
+    background-color:var(--purple);
+    color:var(--background-paper);
+    border: 1px solid var(--purple);
+}
+
+.primary-btn:hover{
+    background-color:var(--background-paper);
+    color:var(--purple);
+    border: 1px solid var(--purple);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 5px;
+}
+
