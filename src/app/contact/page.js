@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <>
         <Header />
-        <h1>contact</h1>
+        <h1>contact page</h1>
         <Footer/>
     </>
   );
