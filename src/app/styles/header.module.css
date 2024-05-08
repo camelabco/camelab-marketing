@@ -1,0 +1,38 @@
+.header {
+    background-color: white;
+    padding: 15px 0;
+}
+
+.leftside-links {
+    margin-left: 64px;
+}
+
+.header-links {
+    margin-right: 32px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--text-primary);
+}
+.header-links.active-page{
+    color: var(--purple);
+}
+.header-links:hover{
+    text-decoration: underline;
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 991px) {
+    .leftside-links {
+        margin-left: 0px;
+    }
+    
+}
+
+
+.header .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+.header .navbar-toggler {
+    border:none !important;
+}

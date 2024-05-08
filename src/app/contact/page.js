@@ -9,6 +9,9 @@ import Form from 'react-bootstrap/Form';
 import Link from 'next/link';
 import ContactForm from '../component/contactForm'
 
+import Footer from '../component/footer';
+
+
 export default function Contact() {
 
   return (
@@ -113,6 +116,7 @@ export default function Contact() {
           </Container>
         </div>
       </div>
+        <Footer/>
     </>
   );
 }

@@ -1,6 +1,11 @@
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
+import './global-RTL.css'
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rtlPlugin from 'stylis-plugin-rtl';
+
 
 export const metadata = {
   title: "Create Next App",
@@ -10,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body dir='rtl'>{children}</body>
     </html>
     // dir="rtl"
   );

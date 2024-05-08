@@ -1,0 +1,38 @@
+.slider-section {
+    padding: 96px 0 80px 0;
+}
+
+.heading-text {
+    position: relative;
+}
+
+.heading-text::before {
+    content: '';
+    position: absolute;
+    width: 61px;
+    height: 58px;
+    top: -35px;
+    right: 145px;
+    background-image: url(../../assets/images/landing/headingtext-design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading-text h3 {
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 76px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    color: (--text-primary);
+}
+
+.heading-text span {
+    color: var(--purple);
+}
+
+.slider-container{
+    padding: 64px 0px 80px 120px;
+}
