@@ -2,75 +2,98 @@
 
 :root {
     --text-primary: #212B36;
-    --text-secondary:#637381;
+    --text-secondary: #637381;
     --purple: #8224E3;
-    --background-paper:#FFFFFF;
+    --background-paper: #FFFFFF;
 }
 
-body{
+body {
     font-family: 'Public Sans' !important;
 }
 
-.main-heading{
+.main-heading {
     font-weight: 700;
     font-size: 48px;
     line-height: 64px;
+    color: var(--text-primary);
+    margin-bottom: 24px;
 }
 
-.primary-button{
+.secondary-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--text-secondary);
+}
+
+.primary-button {
     padding: 9px 22px;
     font-size: 14px;
     font-weight: 600;
     line-height: 22px;
-    background-color:var(--purple) !important;
-    color:var(--background-paper);
-    border: none
+    background-color: var(--purple) !important;
+    color: var(--background-paper);
+    border: 1px solid var(--purple) !important;
 }
 
-.primary-button:hover{
-    background-color:white !important;
-    color:var(--purple) !important;
-    border: 1px solid var(--purple) ;
+.primary-button:hover {
+    background-color: white !important;
+    color: var(--purple) !important;
+    border: 1px solid var(--purple);
 }
 
 /* animated card */
 
-.common-animated-card .card{
-    border :none;
+.common-animated-card .card {
+    border: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px 54px;
     box-shadow: 0px 12px 24px -4px #919EAB1F;
+    margin: 16px 0px;
 }
 
-.common-animated-card .card-img{
+.common-animated-card .card-img {
     width: 58px;
     height: 58px;
     margin-bottom: 30px;
 }
 
-.common-animated-card .card-heading h6{
+.common-animated-card .card-heading h6 {
     font-weight: 700;
-    font-size:20px;
+    font-size: 20px;
     line-height: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.common-animated-card .card-content a{
-   color: #637381;
-   text-align: center;
-   text-decoration: none;
-   display: flex;
+.common-animated-card .card-content a {
+    color: #637381;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
 }
 
 .common-animated-card {
     display: grid;
 }
 
-.common-animated-card .card-image-div .large-circle{
+.common-animated-card .card-content p {
+    color: #637381;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+}
+
+.card-image-div {
+    margin-bottom: 10px;
+}
+
+.common-animated-card .card-image-div .large-circle {
     position: absolute;
     border-radius: 50%;
     transition: all .3s ease-in-out;
@@ -81,7 +104,7 @@ body{
     background: rgba(200, 74, 166, 0.1);
 }
 
-.common-animated-card .card-image-div .small-circle{
+.common-animated-card .card-image-div .small-circle {
     position: absolute;
     border-radius: 50%;
     transition: all .3s ease-in-out;
@@ -92,25 +115,38 @@ body{
     background: rgba(128, 137, 255, .1);
 }
 
-.common-animated-card .card:hover .card-img path{
+/* CSS for changing SVG color to white on hover */
+.common-animated-card:hover .card-image-div svg g path {
+    fill: #ffffff;
+}
+
+.common-animated-card:hover .card-image-div svg path {
+    fill: #ffffff;
+}
+
+.common-animated-card:hover .card-image-div svg path {
+    stroke: #ffffff;
+}
+
+.common-animated-card .card:hover .card-img path {
     fill: #fff;
 }
 
-.common-animated-card .card:hover .large-circle{
+.common-animated-card .card:hover .large-circle {
     background: hsla(0, 0%, 100%, .1);
     transform: scale(1.4);
 }
 
-.common-animated-card .card:hover .small-circle{
+.common-animated-card .card:hover .small-circle {
     background: hsla(0, 0%, 100%, .1);
     transform: scale(1.4);
 }
 
-.common-animated-card .card:hover{
+.common-animated-card .card:hover {
     background-color: var(--purple);
 }
 
-.common-animated-card .card:hover .card-img{
+.common-animated-card .card:hover .card-img {
     color: #fff !important;
     animation-name: animation-wobble-to-top-right;
     -webkit-animation-duration: 1s;
@@ -121,11 +157,15 @@ body{
     animation-iteration-count: 1;
 }
 
-.common-animated-card .card:hover .card-heading h6{
+.common-animated-card .card:hover .card-heading h6 {
     color: #ffffff;
 }
 
-.common-animated-card .card:hover .card-content a{
+.common-animated-card .card:hover .card-content a {
+    color: #ffffff;
+}
+
+.common-animated-card .card:hover .card-content p {
     color: #ffffff;
 }
 
@@ -135,36 +175,70 @@ body{
     16.65% {
         transform: translate(8px, -8px);
     }
+
     33.3% {
         transform: translate(-6px, 6px);
     }
+
     49.95% {
         transform: translate(4px, -4px);
     }
+
     66.6% {
         transform: translate(-2px, 2px);
     }
+
     83.25% {
         transform: translate(1px, -1px);
     }
+
     100% {
         transform: translate(0);
     }
 }
 
 /* responsive  */
+@media screen and (max-width: 1200px) {
+    .secondary-text {
+        font-size: 18px;
+        font-weight: 400;
+    }
 
-@media only screen and (max-width: 991px){
-    .common-animated-card .card{
-        margin-top: 30px;
+    .main-heading {
+        font-size: 42px;
+        margin-bottom: 20px;
+        line-height: 48px;
     }
 }
 
-@media only screen and (max-width: 768px){
-    .main-heading{
+@media only screen and (max-width: 991px) {
+    .common-animated-card .card {
+        margin-top: 30px;
+    }
+    .main-heading {
+        font-size: 38px;
+        margin-bottom: 15px;
+        line-height: 44px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-heading {
         font-size: 38px;
     }
-    .common-animated-card .card{
-        padding: 50px 34px ;
+
+    .common-animated-card .card {
+        padding: 50px 34px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main-heading {
+        font-size: 28px;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+    .secondary-text {
+        font-size: 16px;
     }
 }

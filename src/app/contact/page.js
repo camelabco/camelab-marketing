@@ -19,7 +19,7 @@ export default function Contact() {
           <Container>
             <div className={`${contactStyles['contact-section-content']}`}>
               <h3 className='main-heading mb-3'>Contact Us</h3>
-              <p>Connect with us at Camelab, your partner in digital transformation, and let's together turn challenges into opportunities for scalable and sustainable growth.</p>
+              <p className='secondary-text'>Connect with us at Camelab, your partner in digital transformation, and let's together turn challenges into opportunities for scalable and sustainable growth.</p>
             </div>
             <div>
               <div className={`${contactStyles['contact-mobile-image-section']}`}>

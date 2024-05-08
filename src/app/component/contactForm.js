@@ -8,7 +8,6 @@ import createCache from '@emotion/cache';
 import { prefixer } from 'stylis';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import contactStyles from '../styles/contact.module.css'
 import Button from 'react-bootstrap/Button';
 
 const theme = (outerTheme) =>
