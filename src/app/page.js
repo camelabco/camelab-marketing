@@ -232,5 +232,6 @@ export default function Home() {
       {/* Footer */}
       <Footer />
     </main>
+>>>>>>> 04d5303141585b93e0151fd4de98f0336eb5874a
   );
 }
