@@ -4,6 +4,8 @@ import Footer from '../app/component/footer';
 import Image from "next/image";
 import { Container, Button, Row, Col } from 'react-bootstrap';
 import Brands from "./component/brands";
+import Slider from "./component/slider";
+import ReviewSlider from "./component/reviewSlider";
 
 
 export default function Home() {
@@ -21,11 +23,11 @@ export default function Home() {
             </h3>
           </div>
         </Container>
-        {/* <div className={`${styles['slider-container']}`}>
+        <div className={`${styles['slider-container']}`}>
         <Row>
-        <Col lg={6}>
-        <div className={`${styles['left-content']}`}>
-            <p>
+          <Col lg={6}>
+          <div className={`${styles['left-content']}`}>
+            <p className="secondary-text">
               Share products/services you love, and get rewarded when others make purchases through your recommendations. Join our word-of-mouth commerce platform and turn your influence into income!"
             </p>
             <div className={`${styles['signup-part']}`}>
@@ -34,11 +36,25 @@ export default function Home() {
             </div>
           </div>
 
-        </Col>
-        <Col lg={6}></Col>
+          </Col>
+          <Col lg={6}>
+          <div className={`${styles['slider-content']}`}>
+          <Slider/>
+          </div>
+          </Col>
+        </Row>
+
+       
+
+
+
+       
+
+ 
+
         
-          </Row>
-        </div> */}
+  
+        </div>
         <Brands />
       </section>
 
@@ -176,10 +192,11 @@ export default function Home() {
                   ready to make Brand Collaboration
                 </h3>
                 <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
-              </div>
-              <div className={`${styles['btn-part']}`}>
+                <div className={`${styles['btn-part']}`}>
                 <Button className="primary-button" variant="primary">Order Now</Button>
               </div>
+              </div>
+              
             </Col>
 
             <Col lg={6}>
@@ -216,31 +233,13 @@ export default function Home() {
                 <p className="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. </p>
 
                 <div className={`${styles['cliet-review']}`}>
-
-                  <div className={`${styles['cliet-photo']}`}>
-                    <Image src={require('../assets/images/landing/client-photo.svg').default} width="100%" alt="create-video-img" />
-                  </div>
-                  <div className={`${styles['cliet-name']}`}>
-                    <h4>Hannah Schmitt</h4>
-                    <p>Growth Marketing Consultant</p>
-                    <div className={`${styles['review-star']}`}>
-                      <Image src={require('../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                      <Image src={require('../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                      <Image src={require('../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                      <Image src={require('../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                      <Image src={require('../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                    </div>
-
-                  </div>
-                  <div className={`${styles['changing-btn']}`}>
-                    <div className={`${styles['circle-btn']} ${styles['left-btn']}`}>
-
-                    </div>
-                    <div className={`${styles['circle-btn']} ${styles['right-btn']}`}>
-
-                    </div>
-                  </div>
+                <ReviewSlider/>
                 </div>
+
+
+
+
+                
               </div>
             </Col>
           </Row>

@@ -2,7 +2,7 @@
     background-color: #F2F5F7;
 }
 
-.row-content {
+.footer-content {
     padding: 80px 0 24px 0;
 }
 
@@ -57,7 +57,8 @@
     font-weight: 400;
     color: var(--text-secondary);
 }
-.apps-part a{
+
+.apps-part a {
     margin: 10px;
 }
 
@@ -111,14 +112,19 @@
         justify-content: center;
     }
 
-    .right-text {
-        margin-top: 15px;
+    .footer-content {
+        padding: 0px 0 24px 0;
     }
 
-    .custom-mt{
+    .left-col-content p {
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 343px) {
+    .custom-mt {
         margin-top: 10px;
     }
-   
-
-
 }

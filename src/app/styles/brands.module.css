@@ -15,8 +15,18 @@
         padding: 0 10%;
     }
 
-    .brands-img{
+    .brands-img {
         display: flex;
         justify-content: center;
+    }
+
+    .brands-img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .all-brands {
+        row-gap: 35px;
     }
 }

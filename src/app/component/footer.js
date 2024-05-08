@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className={`${footerStyles['main-content']}`}>
       <Container>
-        <Row className={`${footerStyles['row-content']}`} >
+        <Row className={`${footerStyles['footer-content']}`} >
           <Col lg={7} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['left-col-content']}`}>
               <Image

@@ -32,24 +32,24 @@
 }
 
 .banner-text span {
-    color: var(--purple);
+    background: linear-gradient(90deg, #48147D, #8636D3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 
 
 
 .slider-container {
+    width: 100%;
     padding: 64px 0px 80px 120px;
+    overflow: hidden;
 }
 
 .slider-container .left-content p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    color: var(--text-secondary);
+    margin: 0px auto 40px 0;
     width: 74%;
-    margin-bottom: 40px;
 }
 
 .slider-container h6 {
@@ -248,15 +248,21 @@
     margin: 0 auto 0 0;
 }
 
-.our-client .cliet-review {
+.item {
     display: flex;
     justify-content: start;
     margin-right: auto;
     align-items: center;
+}
+
+.our-client .cliet-review {
+    width: 100%;
     margin-top: 64px;
 }
 
-.our-client .cliet-review .cliet-photo {
+.our-client .cliet-review .cliet-photo img {
+    width: 93px;
+    height: 93px;
     margin-right: 24px;
 }
 
@@ -266,6 +272,16 @@
     line-height: 28.2px;
     color: var(--text-primary);
 
+}
+
+.our-client .cliet-review .review-star {
+    display: flex;
+
+}
+
+.our-client .cliet-review .review-star img {
+    width: 20px;
+    height: 20px;
 }
 
 .our-client .cliet-review .cliet-name p {
@@ -280,6 +296,7 @@
     display: flex;
     gap: 30px;
     margin-left: 70px;
+
 }
 
 .our-client .cliet-review .circle-btn {
@@ -297,12 +314,18 @@
     background-image: url(../assets/images/landing/white-arrow-left.svg);
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
+    top: 25px;
+    left: 76%;
 }
 
 .our-client .cliet-review .circle-btn.right-btn {
     background-image: url(../assets/images/landing/white-arrow-right.svg);
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
+    top: 25px;
+    right: 0%;
 }
 
 .our-client .cliet-review .circle-btn:hover {
@@ -337,8 +360,8 @@
     }
 
     .slider-container .left-content p {
-        font-size: 18px;
         margin-bottom: 25px;
+
     }
 
     .slider-container h6 {
@@ -446,10 +469,16 @@
         margin: auto;
     }
 
+    .our-client .cliet-review .changing-btn {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto auto auto;
+    }
+
     .our-client .cliet-review {
         justify-content: center;
-        margin: auto;
-        margin-top: 64px;
+        text-align: left;
+        margin-top: 50px;
     }
 
     .slider-container .left-content {
@@ -458,12 +487,24 @@
         align-items: center;
         text-align: center;
     }
-    .slider-container .left-content p{
+
+    .slider-container .left-content p {
         width: 75%;
+        margin: auto auto 30px auto;
     }
 
     .slider-container {
         padding: 30px 0 60px 0;
+    }
+
+    .our-client .cliet-review .circle-btn.left-btn {
+        top: 25px;
+        left: 70%;
+    }
+
+    .our-client .cliet-review .circle-btn.right-btn {
+        top: 25px;
+        right: 10%;
     }
 }
 
@@ -483,11 +524,6 @@
         display: none;
     }
 
-    .slider-container .left-content p {
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-
     .slider-container h6 {
         font-size: 16px;
     }
@@ -504,12 +540,28 @@
         font-size: 20px;
     }
 
+    .creations-img {
+        flex-wrap: wrap;
+    }
+
     .our-value {
         padding: 60px 0;
     }
 
     .content-creator {
         padding: 60px 0;
+    }
+
+    .content-creator p {
+        width: 90%;
+    }
+
+    .create-videos .text-part h3 {
+        margin-top: 35px;
+    }
+
+    .create-videos .text-part ul {
+        margin-top: 20px;
     }
 
     .our-client {
@@ -533,70 +585,112 @@
     .our-client .cliet-review .changing-btn {
         margin-left: 40px;
     }
+
+    .creations-img {
+        margin-bottom: 30px;
+    }
+
+    .our-value .card-content {
+        padding: 40px 30px;
+    }
 }
 
 @media screen and (max-width: 520px) {
+    .item {
+        justify-content: center;
+    }
+
+    .our-client .cliet-review {
+        padding-bottom: 95px;
+    }
+
+    .our-client .cliet-review .circle-btn.left-btn {
+        top: 124%;
+        left: 35%;
+    }
+
+    .our-client .cliet-review .circle-btn.right-btn {
+        top: 124%;
+        right: 35%;
+    }
+
     .slider-section {
         padding: 30px 0 30px 0;
     }
 
     .banner-text h3 {
-        font-size: 30px;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 1px;
     }
 
-    /* .banner-text::before {
-        display: none;
-    }
-
-    .slider-container .left-content p {
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-
-    .slider-container h6 {
-        font-size: 16px;
-    }
-
-    .create-videos .text-part h3 {
-        max-width: 100%;
-    }
-
-    .content-creator h3 {
-        width: 100%;
-    }
-
-    .create-videos .text-part ul li {
-        font-size: 20px;
-    }
-
-    .our-value {
-        padding: 60px 0;
+    .our-value .card-content {
+        padding: 40px 30px;
     }
 
     .content-creator {
-        padding: 60px 0;
+        padding: 30px 0;
+    }
+
+    .our-value {
+        padding: 30px 0;
+    }
+
+    .content-creator .text-part {
+        margin-bottom: 50px;
+    }
+
+    .our-value .core-cards {
+        margin-top: 60px;
+    }
+
+    .card-content .img-part {
+        margin-bottom: 25px;
+    }
+
+    .slider-container .left-content p {
+        width: 90%;
+    }
+
+    .create-videos .text-part ul li {
+        font-size: 16px;
+    }
+
+    .create-videos .text-part ul {
+        margin-bottom: 10px;
+    }
+
+    .create-videos {
+        padding: 30px 0;
     }
 
     .our-client {
-        padding: 60px 0;
+        padding: 30px 0;
     }
 
-    .our-client .text-part h3 {
-        width: 100%;
-    }
+}
 
-    .our-client .cliet-review .cliet-name h4 {
-        font-size: 18px;
-
-    }
-
-    .our-client .cliet-review .cliet-name p {
-        font-size: 14px;
-        margin-bottom: 0px;
+@media screen and (max-width: 460px) {
+    .our-client .cliet-review .cliet-photo img {
+        width: 80%;
     }
 
     .our-client .cliet-review .changing-btn {
-        margin-left: 40px;
-    } */
+        display: flex;
+        justify-content: center;
+        margin: 30px auto auto auto;
+    }
 
+    .our-client .cliet-review .circle-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .our-client .cliet-review .circle-btn.left-btn {
+        background-size: 16px;
+    }
+
+    .our-client .cliet-review .circle-btn.right-btn {
+        background-size: 16px;
+    }
 }
