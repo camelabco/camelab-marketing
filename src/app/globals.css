@@ -25,6 +25,7 @@ body {
 .primary-button:hover {
     background-color: var(--background-paper);
     color: var(--purple);
+    border: 1px solid var(--purple);
 }
 
 .text-part {
@@ -89,3 +90,24 @@ body {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

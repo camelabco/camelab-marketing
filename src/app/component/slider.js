@@ -1,4 +1,5 @@
 "use client";
+import $ from 'jquery';
 import sliderStyle from "../styles/slider.module.css";
 import React from "react";
 import dynamic from "next/dynamic";
@@ -41,7 +42,7 @@ const Slider = () => {
   };
 
   return (
-    <div>
+    <div >
     <OwlCarousel className={`${sliderStyle['owlcarousel']}`}  loop  {...options}>
       <div className={`${sliderStyle['item']}`}>
         <div>
@@ -81,10 +82,6 @@ const Slider = () => {
             />
         </div>
       </div>
-
-
-
-
     </OwlCarousel>
     </div>
   );

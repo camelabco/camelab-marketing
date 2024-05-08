@@ -7,7 +7,6 @@ import Brands from "./component/brands";
 import Slider from "./component/slider";
 import ReviewSlider from "./component/reviewSlider";
 
-
 export default function Home() {
   return (
     <main className={`${styles['main']}`}>
@@ -24,36 +23,25 @@ export default function Home() {
           </div>
         </Container>
         <div className={`${styles['slider-container']}`}>
-        <Row>
-          <Col lg={6}>
-          <div className={`${styles['left-content']}`}>
-            <p className="secondary-text">
-              Share products/services you love, and get rewarded when others make purchases through your recommendations. Join our word-of-mouth commerce platform and turn your influence into income!"
-            </p>
-            <div className={`${styles['signup-part']}`}>
-              <Button className="primary-button" variant="primary">Sign up</Button>
-              <h6 className="mx-4">Become a creator</h6>
-            </div>
-          </div>
+          <Row>
+            <Col lg={6}>
+              <div className={`${styles['left-content']}`}>
+                <p className="secondary-text">
+                  Share products/services you love, and get rewarded when others make purchases through your recommendations. Join our word-of-mouth commerce platform and turn your influence into income!"
+                </p>
+                <div className={`${styles['signup-part']}`}>
+                  <Button className="primary-button" variant="primary">Sign up</Button>
+                  <h6 className="mx-4">Become a creator</h6>
+                </div>
+              </div>
 
-          </Col>
-          <Col lg={6}>
-          <div className={`${styles['slider-content']}`}>
-          <Slider/>
-          </div>
-          </Col>
-        </Row>
-
-       
-
-
-
-       
-
- 
-
-        
-  
+            </Col>
+            <Col lg={6}>
+              <div className={`${styles['slider-content']}`}>
+                <Slider />
+              </div>
+            </Col>
+          </Row>
         </div>
         <Brands />
       </section>
@@ -193,10 +181,10 @@ export default function Home() {
                 </h3>
                 <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
                 <div className={`${styles['btn-part']}`}>
-                <Button className="primary-button" variant="primary">Order Now</Button>
+                  <Button className="primary-button" variant="primary">Order Now</Button>
+                </div>
               </div>
-              </div>
-              
+
             </Col>
 
             <Col lg={6}>
@@ -233,18 +221,14 @@ export default function Home() {
                 <p className="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. </p>
 
                 <div className={`${styles['cliet-review']}`}>
-                <ReviewSlider/>
+                  <ReviewSlider />
                 </div>
-
-
-
-
-                
               </div>
             </Col>
           </Row>
         </Container>
       </section>
+
       {/* Footer */}
       <Footer />
     </main>
