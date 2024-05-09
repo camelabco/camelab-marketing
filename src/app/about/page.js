@@ -6,6 +6,7 @@ import Image from "next/image";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'react-bootstrap';
+import Footer from '../component/footer';
 
 export default function About() {
   return (
@@ -231,6 +232,7 @@ export default function About() {
           </div>
         </Container>
       </div>
+      <Footer/>
     </>
   );
 }
