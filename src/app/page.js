@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Header from '../app/component/header'
 import Footer from '../app/component/footer';
 import Image from "next/image";
-import { Container, Button, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Brands from "./component/brands";
 import Slider from "./component/slider";
 import ReviewSlider from "./component/reviewSlider";
@@ -30,7 +30,7 @@ export default function Home() {
                   Share products/services you love, and get rewarded when others make purchases through your recommendations. Join our word-of-mouth commerce platform and turn your influence into income!"
                 </p>
                 <div className={`${styles['signup-part']}`}>
-                  <Button className="primary-button" variant="primary">Sign up</Button>
+                  <button className="primary-button" >Sign up</button>
                   <h6 className="mx-4">Become a creator</h6>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className={`${styles['btn']}`}>
-                <Button className="primary-button" variant="primary">Order Now</Button>
+                <button className="primary-button" variant="primary">Order Now</button>
               </div>
             </Col>
           </Row>
@@ -181,7 +181,7 @@ export default function Home() {
                 </h3>
                 <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
                 <div className={`${styles['btn-part']}`}>
-                  <Button className="primary-button" variant="primary">Order Now</Button>
+                  <button className="primary-button" variant="primary">Order Now</button>
                 </div>
               </div>
 
@@ -232,6 +232,6 @@ export default function Home() {
       {/* Footer */}
       <Footer />
     </main>
->>>>>>> 04d5303141585b93e0151fd4de98f0336eb5874a
+
   );
 }

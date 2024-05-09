@@ -8,8 +8,6 @@ import createCache from '@emotion/cache';
 import { prefixer } from 'stylis';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-
 const theme = (outerTheme) =>
     createTheme({
         direction: 'rtl',
@@ -176,9 +174,9 @@ export default function ContactForm() {
                                 />
                             </Col>
                         </Row>
-                        <Button type="submit" className='primary-button'>
+                        <button type="submit" className='primary-button'>
                             Submit Now
-                        </Button>
+                        </button>
                     </div>
                     {/* </div> */}
                 </ThemeProvider>

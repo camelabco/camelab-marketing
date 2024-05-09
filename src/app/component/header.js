@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from "next/image";
-import Button from 'react-bootstrap/Button';
 
 function Header() {
   return (
@@ -27,7 +26,7 @@ function Header() {
             </Nav>
             <Nav className="ms-auto align-items-center">
               <Nav.Link className={`${headerStyles['header-links']}`} href="#home">Become a creator</Nav.Link>
-              <Nav.Link className={`${headerStyles['header-links']}`} href="#link"> <Button className="primary-button" variant="primary">Login</Button></Nav.Link>
+              <Nav.Link className={`${headerStyles['header-links']}`} href="#link"> <button className="primary-button" variant="primary">Login</button></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
