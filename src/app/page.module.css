@@ -1,0 +1,696 @@
+/* slider section */
+
+.slider-section {
+    padding: 96px 0 80px 0;
+}
+
+.banner-text {
+    position: relative;
+}
+
+.banner-text::before {
+    content: '';
+    position: absolute;
+    width: 61px;
+    height: 58px;
+    top: -35px;
+    right: 145px;
+    background-image: url(../assets/images/landing/headingtext-design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-text h3 {
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 76px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    color: var(--text-primary);
+}
+
+.banner-text span {
+    background: linear-gradient(90deg, #48147D, #8636D3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+.slider-container {
+    width: 100%;
+    padding: 64px 0px 80px 120px;
+    overflow: hidden;
+}
+
+.slider-container .left-content p {
+    margin: 0px auto 40px 0;
+    width: 74%;
+}
+
+.slider-container h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.15px;
+    color: var(--text-primary);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.signup-part {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* our value section */
+.our-value {
+    padding: 80px 0;
+}
+
+.our-value .core-cards {
+    margin-top: 40px;
+}
+
+.our-value .all-cards {
+    display: flex;
+    align-items: center;
+}
+
+.our-value .sub-card {
+    display: flex;
+    justify-content: center;
+}
+
+.our-value .card-content {
+    padding: 80px 40px;
+    background: var(--background-paper);
+    box-shadow: -40px 40px 80px 0px #919EAB29;
+    border-radius: 15px;
+    max-width: 330px;
+}
+
+.card-content .text-part {
+    text-align: center;
+}
+
+.card-content .img-part {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.card-content .img-part::after {
+    content: ' ';
+    width: 45px;
+    height: 45px;
+    background-color: #8E33FF14;
+    top: 7px;
+    position: absolute;
+    border-radius: 50%;
+    left: 115px;
+}
+
+.card-content .text-part {
+    align-items: center;
+}
+
+.card-content .text-part h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.card-content .text-part p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-secondary);
+}
+
+
+/* creation section */
+.creations-img {
+    display: flex;
+    margin-top: 40px;
+}
+
+.img-part {
+    display: flex;
+}
+
+.img-set {
+    display: flex;
+    flex-direction: column;
+}
+
+.creations-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* create videos  section*/
+
+.create-videos {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #F2F5F7 0%, #FFFFFF 100%);
+}
+
+.create-videos .img-part {
+    display: flex;
+    justify-content: end;
+}
+
+.create-videos .img-part img {
+    width: 100%;
+    height: auto;
+}
+
+.create-videos .text-part h3 {
+    max-width: 85%;
+}
+
+.create-videos .text-part ul {
+    list-style-type: decimal;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.create-videos .text-part ul li {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--text-primary);
+}
+
+
+/* content creator section */
+
+.content-creator {
+    padding: 80px 0;
+}
+
+.content-creator .img-part img {
+    width: 100%;
+    height: auto;
+}
+
+.content-creator h3 {
+    width: 78%;
+    text-align: right;
+    margin-left: auto;
+}
+
+.content-creator p {
+    width: 70%;
+    text-align: right;
+    margin: 0 0 30px auto;
+}
+
+.content-creator .btn-part {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* our-client section */
+.our-client {
+    padding: 80px 0;
+}
+
+.our-client .img-part img {
+    width: 100%;
+    height: auto;
+}
+
+.our-client .text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.our-client .text-part h3 {
+    width: 65%;
+    margin-right: auto;
+}
+
+.our-client .text-part p {
+    margin: 0 auto 0 0;
+}
+
+.item {
+    display: flex;
+    justify-content: start;
+    margin-right: auto;
+    align-items: center;
+}
+
+.our-client .cliet-review {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.our-client .cliet-review .cliet-photo img {
+    width: 93px;
+    height: 93px;
+    margin-right: 24px;
+}
+
+.our-client .cliet-review .cliet-name h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.2px;
+    color: var(--text-primary);
+
+}
+
+.our-client .cliet-review .review-star {
+    display: flex;
+
+}
+
+.our-client .cliet-review .review-star img {
+    width: 20px;
+    height: 20px;
+}
+
+.our-client .cliet-review .cliet-name p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.15px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.our-client .cliet-review .changing-btn {
+    display: flex;
+    gap: 30px;
+    margin-left: 70px;
+
+}
+
+.our-client .cliet-review .circle-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-client .cliet-review .circle-btn.left-btn {
+    background-image: url(../assets/images/landing/white-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 25px;
+    left: 76%;
+}
+
+.our-client .cliet-review .circle-btn.right-btn {
+    background-image: url(../assets/images/landing/white-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 25px;
+    right: 0%;
+}
+
+.our-client .cliet-review .circle-btn:hover {
+    background-color: var(--background-paper);
+}
+
+.our-client .cliet-review .circle-btn:hover.left-btn {
+    background-image: url(../assets/images/landing/arrow-left.svg);
+}
+
+.our-client .cliet-review .circle-btn:hover.right-btn {
+    background-image: url(../assets/images/landing/arrow-right.svg);
+}
+
+
+
+/* responsive css */
+
+@media screen and (max-width: 1200px) {
+    .slider-section {
+        padding: 70px 0 50px 0;
+    }
+
+    .banner-text h3 {
+        font-size: 50px;
+        line-height: 62px;
+        width: 75%;
+    }
+
+    .banner-text::before {
+        display: none;
+    }
+
+    .slider-container .left-content p {
+        margin-bottom: 25px;
+
+    }
+
+    .slider-container h6 {
+        font-size: 16px;
+    }
+
+    .create-videos .text-part h3 {
+        max-width: 100%;
+    }
+
+    .content-creator h3 {
+        width: 100%;
+    }
+
+    .create-videos .text-part ul li {
+        font-size: 20px;
+    }
+
+    .our-value {
+        padding: 60px 0;
+    }
+
+    .content-creator {
+        padding: 60px 0;
+    }
+
+    .our-client {
+        padding: 60px 0;
+    }
+
+    .our-client .text-part h3 {
+        width: 100%;
+    }
+
+    .our-client .cliet-review .cliet-name h4 {
+        font-size: 18px;
+
+    }
+
+    .our-client .cliet-review .cliet-name p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .our-client .cliet-review .changing-btn {
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .our-value .sub-card {
+        display: grid;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .create-videos .text-part ul {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    .our-client {
+        padding: 40px 0;
+    }
+
+    .content-creator h3 {
+        text-align: center;
+    }
+
+    .content-creator p {
+        text-align: center;
+        margin: auto;
+    }
+
+    .content-creator .btn-part {
+        margin: 25px 0;
+        justify-content: center;
+    }
+
+    .create-videos .text-part h3 {
+        margin: auto;
+        text-align: center;
+    }
+
+    .create-videos .text-part ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        text-align: start;
+    }
+
+    .create-videos .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-client .text-part {
+        text-align: center;
+    }
+
+    .our-client .text-part p {
+        margin: auto;
+    }
+
+    .our-client .cliet-review .changing-btn {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto auto auto;
+    }
+
+    .our-client .cliet-review {
+        justify-content: center;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .slider-container .left-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .slider-container .left-content p {
+        width: 75%;
+        margin: auto auto 30px auto;
+    }
+
+    .slider-container {
+        padding: 30px 0 60px 0;
+    }
+
+    .our-client .cliet-review .circle-btn.left-btn {
+        top: 25px;
+        left: 70%;
+    }
+
+    .our-client .cliet-review .circle-btn.right-btn {
+        top: 25px;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-section {
+        padding: 70px 0 50px 0;
+    }
+
+    .banner-text h3 {
+        font-size: 33px;
+        line-height: 38px;
+        letter-spacing: 2px;
+        width: 100%;
+    }
+
+    .banner-text::before {
+        display: none;
+    }
+
+    .slider-container h6 {
+        font-size: 16px;
+    }
+
+    .create-videos .text-part h3 {
+        max-width: 100%;
+    }
+
+    .content-creator h3 {
+        width: 100%;
+    }
+
+    .create-videos .text-part ul li {
+        font-size: 20px;
+    }
+
+    .creations-img {
+        flex-wrap: wrap;
+    }
+
+    .our-value {
+        padding: 60px 0;
+    }
+
+    .content-creator {
+        padding: 60px 0;
+    }
+
+    .content-creator p {
+        width: 90%;
+    }
+
+    .create-videos .text-part h3 {
+        margin-top: 35px;
+    }
+
+    .create-videos .text-part ul {
+        margin-top: 20px;
+    }
+
+    .our-client {
+        padding: 60px 0;
+    }
+
+    .our-client .text-part h3 {
+        width: 100%;
+    }
+
+    .our-client .cliet-review .cliet-name h4 {
+        font-size: 18px;
+
+    }
+
+    .our-client .cliet-review .cliet-name p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .our-client .cliet-review .changing-btn {
+        margin-left: 40px;
+    }
+
+    .creations-img {
+        margin-bottom: 30px;
+    }
+
+    .our-value .card-content {
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .item {
+        justify-content: center;
+    }
+
+    .our-client .cliet-review {
+        padding-bottom: 95px;
+    }
+
+    .our-client .cliet-review .circle-btn.left-btn {
+        top: 124%;
+        left: 35%;
+    }
+
+    .our-client .cliet-review .circle-btn.right-btn {
+        top: 124%;
+        right: 35%;
+    }
+
+    .slider-section {
+        padding: 30px 0 30px 0;
+    }
+
+    .banner-text h3 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 1px;
+    }
+
+    .our-value .card-content {
+        padding: 40px 30px;
+    }
+
+    .content-creator {
+        padding: 30px 0;
+    }
+
+    .our-value {
+        padding: 30px 0;
+    }
+
+    .content-creator .text-part {
+        margin-bottom: 50px;
+    }
+
+    .our-value .core-cards {
+        margin-top: 60px;
+    }
+
+    .card-content .img-part {
+        margin-bottom: 25px;
+    }
+
+    .slider-container .left-content p {
+        width: 90%;
+    }
+
+    .create-videos .text-part ul li {
+        font-size: 16px;
+    }
+
+    .create-videos .text-part ul {
+        margin-bottom: 10px;
+    }
+
+    .create-videos {
+        padding: 30px 0;
+    }
+
+    .our-client {
+        padding: 30px 0;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .our-client .cliet-review .cliet-photo img {
+        width: 80%;
+    }
+
+    .our-client .cliet-review .changing-btn {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto auto auto;
+    }
+
+    .our-client .cliet-review .circle-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .our-client .cliet-review .circle-btn.left-btn {
+        background-size: 16px;
+    }
+
+    .our-client .cliet-review .circle-btn.right-btn {
+        background-size: 16px;
+    }
+}

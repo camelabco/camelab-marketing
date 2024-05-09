@@ -1,0 +1,16 @@
+
+.item img{
+    width: 100%;
+}
+
+.item-card{
+    max-width: 173px;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 991px) {
+.owlcarousel{
+    margin-top: 50px;
+}
+}

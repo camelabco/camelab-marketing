@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className={`${footerStyles['main-content']}`}>
       <Container>
-        <Row className={`${footerStyles['row-content']}`} >
+        <Row className={`${footerStyles['footer-content']}`} >
           <Col lg={7} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['left-col-content']}`}>
               <Image
@@ -50,22 +50,18 @@ function Footer() {
           <Col lg={2} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['list-content']}`}>
               <h5>Resources</h5>
-              <ul>
-                <Link href="#"><li>Become a Creator</li></Link>
-                <Link href="#"><li>About Us</li></Link>
-                <Link href="#"><li>Contact Us</li></Link>
-              </ul>
+                <Link href="#"><h6>Become a Creator</h6></Link>
+                <Link href="#"><h6>About Us</h6></Link>
+                <Link href="#"><h6>Contact Us</h6></Link>
             </div>
           </Col>
           <Col lg={3} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['list-content']}`}>
               <h5>Contact us</h5>
-              <ul>
-                <Link href="#"><div className='d-flex'><Image className={`${footerStyles['list-icon']}`} src={require('../../assets/images/footer/phone.svg').default} width={18} height={18} alt="instagram-logo" /><li>+966 546 286 962</li></div></Link>
-                <Link href="#"><div className='d-flex'><Image className={`${footerStyles['list-icon']}`} src={require('../../assets/images/footer/messege.svg').default} width={18} height={18} alt="instagram-logo" /><li>ahmed@camelab.co</li></div></Link>
-                <Link href="#"><div className='d-flex'><Image className={`${footerStyles['list-icon']}`} src={require('../../assets/images/footer/location.svg').default} width={18} height={18} alt="instagram-logo" /><li>Ahmed Farouk
-                  King Fahad Road, Riyadh - 13217</li></div></Link>
-              </ul>
+                <Link href="#" ><div className={`${footerStyles['list-icon']}`}><Image  src={require('../../assets/images/footer/phone.svg').default} width={18} height={18} alt="instagram-logo" /><h6>+966 546 286 962</h6></div></Link>
+                <Link href="#" ><div className={`${footerStyles['list-icon']}`}><Image  src={require('../../assets/images/footer/messege.svg').default} width={18} height={18} alt="instagram-logo" /><h6>ahmed@camelab.co</h6></div></Link>
+                <Link href="#" ><div className={`${footerStyles['list-icon']}`}><Image  src={require('../../assets/images/footer/location.svg').default} width={18} height={18} alt="instagram-logo" /><h6>Ahmed Farouk
+                  King Fahad Road, Riyadh - 13217</h6></div></Link>
             </div>
           </Col>
         </Row>
@@ -73,8 +69,8 @@ function Footer() {
         <div className={`${footerStyles['footer-apps']}`}>
           <p>Become a creator</p>
           <div className={`${footerStyles['apps-part']}`}>
-            <Link href="#"><Image className={`${footerStyles['list-icon']}`} src={require('../../assets/images/footer/app-store.svg').default} width="100%" alt="instagram-logo" /></Link>
-            <Link href="#"><Image className={`${footerStyles['list-icon']}`} src={require('../../assets/images/footer/google-play.svg').default} width="100%" alt="instagram-logo" /></Link>
+            <Link href="#"><Image src={require('../../assets/images/footer/app-store.svg').default} width="100%" alt="instagram-logo" /></Link>
+            <Link href="#" ><Image className={`${footerStyles['custom-mt']}`} src={require('../../assets/images/footer/google-play.svg').default} width="100%" alt="instagram-logo" /></Link>
           </div>
         </div>
       </Container>

@@ -15,7 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <body >{children}</body>
     </html>
     // dir="rtl"
   );
