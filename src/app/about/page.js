@@ -193,28 +193,33 @@ export default function About() {
               </Row>
             </div>
           </div>
-          {/* about order section  */}
-          <div className={`${aboutStyles['about-order-section']}`}>
-            <Row>
-              <Col lg={6} md={12} sm={12}>
-                <div className={`${aboutStyles['order-content-section']}`}>
-                  <h3 className='main-heading'>Our Content Creators are
-                    ready to make Brand Collaboration</h3>
-                  <p className='secondary-text'>Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
-                  <button className='primary-button mt-3'>Order Now</button>
-                </div>
-              </Col>
-              <Col lg={6} md={12} sm={12}>
-                <div className={`${aboutStyles['order-image-section']}`}>
-                  <Image
-                    src={require('../../assets/images/about/about-order-img.png').default}
-                    alt="about order image"
-                    className={`${aboutStyles['about-order-img']}`}
-                  />
-                </div>
-              </Col>
-            </Row>
-          </div>
+          {/* content-creator */}
+
+          <section className="content-creator">
+            <Container>
+              <Row>
+                <Col lg={6}>
+                  <div className='text-part'>
+                    <h3 className="main-heading">
+                      Our Content Creators are
+                      ready to make Brand Collaboration
+                    </h3>
+                    <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
+                    <div className='btn-part'>
+                      <button className="primary-button" variant="primary">Order Now</button>
+                    </div>
+                  </div>
+
+                </Col>
+
+                <Col lg={6}>
+                  <div className='img-part'>
+                    <Image src={require('../../assets/images/landing/content-creator-img.svg').default} width="100%" alt="create-video-img" />
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
           {/* about client and project section  */}
           <div className={`${aboutStyles['about-client-section']}`}>
             <Row>
@@ -236,7 +241,7 @@ export default function About() {
 
         </Container>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

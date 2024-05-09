@@ -1,0 +1,151 @@
+.banner-section {
+    background-image: url(../../assets/images/creator/creator-banner-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 232px 0;
+    background-size: cover;
+}
+
+.banner-section h3 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 73.28px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.banner-section p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.48px;
+    width: 54%;
+    margin: auto;
+}
+
+.banner-section .text-part {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.banner-section .app-store {
+    margin-top: 25px;
+}
+
+.banner-section .app-store img {
+    margin: 5px;
+}
+
+
+
+.inclusive-hub {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #F1F4F6 0%, #FFFFFF 100%);
+}
+
+.inclusive-hub h3 {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.inclusive-hub p {
+    text-align: center;
+}
+
+.inclusive-hub .text-part {
+    margin-bottom: 64px;
+}
+
+
+/* vertical accordion */
+
+.faq-section{
+    padding: 80px 0;
+}
+
+.faq-section .heading-part h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+.accordion-header h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--text-primary) !important;
+}
+
+.accordion-body p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--text-secondary) !important;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .banner-section h3 {
+        width: 100%;
+    }
+
+    .banner-section p {
+        width: 70%;
+    }
+
+    .inclusive-hub h3 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner-section{
+        padding: 180px 0;
+    }
+    .faq-section{
+        padding: 0px 0 80px 0;
+    }
+    .banner-section h3 {
+        font-size: 54px;
+        line-height: 54.28px;
+    }
+
+    .banner-section p {
+        width: 70%;
+        font-size: 22px;
+    }
+
+    .inclusive-hub h3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-section h3 {
+        font-size: 50px;
+        line-height: 47.28px;
+    }
+
+    .banner-section p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .banner-section h3 {
+        font-size: 42px;
+        line-height: 42.28px;
+    }
+
+    .banner-section p {
+        font-size: 18px;
+    }
+    .inclusive-hub {
+        padding: 40px 0;
+    }
+}

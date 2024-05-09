@@ -3,3 +3,14 @@
     padding-left: 3rem !important;
     padding-right: 0;
 }
+
+
+
+[dir="rtl"] .content-creator .btn-part {
+    display: flex;
+    justify-content: start;
+}
+
+@media only screen and (max-width: 991px) {
+    
+}

@@ -1,5 +1,4 @@
 "use client";
-import $ from 'jquery';
 import sliderStyle from "../styles/slider.module.css";
 import React from "react";
 import dynamic from "next/dynamic";
@@ -7,10 +6,18 @@ import Image from "next/image";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
+
+
+const $ = require("jquery");
+if (typeof window !== "undefined") {
+   window.$ = window.jQuery = require("jquery");
+}
+
 // This is for Next.js. On Rect JS remove this line
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   ssr: false,
 });
+
 
 const Slider = () => {
   const options = {
@@ -19,6 +26,7 @@ const Slider = () => {
     nav: false,
     dots: false,
     autoplay: true,
+    rtl:true,
     autoplayTimeout:1000,
     autoplaySpeed:1000,
     stagePadding:0,

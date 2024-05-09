@@ -53,42 +53,42 @@ export default function Home() {
 
       <section className={`${styles['our-value']}`}>
         <Container>
-          <div className="text-part">
+          <div className={`${styles['text-part']}`}>
             <h3 className="main-heading">
               Our Core Values
             </h3>
             <p className="secondary-text">We place immense trust in the synergy of People, Technology, and the empowerment of individual creators. These four pillars are the cornerstone of our digital transformation strategy, shaping our mission to drive businesses towards remarkable growth and prosperity.</p>
           </div>
-          <div className={`${styles['core-cards']}`}>
-            <Row className={`${styles['all-cards']}`}>
-              <Col lg={4} md={6} className={`${styles['sub-card']}`}>
-                <div className={`${styles['card-content']}`}>
-                  <div className={`${styles['img-part']}`}>
+          <div className='core-cards'>
+            <Row>
+              <Col lg={4} md={6} className='sub-card'>
+                <div className='card-content'>
+                  <div className='img-part'>
                     <Image src={require('../assets/images/landing/people.svg').default} width={48} height={48} alt="core-cards-img" />
                   </div>
-                  <div className={`${styles['text-part']}`}>
+                  <div className='text-part'>
                     <h5>People</h5>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                 </div>
               </Col>
-              <Col lg={4} md={6} className={`${styles['sub-card']}`}>
-                <div className={`${styles['card-content']}`}>
-                  <div className={`${styles['img-part']}`}>
+              <Col lg={4} md={6} className='sub-card scale-up'>
+                <div className='card-content'>
+                  <div className='img-part'>
                     <Image src={require('../assets/images/landing/technology.svg').default} width={48} height={48} alt="core-cards-img" />
                   </div>
-                  <div className={`${styles['text-part']}`}>
+                  <div className='text-part'>
                     <h5>Technology</h5>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                   </div>
                 </div>
               </Col>
-              <Col lg={4} md={12} className={`${styles['sub-card']}`}>
-                <div className={`${styles['card-content']}`}>
-                  <div className={`${styles['img-part']}`}>
+              <Col lg={4} md={12} className='sub-card'>
+                <div className='card-content'>
+                  <div className='img-part'>
                     <Image src={require('../assets/images/landing/individual.svg').default} width={43} height={45} alt="core-cards-img" />
                   </div>
-                  <div className={`${styles['text-part']}`}>
+                  <div className='text-part'>
                     <h5>Individual creators</h5>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                   </div>
@@ -102,7 +102,7 @@ export default function Home() {
       {/* creations-section */}
       <section className={`${styles['creations']}`}>
         <Container>
-          <div className="text-part">
+          <div className={`${styles['text-part']}`}>
             <h3 className="main-heading">
               Inspiring Creations
             </h3>
@@ -170,17 +170,17 @@ export default function Home() {
 
       {/* content-creator */}
 
-      <section className={`${styles['content-creator']}`}>
+      <section className='content-creator'>
         <Container>
           <Row>
             <Col lg={6}>
-              <div className={`${styles['text-part']}`}>
+              <div className='text-part'>
                 <h3 className="main-heading">
                   Our Content Creators are
                   ready to make Brand Collaboration
                 </h3>
                 <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
-                <div className={`${styles['btn-part']}`}>
+                <div className='btn-part'>
                   <button className="primary-button" variant="primary">Order Now</button>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function Home() {
             </Col>
 
             <Col lg={6}>
-              <div className={`${styles['img-part']}`}>
+              <div className='img-part'>
                 <Image src={require('../assets/images/landing/content-creator-img.svg').default} width="100%" alt="create-video-img" />
               </div>
             </Col>
