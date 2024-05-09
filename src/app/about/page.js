@@ -5,8 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Image from "next/image";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Footer from '../component/footer';
 import Brands from '../component/brands';
+import Footer from '../component/footer';
 
 export default function About() {
   return (
@@ -236,7 +236,7 @@ export default function About() {
 
         </Container>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 }

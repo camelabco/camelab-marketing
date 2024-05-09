@@ -3,34 +3,12 @@
 :root {
     --text-primary: #212B36;
     --text-secondary: #637381;
-    --text-secondary: #637381;
     --purple: #8224E3;
-    --background-paper:  #FFFFFF;
+    --background-paper: #FFFFFF;
 }
 
 body {
     font-family: 'Public Sans' !important;
-}
-
-.primary-button {
-    padding: 9px 22px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 22px;
-    border-radius: 5px;
-    background-color: var(--purple);
-    color: var(--background-paper);
-    border: 1px solid var(--purple);
-}
-
-.primary-button:hover {
-    background-color: var(--background-paper);
-    color: var(--purple);
-    border: 1px solid var(--purple);
-}
-
-.text-part {
-    text-align: center;
 }
 
 .main-heading {
@@ -51,7 +29,25 @@ body {
     margin: auto;
 }
 
+.primary-button {
+    padding: 9px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: var(--purple) ;
+    color: var(--background-paper);
+    border: 1px solid var(--purple) ;
+   
+}
 
+.primary-button:hover {
+    background-color: white ;
+    color: var(--purple) ;
+    border: 1px solid var(--purple);
+}
+
+/* animated card */
 
 .common-animated-card .card {
     border: none;
@@ -250,3 +246,4 @@ body {
         font-size: 16px;
     }
 }
+
