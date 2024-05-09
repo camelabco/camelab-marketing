@@ -31,7 +31,9 @@
 
 /* work section  */
 
+
 .about-work-section {
+    background: linear-gradient(180deg, #F1F4F6 0%, #FFFFFF 100%);
     padding: 80px 0px;
 }
 

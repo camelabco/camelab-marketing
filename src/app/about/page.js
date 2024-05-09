@@ -13,9 +13,10 @@ export default function About() {
     <>
       <Header />
       <div className={`${aboutStyles['about-us-section']}`}>
-        <Container>
-          {/* banner section  */}
-          <div className={`${aboutStyles['about-banner-section']}`}>
+        {/* <Container> */}
+        {/* banner section  */}
+        <div className={`${aboutStyles['about-banner-section']}`}>
+          <Container>
             <Row>
               <Col lg={6} md={12} sm={12}>
                 <div className={`${aboutStyles['about-image-section']}`}>
@@ -56,9 +57,11 @@ export default function About() {
                 </div>
               </Col>
             </Row>
-          </div>
-          {/* about work section  */}
-          <div className={`${aboutStyles['about-work-section']}`}>
+          </Container>
+        </div>
+        {/* about work section  */}
+        <div className={`${aboutStyles['about-work-section']}`}>
+          <Container>
             <h3 className='main-heading text-center'>How we work at Camelab</h3>
             <div className={`${aboutStyles['work-card-section']}`}>
               <Row className="justify-content-center">
@@ -192,36 +195,38 @@ export default function About() {
                 </Col>
               </Row>
             </div>
-          </div>
-          {/* content-creator */}
+          </Container>
+        </div>
+        {/* content-creator */}
 
-          <section className="content-creator">
-            <Container>
-              <Row>
-                <Col lg={6}>
-                  <div className='text-part'>
-                    <h3 className="main-heading">
-                      Our Content Creators are
-                      ready to make Brand Collaboration
-                    </h3>
-                    <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
-                    <div className='btn-part'>
-                      <button className="primary-button" variant="primary">Order Now</button>
-                    </div>
+        <section className="content-creator">
+          <Container>
+            <Row>
+              <Col lg={6}>
+                <div className='text-part'>
+                  <h3 className="main-heading">
+                    Our Content Creators are
+                    ready to make Brand Collaboration
+                  </h3>
+                  <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
+                  <div className='btn-part'>
+                    <button className="primary-button" variant="primary">Order Now</button>
                   </div>
+                </div>
 
-                </Col>
+              </Col>
 
-                <Col lg={6}>
-                  <div className='img-part'>
-                    <Image src={require('../../assets/images/landing/content-creator-img.svg').default} width="100%" alt="create-video-img" />
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          {/* about client and project section  */}
-          <div className={`${aboutStyles['about-client-section']}`}>
+              <Col lg={6}>
+                <div className='img-part'>
+                  <Image src={require('../../assets/images/landing/content-creator-img.svg').default} width="100%" alt="create-video-img" />
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        {/* about client and project section  */}
+        <div className={`${aboutStyles['about-client-section']}`}>
+          <Container>
             <Row>
               <Col lg={6} md={12} sm={12}>
                 <div className={`${aboutStyles['client-heading-section']}`}>
@@ -237,9 +242,10 @@ export default function About() {
             <div className={`${aboutStyles['client-brand-section']}`}>
               <Brands />
             </div>
-          </div>
+          </Container>
+        </div>
 
-        </Container>
+        {/* </Container> */}
       </div>
       <Footer />
     </>
