@@ -7,11 +7,28 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Brands from '../component/brands';
 import Footer from '../component/footer';
+import AboutSlider from '../component/aboutSlider';
+import AnimatedImgSection from '../component/animatedImgSection';
 
 export default function About() {
   return (
     <>
       <Header />
+
+
+
+<Container>
+<AboutSlider/>
+</Container>
+
+
+
+
+
+
+
+
+
       <div className={`${aboutStyles['about-us-section']}`}>
         {/* <Container> */}
         {/* banner section  */}
@@ -200,29 +217,7 @@ export default function About() {
         {/* content-creator */}
 
         <section className="content-creator">
-          <Container>
-            <Row>
-              <Col lg={6}>
-                <div className='text-part'>
-                  <h3 className="main-heading">
-                    Our Content Creators are
-                    ready to make Brand Collaboration
-                  </h3>
-                  <p className="secondary-text">Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
-                  <div className='btn-part'>
-                    <button className="primary-button" variant="primary">Order Now</button>
-                  </div>
-                </div>
-
-              </Col>
-
-              <Col lg={6}>
-                <div className='img-part'>
-                  <Image src={require('../../assets/images/landing/content-creator-img.svg').default} width="100%" alt="create-video-img" />
-                </div>
-              </Col>
-            </Row>
-          </Container>
+        <AnimatedImgSection/>
         </section>
         {/* about client and project section  */}
         <div className={`${aboutStyles['about-client-section']}`}>

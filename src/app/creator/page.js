@@ -36,11 +36,17 @@ export default function Creator() {
 
             <section className={`${creatorStyle['horizontal-accordion']}`}>
                 <Container>
-                    {/* <HorizontalAccordion /> */}
+
+
+                    <div className={`${creatorStyle['text-part']}`}>
+                        <h3 className='main-heading'>Start working with <span>creators</span> in
+                            4 easy steps</h3>
+                            <p className='secondary-text'>Every step is integrated into the platform to streamline your collaborations.</p>
+                    </div>
+                    <HorizontalAccordion />
                 </Container>
 
             </section>
-
 
 
 
