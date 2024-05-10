@@ -7,15 +7,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Brands from '../component/brands';
 import Footer from '../component/footer';
+import AnimatedImgSection from '../component/animatedImgSection'
 
 export default function About() {
   return (
     <>
       <Header />
       <div className={`${aboutStyles['about-us-section']}`}>
-        <Container>
-          {/* banner section  */}
-          <div className={`${aboutStyles['about-banner-section']}`}>
+        {/* banner section  */}
+        <div className={`${aboutStyles['about-banner-section']}`}>
+          <Container>
             <Row>
               <Col lg={6} md={12} sm={12}>
                 <div className={`${aboutStyles['about-image-section']}`}>
@@ -56,9 +57,11 @@ export default function About() {
                 </div>
               </Col>
             </Row>
-          </div>
-          {/* about work section  */}
-          <div className={`${aboutStyles['about-work-section']}`}>
+          </Container>
+        </div>
+        {/* about work section  */}
+        <div className={`${aboutStyles['about-work-section']}`}>
+          <Container>
             <h3 className='main-heading text-center'>How we work at Camelab</h3>
             <div className={`${aboutStyles['work-card-section']}`}>
               <Row className="justify-content-center">
@@ -192,31 +195,15 @@ export default function About() {
                 </Col>
               </Row>
             </div>
-          </div>
-          {/* about order section  */}
-          <div className={`${aboutStyles['about-order-section']}`}>
-            <Row>
-              <Col lg={6} md={12} sm={12}>
-                <div className={`${aboutStyles['order-content-section']}`}>
-                  <h3 className='main-heading'>Our Content Creators are
-                    ready to make Brand Collaboration</h3>
-                  <p className='secondary-text'>Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>
-                  <button className='primary-button mt-3'>Order Now</button>
-                </div>
-              </Col>
-              <Col lg={6} md={12} sm={12}>
-                <div className={`${aboutStyles['order-image-section']}`}>
-                  <Image
-                    src={require('../../assets/images/about/about-order-img.png').default}
-                    alt="about order image"
-                    className={`${aboutStyles['about-order-img']}`}
-                  />
-                </div>
-              </Col>
-            </Row>
-          </div>
-          {/* about client and project section  */}
-          <div className={`${aboutStyles['about-client-section']}`}>
+          </Container>
+        </div>
+        {/* about order section  */}
+        <div className={`${aboutStyles['about-order-section']}`}>
+           <AnimatedImgSection/>
+        </div>
+        {/* about client and project section  */}
+        <div className={`${aboutStyles['about-client-section']}`}>
+          <Container>
             <Row>
               <Col lg={6} md={12} sm={12}>
                 <div className={`${aboutStyles['client-heading-section']}`}>
@@ -232,11 +219,10 @@ export default function About() {
             <div className={`${aboutStyles['client-brand-section']}`}>
               <Brands />
             </div>
-          </div>
-
-        </Container>
+          </Container>
+        </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -38,13 +38,8 @@
     font-weight: 600;
     line-height: 32px;
     writing-mode: vertical-rl;
-    /* rotate: -90deg; */
-    /* display: none; */
+   
     color: var(--text-primary);
     margin-top: auto;
 }
 
-.accordion-item.active .accordion-content {
-    /* display: block; */
-   
-}
