@@ -199,7 +199,7 @@ export default function About() {
         </div>
         {/* about order section  */}
         <div className={`${aboutStyles['about-order-section']}`}>
-           <AnimatedImgSection/>
+          <AnimatedImgSection/>
         </div>
         {/* about client and project section  */}
         <div className={`${aboutStyles['about-client-section']}`}>
@@ -221,7 +221,7 @@ export default function About() {
             </div>
           </Container>
         </div>
-      </div>
+      </div >
       <Footer />
     </>
   );

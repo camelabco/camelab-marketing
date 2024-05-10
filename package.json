@@ -14,6 +14,7 @@
     "@mui/material": "^5.15.16",
     "bootstrap": "^5.3.3",
     "bootstrap-rtl": "^3.3.4",
+    "jquery": "^3.7.1",
     "next": "14.2.3",
     "owl.carousel": "^2.3.4",
     "react": "^18",
@@ -22,5 +23,8 @@
     "react-owl-carousel": "^2.3.3",
     "stylis-plugin-rtl": "^2.1.1",
     "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "webpack": "^5.91.0"
   }
 }

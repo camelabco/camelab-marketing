@@ -2,6 +2,9 @@
     margin-top: 80px;
     width:50%
 }
+.contact-section-content p{
+    width: 100%;
+}
 
 .contact-desktop-img-section{
     padding: 20px;
