@@ -30,7 +30,6 @@ export default function About() {
 
 
       <div className={`${aboutStyles['about-us-section']}`}>
-        {/* <Container> */}
         {/* banner section  */}
         <div className={`${aboutStyles['about-banner-section']}`}>
           <Container>
@@ -239,9 +238,7 @@ export default function About() {
             </div>
           </Container>
         </div>
-
-        {/* </Container> */}
-      </div>
+      </div >
       <Footer />
     </>
   );

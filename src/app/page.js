@@ -80,7 +80,7 @@ export default function Home() {
                   </div>
                   <div className='text-part'>
                     <h5>Technology</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                   </div>
                 </div>
               </Col>
@@ -102,45 +102,8 @@ export default function Home() {
 
       {/* creations-section */}
       <section className={`${styles['creations']}`}>
-        <Container>
-          <div className={`${styles['text-part']}`}>
-            <h3 className="main-heading">
-              Inspiring Creations
-            </h3>
-            <p className="secondary-text">Visualize a canvas where People, Process, and Technology converge effortlessly, guided by the hands of empowered creators. It's a space where ideas are born, nurtured, and transformed into reality.</p>
-          </div>
-
-          <div className={`${styles['creations-img']}`}>
-
-            <div className={`${styles['img-part']}`}>
-              <div className={`${styles['img-set']}`}>
-                <div><Image src={require('../assets/images/landing/creation-img1.svg').default} alt="core-cards-img" /></div>
-                <div><Image src={require('../assets/images/landing/creation-img2.svg').default} alt="core-cards-img" /></div>
-              </div>
-              <div className={`${styles['img-set']}`}>
-                <div><Image src={require('../assets/images/landing/creation-img3.svg').default} alt="core-cards-img" /></div>
-                <div><Image src={require('../assets/images/landing/creation-img4.svg').default} alt="core-cards-img" /></div>
-              </div>
-            </div>
-
-
-
-            <div className={`${styles['img-part']}`}>
-              <div className={`${styles['img-set-one']}`}>
-                <div><Image src={require('../assets/images/landing/creation-img5.svg').default} alt="core-cards-img" /></div>
-                <div><Image src={require('../assets/images/landing/creation-img6.svg').default} alt="core-cards-img" /></div>
-              </div>
-              <div className={`${styles['img-set-two']}`}>
-                <div><Image src={require('../assets/images/landing/creation-img7.svg').default} alt="core-cards-img" /></div>
-                <div><Image src={require('../assets/images/landing/creation-img8.svg').default} alt="core-cards-img" /></div>
-              </div>
-            </div>
-          </div>
-        </Container>
+          <AnimatedImgSection />
       </section>
-
-
-
 
       <section className={`${styles['create-videos']}`}>
         <Container>

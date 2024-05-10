@@ -1,3 +1,6 @@
+.GT-Walsheim-Trial{
+    font-family:'GT Walsheim Trial';
+}
 /* about banner section  */
 .about-banner-section {
     padding: 80px 0px;
@@ -31,7 +34,6 @@
 
 /* work section  */
 
-
 .about-work-section {
     background: linear-gradient(180deg, #F1F4F6 0%, #FFFFFF 100%);
     padding: 80px 0px;
@@ -45,7 +47,32 @@
     top: 15% !important;
 }
 
+/* about order section  */
 
+.about-order-section {
+    padding: 80px 0px;
+}
+
+.order-content-section {
+    text-align: right;
+    padding: 10px;
+}
+
+.order-content-section h3 {
+    font-size: 46px;
+}
+
+.about-order-img {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.order-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* about client section  */
 .about-client-section {
@@ -76,7 +103,7 @@
     }
 
     .about-work-section {
-        padding: 20px 0px;
+        padding: 40px 0px;
     }
 
     .about-client-section {

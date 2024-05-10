@@ -52,47 +52,7 @@
     margin-top: auto;
 }
 
-.horizontal-accordion .accordion-item .accordion-content {
-    display: none;
-
-}
-
-
-.horizontal-accordion .accordion-item.active .accordion-content {
-    display: block;
-}
-
-
-.horizontal-accordion .accordion-content .text-part {
-    align-items: center;
-    display: flex;
-    margin-left: 40px;
-}
-
-.horizontal-accordion .accordion-content .text-part h3 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-    color: var(--text-primary);
-
-}
-
-.horizontal-accordion .accordion-content .text-part p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    color: var(--text-secondary);
-}
-
-.horizontal-accordion .accordion-content .img-btn img {
-    margin: 24px 5px 0 0;
-}
-
-.horizontal-accordion .accordion-content .img-part img {
-    min-width: 100%; 
-}
-.horizontal-accordion .accordion-content .img-part{
-   display: flex;
-   align-items: center;
+.accordion-item.active .accordion-content {
+    /* display: block; */
+   
 }
