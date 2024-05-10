@@ -199,29 +199,6 @@
     padding: 80px 0;
 }
 
-.content-creator .img-part img {
-    width: 100%;
-    height: auto;
-}
-
-.content-creator h3 {
-    width: 78%;
-    text-align: right;
-    margin-left: auto;
-}
-
-.content-creator p {
-    width: 70%;
-    text-align: right;
-    margin: 0 0 30px auto;
-}
-
-.content-creator .btn-part {
-    display: flex;
-    justify-content: end;
-}
-
-
 /* our-client section */
 .our-client {
     padding: 80px 0;

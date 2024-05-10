@@ -22,7 +22,7 @@ export default function AnimatedImgSection() {
                         <div className={`${animatedImgStyles['order-image-section']}`}>
                             <div className={`${animatedImgStyles['order-img-div']}`}>
                                 <Image
-                                    src={require('../../assets/images/about/order-sec-img.png').default}
+                                    src={require('../../assets/images/animated-img/order-sec-img.png').default}
                                     alt="about order image"
                                     className={`${animatedImgStyles['order-img']}`}
                                 />

@@ -29,7 +29,7 @@
 }
 .order-img-div::before{
     content: " ";
-    background-image: url('../../assets/images/about/like.svg');
+    background-image: url('../../assets/images/animated-img/like.svg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 40px;
@@ -45,7 +45,7 @@
 
 .order-img-div::after{
     content: " ";
-    background-image: url('../../assets/images/about/chat.svg');
+    background-image: url('../../assets/images/animated-img/chat.svg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 42px;

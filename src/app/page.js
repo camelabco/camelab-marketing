@@ -80,7 +80,7 @@ export default function Home() {
                   </div>
                   <div className={`${styles['text-part']}`}>
                     <h5>Technology</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                   </div>
                 </div>
               </Col>
@@ -102,9 +102,7 @@ export default function Home() {
 
       {/* creations-section */}
       <section className={`${styles['creations']}`}>
-        <Container>
           <AnimatedImgSection />
-        </Container>
       </section>
 
 
