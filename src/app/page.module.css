@@ -1,8 +1,8 @@
-
 [dir="rtl"] .our-client .text-part h3 {
     width: 80%;
     margin-left: auto;
 }
+
 [dir="rtl"] .signup-part {
     display: flex;
     justify-content: right
@@ -15,40 +15,45 @@
 }
 
 
-[dir="rtl"] .slider-container{
+[dir="rtl"] .slider-container {
     width: 100%;
     padding: 64px 120px 80px 0px;
     overflow: hidden;
 }
 
-[dir="rtl"] .review-owlcarousel .item{
+[dir="rtl"] .review-owlcarousel .item {
     justify-content: left;
 }
-[dir="rtl"] .review-owlcarousel .item h4{
-    text-align: left;
-}
-[dir="rtl"] .review-owlcarousel .item p{
+
+[dir="rtl"] .review-owlcarousel .item h4 {
     text-align: left;
 }
 
-[dir="rtl"] .review-owlcarousel .item .review-star{
+[dir="rtl"] .review-owlcarousel .item p {
+    text-align: left;
+}
+
+[dir="rtl"] .review-owlcarousel .item .review-star {
     justify-content: left;
 }
 
 [dir="rtl"] .our-client .cliet-review .cliet-photo img {
     margin-left: 24px;
-    margin-right:0 ;
+    margin-right: 0;
 }
+
 @media screen and (max-width: 991px) {
     [dir="rtl"] .signup-part {
         display: flex;
         justify-content: center
     }
-    [dir="rtl"] .slider-container{
+
+    [dir="rtl"] .slider-container {
         width: 100%;
         padding: 64px 0px 80px 0px;
         overflow: hidden;
     }
+
     [dir="rtl"] .slider-container .left-content p {
         margin: 0px auto 40px auto;
         width: 74%;
@@ -117,12 +122,15 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-.signup-part a{
+
+.signup-part a {
     text-decoration: none;
 }
-.signup-part a:hover h6{
+
+.signup-part a:hover h6 {
     color: var(--purple);
 }
+
 .signup-part {
     display: flex;
     align-items: center;
@@ -130,7 +138,7 @@
 
 
 
-  
+
 
 
 
@@ -147,14 +155,14 @@
 
 
 /* creation section */
-.creations{
+.creations {
     padding: 80px 0;
 }
 
 
 .creations .text-part {
     text-align: center;
-  
+
 }
 
 .creations-img {
@@ -195,7 +203,7 @@
 }
 
 .create-videos .text-part h3 {
-    max-width: 85%;
+    max-width: 100%;
 }
 
 .create-videos .text-part ul {
@@ -208,12 +216,14 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
+    margin-bottom: 14px;
     color: var(--text-primary);
 }
 
-.create-videos .right-text-part{
+.create-videos .right-text-part {
     display: flex;
     align-items: center;
+
 }
 
 
@@ -225,7 +235,6 @@
 
 .our-client .img-part img {
     width: 100%;
-    height: auto;
 }
 
 .our-client .text-part {
@@ -364,16 +373,12 @@
     .slider-container h6 {
         font-size: 16px;
     }
-    .create-videos .right-text-part{
+
+    .create-videos .right-text-part {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .create-videos .text-part h3 {
-        max-width: 100%;
-    }
-
     .create-videos .text-part ul li {
         font-size: 20px;
     }
@@ -385,6 +390,9 @@
 
     .our-client {
         padding: 60px 0;
+    }
+    .our-client .text-part{
+        padding: 0;
     }
 
     .our-client .text-part h3 {
@@ -413,17 +421,29 @@
         margin: auto;
         margin-bottom: 25px;
     }
+    .create-videos .text-part ul li {
+        margin-bottom: 5px;
+    }
+
     .create-videos .text-part {
         margin-top: 25px;
     }
 
     .create-videos .text-part ul {
-        margin-top: 0px;
+        margin-top: 25px;
         margin-bottom: 25px;
     }
 
     .our-client {
         padding: 40px 0;
+    }
+    .our-client .text-part{
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .create-videos .right-text-part {
+        padding: 0;
     }
 
 
@@ -569,15 +589,19 @@
 }
 
 @media screen and (max-width: 520px) {
-    [dir="rtl"] .review-owlcarousel .item{
+    [dir="rtl"] .review-owlcarousel .item {
         justify-content: center;
     }
+
     .review-owlcarousel .item {
         justify-content: center;
     }
 
     .our-client .cliet-review {
         padding-bottom: 95px;
+    }
+    .create-videos .text-part ul li {
+        margin-bottom: 0px;
     }
 
     .our-client .cliet-review .circle-btn.left-btn {
@@ -600,12 +624,12 @@
         letter-spacing: 1px;
     }
 
-  
-
     .our-value {
-        padding: 30px 0;
+        padding: 30px 0 0 0;
     }
-
+    .core-cards {
+        margin-top: 40px;
+    }
 
     .slider-container .left-content p {
         width: 90%;

@@ -148,7 +148,7 @@ export default function Home() {
                 <Image src={require('../assets/images/landing/create-video-img.svg').default} width="100%" alt="create-video-img" />
               </div>
             </Col>
-            <Col lg={7} className={`${styles['right-text-part']}`}>
+            <Col lg={7} className={`${styles['right-text-part']} px-5`}>
               <div className={`${styles['text-part']}`}>
                 <h3 className="main-heading">
                   Create your brand's video with Camelab
@@ -186,17 +186,16 @@ export default function Home() {
           <Row>
             <Col lg={6}>
               <div className={`${styles['img-part']}`}>
-                <Image src={require('../assets/images/landing/our-client-img.svg').default} width="100%" alt="create-video-img" />
+                <Image src={require('../assets/images/landing/our-client-img.svg').default} width={"100%"} alt="create-video-img" />
               </div>
             </Col>
             <Col lg={6}>
-              <div className={`${styles['text-part']}`}>
+              <div className={`${styles['text-part']} px-4 d-flex align-items-center flex-column`}>
                 <h3 className="main-heading">
                   What our Client
                   say about us
                 </h3>
                 <p className="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. </p>
-
                 <div className={`${styles['cliet-review']}`}>
                   <ReviewSlider />
                 </div>

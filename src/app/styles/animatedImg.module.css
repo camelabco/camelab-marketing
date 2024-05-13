@@ -73,6 +73,7 @@
     line-height: 32px;
     
 } 
+
 /* animation  */
 @keyframes zoomInOut {
     0% {
@@ -84,14 +85,19 @@
         /* Adjust zoom level as needed */
     }
 }
+@media only screen and (max-width: 1200px) {
+    .order-content-text-part{
+        padding: 0 !important;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .order-content-section .button-part {
         display: flex;
         justify-content: center;
     }
-    .order-content-text-part{
-        padding: 0 !important;
+    .order-image-section{
+        margin-top: 25px;
     }
 
 }

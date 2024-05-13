@@ -26,7 +26,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-secondary);
     width: 90%;
-    margin: auto;
+    margin:auto;
 }
 
 .primary-button {
@@ -81,7 +81,7 @@ body {
 
 /* core card */
 .core-cards {
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .core-cards .scale-up {
@@ -222,7 +222,6 @@ body {
     background: rgba(128, 137, 255, .1);
 }
 
-/* CSS for changing SVG color to white on hover */
 .common-animated-card:hover .card-image-div svg g path {
     fill: #ffffff;
 }
@@ -431,7 +430,7 @@ body {
         margin-bottom: 50px;
     }
 
-    .card-content {
+    .core-cards .card-content {
         padding: 40px 30px;
     }
 

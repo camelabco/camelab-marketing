@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
   window.$ = window.jQuery = require("jquery");
 }
 
-const OwlCarousel = dynamic(() => import("react-owl-carousel-rtl"), {
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
     ssr: false,
 });
 

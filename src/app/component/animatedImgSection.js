@@ -9,7 +9,7 @@ export default function AnimatedImgSection() {
             <Container>
                 <Row>
                     <Col lg={6} md={12} sm={12} className='d-flex align-items-center'>
-                        <div className={`${animatedImgStyles['order-content-text-part']} px-3`}>
+                        <div className={`${animatedImgStyles['order-content-text-part']} px-4`}>
                             <h3 className='main-heading'>Our Content Creators are
                                 ready to make Brand Collaboration</h3>
                             <p className='secondary-text'>Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging.</p>

@@ -29,7 +29,6 @@ export default function ContactForm() {
     const handleChange = () => {
       setRtl(!rtl);
     };
-  
     return (
         <>
             <CacheProvider value={rtl ? rtlCache : ltrCache}>
@@ -50,14 +49,15 @@ export default function ContactForm() {
                                         '& .MuiOutlinedInput-root': {
                                             '& fieldset': {
                                                 borderColor: '#637381',
+                                                borderRadius: '10px !important'
                                             },
                                             '&:hover fieldset': {
-                                                borderColor: '#637381',
+                                                borderColor: 'rgba(145, 158, 171, 0.8)',
                                             },
                                             '&.Mui-focused fieldset': {
-                                                borderColor: '#637381 !important',
+                                                borderColor: 'rgba(145, 158, 171, 0.8) !important',
                                                 borderWidth: '0.5px',
-                                                borderRadius: '5px',
+                                                borderRadius: '10px !important',
                                             },
                                         },
                                     }}
@@ -72,19 +72,20 @@ export default function ContactForm() {
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
-                                            color: '#637381  !important',
+                                            color: '#637381 !important',
                                         },
                                         '& .MuiOutlinedInput-root': {
                                             '& fieldset': {
                                                 borderColor: '#637381',
+                                                borderRadius: '10px !important'
                                             },
                                             '&:hover fieldset': {
-                                                borderColor: '#637381',
+                                                borderColor: 'rgba(145, 158, 171, 0.8)',
                                             },
                                             '&.Mui-focused fieldset': {
-                                                borderColor: '#637381 !important',
+                                                borderColor: 'rgba(145, 158, 171, 0.8) !important',
                                                 borderWidth: '0.5px',
-                                                borderRadius: '5px',
+                                                borderRadius: '10px !important',
                                             },
                                         },
                                     }}
@@ -99,19 +100,20 @@ export default function ContactForm() {
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
-                                            color: '#637381  !important',
+                                            color: '#637381 !important',
                                         },
                                         '& .MuiOutlinedInput-root': {
                                             '& fieldset': {
                                                 borderColor: '#637381',
+                                                borderRadius: '10px !important'
                                             },
                                             '&:hover fieldset': {
-                                                borderColor: '#637381',
+                                                borderColor: 'rgba(145, 158, 171, 0.8)',
                                             },
                                             '&.Mui-focused fieldset': {
-                                                borderColor: '#637381 !important',
+                                                borderColor: 'rgba(145, 158, 171, 0.8) !important',
                                                 borderWidth: '0.5px',
-                                                borderRadius: '5px'
+                                                borderRadius: '10px !important',
                                             },
                                         },
                                     }}
@@ -126,19 +128,20 @@ export default function ContactForm() {
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
-                                            color: '#637381  !important',
+                                            color: '#637381 !important',
                                         },
                                         '& .MuiOutlinedInput-root': {
                                             '& fieldset': {
-                                                borderRadius: '5px'
+                                                borderColor: '#637381',
+                                                borderRadius: '10px !important'
                                             },
                                             '&:hover fieldset': {
-                                                borderColor: '#637381',
+                                                borderColor: 'rgba(145, 158, 171, 0.8)',
                                             },
                                             '&.Mui-focused fieldset': {
-                                                borderColor: '#637381 !important',
-                                                borderColor: '#637381',
-                                                borderWidth: '0.5px'
+                                                borderColor: 'rgba(145, 158, 171, 0.8) !important',
+                                                borderWidth: '0.5px',
+                                                borderRadius: '10px !important',
                                             },
                                         },
                                     }}
@@ -155,19 +158,20 @@ export default function ContactForm() {
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
-                                            color: '#637381  !important',
+                                            color: '#637381 !important',
                                         },
                                         '& .MuiOutlinedInput-root': {
                                             '& fieldset': {
                                                 borderColor: '#637381',
+                                                borderRadius: '10px !important'
                                             },
                                             '&:hover fieldset': {
-                                                borderColor: '#637381',
+                                                borderColor: 'rgba(145, 158, 171, 0.8)',
                                             },
                                             '&.Mui-focused fieldset': {
-                                                borderColor: '#637381 !important',
+                                                borderColor: 'rgba(145, 158, 171, 0.8) !important',
                                                 borderWidth: '0.5px',
-                                                borderRadius: '5px',
+                                                borderRadius: '10px !important',
                                             },
                                         },
                                     }}
