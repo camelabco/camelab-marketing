@@ -60,8 +60,8 @@ function Footer() {
               <h5>Contact us</h5>
                 <Link href="#" ><div className={`${footerStyles['list-icon']}`}><Image  src={require('../../assets/images/footer/phone.svg').default} width={18} height={18} alt="instagram-logo" /><h6>+966 546 286 962</h6></div></Link>
                 <Link href="#" ><div className={`${footerStyles['list-icon']}`}><Image  src={require('../../assets/images/footer/messege.svg').default} width={18} height={18} alt="instagram-logo" /><h6>ahmed@camelab.co</h6></div></Link>
-                <Link href="#" ><div className={`${footerStyles['list-icon']}`}><Image  src={require('../../assets/images/footer/location.svg').default} width={18} height={18} alt="instagram-logo" /><h6>Ahmed Farouk
-                  King Fahad Road, Riyadh - 13217</h6></div></Link>
+                <div href="#" className={`${footerStyles['address-style']}`}><div className={`${footerStyles['list-icon']}`}><Image  src={require('../../assets/images/footer/location.svg').default} width={18} height={18} alt="instagram-logo" /><h6>Ahmed Farouk
+                  King Fahad Road, Riyadh - 13217</h6></div></div>
             </div>
           </Col>
         </Row>

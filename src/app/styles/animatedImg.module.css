@@ -17,39 +17,62 @@
     z-index: 0;
 }
 
-.order-img-div::before {
-    content: " ";
-    background-image: url('../../assets/images/animated-img/like.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+.like-section{
+    /* background:  #31303080; */
+    background: var(--purple);
+    border-radius: 6px;
+    opacity: 0.7;
+    width: 100px;
     height: 40px;
-    width: 104px;
     position: absolute;
-    z-index: 1;
-    top: 16%;
+    top: 14%;
     right: 10%;
-    font-size: larger;
-    color: transparent;
+    z-index: 1;
+    display: flex;
+    padding: 5px 10px;
     animation: zoomInOut 1s infinite alternate;
-    /* Adjust timing as needed */
+    justify-content: space-around;
 }
 
-.order-img-div::after {
-    content: " ";
-    background-image: url('../../assets/images/animated-img/chat.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 42px;
-    width: 104px;
+.like-section .like-img img{
+    width: 90%; 
+}
+
+.like-section .like-text h3{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+} 
+
+.comment-section{
+    /* background:  #31303080; */
+    background: var(--purple);
+    border-radius: 6px;
+    opacity: 0.7;
+    width: 100px;
+    height: 40px;
     position: absolute;
-    z-index: 1;
     bottom: 40%;
     left: 5%;
-    font-size: larger;
-    color: transparent;
+    z-index: 1;
+    display: flex;
+    padding: 5px 10px;
     animation: zoomInOut 1s infinite alternate;
+    justify-content: space-around;
 }
 
+.comment-section .comment-img img{
+    width: 100%;
+}
+
+.comment-section .like-text h3{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    
+} 
 /* animation  */
 @keyframes zoomInOut {
     0% {
@@ -66,6 +89,9 @@
     .order-content-section .button-part {
         display: flex;
         justify-content: center;
+    }
+    .order-content-text-part{
+        padding: 0 !important;
     }
 
 }

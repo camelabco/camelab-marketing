@@ -11,6 +11,8 @@
     justify-content: start;
 }
 
-@media only screen and (max-width: 991px) {
-    
+[dir="rtl"]  .accordion-button::after {
+    background-image: url(../assets/images/creator/open-btn.svg) !important;
+    margin-left: 0 !important;
+    margin-right: auto;
 }

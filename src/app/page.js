@@ -7,6 +7,7 @@ import Brands from "./component/brands";
 import Slider from "./component/slider";
 import ReviewSlider from "./component/reviewSlider";
 import AnimatedImgSection from "./component/animatedImgSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
                 </p>
                 <div className={`${styles['signup-part']}`}>
                   <button className="primary-button" >Sign up</button>
-                  <h6 className="mx-4">Become a creator</h6>
+                  <Link href="#" className="underline mx-4"><h6>Become a creator</h6></Link>
                 </div>
               </div>
 
@@ -102,7 +103,41 @@ export default function Home() {
 
       {/* creations-section */}
       <section className={`${styles['creations']}`}>
-          <AnimatedImgSection />
+        <Container>
+          <div className={`${styles['text-part']}`}>
+            <h3 className="main-heading">
+              Inspiring Creations
+            </h3>
+            <p className="secondary-text">Visualize a canvas where People, Process, and Technology converge effortlessly, guided by the hands of empowered creators. It's a space where ideas are born, nurtured, and transformed into reality.</p>
+          </div>
+
+          <div className={`${styles['creations-img']}`}>
+
+            <div className={`${styles['img-part']}`}>
+              <div className={`${styles['img-set']}`}>
+                <div><Image src={require('../assets/images/landing/creation-img1.svg').default} alt="core-cards-img" /></div>
+                <div><Image src={require('../assets/images/landing/creation-img2.svg').default} alt="core-cards-img" /></div>
+              </div>
+              <div className={`${styles['img-set']}`}>
+                <div><Image src={require('../assets/images/landing/creation-img3.svg').default} alt="core-cards-img" /></div>
+                <div><Image src={require('../assets/images/landing/creation-img4.svg').default} alt="core-cards-img" /></div>
+              </div>
+            </div>
+
+
+
+            <div className={`${styles['img-part']}`}>
+              <div className={`${styles['img-set-one']}`}>
+                <div><Image src={require('../assets/images/landing/creation-img5.svg').default} alt="core-cards-img" /></div>
+                <div><Image src={require('../assets/images/landing/creation-img6.svg').default} alt="core-cards-img" /></div>
+              </div>
+              <div className={`${styles['img-set-two']}`}>
+                <div><Image src={require('../assets/images/landing/creation-img7.svg').default} alt="core-cards-img" /></div>
+                <div><Image src={require('../assets/images/landing/creation-img8.svg').default} alt="core-cards-img" /></div>
+              </div>
+            </div>
+          </div>
+        </Container>
       </section>
 
       <section className={`${styles['create-videos']}`}>
@@ -113,7 +148,7 @@ export default function Home() {
                 <Image src={require('../assets/images/landing/create-video-img.svg').default} width="100%" alt="create-video-img" />
               </div>
             </Col>
-            <Col lg={7}>
+            <Col lg={7} className={`${styles['right-text-part']}`}>
               <div className={`${styles['text-part']}`}>
                 <h3 className="main-heading">
                   Create your brand's video with Camelab
@@ -123,10 +158,11 @@ export default function Home() {
                   <li>Choose your creator</li>
                   <li>Make payment</li>
                 </ul>
-              </div>
-              <div className={`${styles['btn']}`}>
+                <div className={`${styles['btn']}`}>
                 <button className="primary-button" variant="primary">Order Now</button>
               </div>
+              </div>
+             
             </Col>
           </Row>
         </Container>
@@ -135,7 +171,7 @@ export default function Home() {
       {/* content-creator */}
 
       <section className='content-creator'>
-      <AnimatedImgSection/>
+        <AnimatedImgSection />
       </section>
 
 

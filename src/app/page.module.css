@@ -5,9 +5,55 @@
 }
 [dir="rtl"] .signup-part {
     display: flex;
-    justify-content: center
+    justify-content: right
 }
 
+
+[dir="rtl"] .slider-container .left-content p {
+    margin: 0px 0 40px auto;
+    width: 74%;
+}
+
+
+[dir="rtl"] .slider-container{
+    width: 100%;
+    padding: 64px 120px 80px 0px;
+    overflow: hidden;
+}
+
+[dir="rtl"] .review-owlcarousel .item{
+    justify-content: left;
+}
+[dir="rtl"] .review-owlcarousel .item h4{
+    text-align: left;
+}
+[dir="rtl"] .review-owlcarousel .item p{
+    text-align: left;
+}
+
+[dir="rtl"] .review-owlcarousel .item .review-star{
+    justify-content: left;
+}
+
+[dir="rtl"] .our-client .cliet-review .cliet-photo img {
+    margin-left: 24px;
+    margin-right:0 ;
+}
+@media screen and (max-width: 991px) {
+    [dir="rtl"] .signup-part {
+        display: flex;
+        justify-content: center
+    }
+    [dir="rtl"] .slider-container{
+        width: 100%;
+        padding: 64px 0px 80px 0px;
+        overflow: hidden;
+    }
+    [dir="rtl"] .slider-container .left-content p {
+        margin: 0px auto 40px auto;
+        width: 74%;
+    }
+}
 
 /* slider section */
 
@@ -71,12 +117,20 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-
+.signup-part a{
+    text-decoration: none;
+}
+.signup-part a:hover h6{
+    color: var(--purple);
+}
 .signup-part {
     display: flex;
     align-items: center;
 }
 
+
+
+  
 
 
 
@@ -93,8 +147,14 @@
 
 
 /* creation section */
+.creations{
+    padding: 80px 0;
+}
+
+
 .creations .text-part {
     text-align: center;
+  
 }
 
 .creations-img {
@@ -151,6 +211,10 @@
     color: var(--text-primary);
 }
 
+.create-videos .right-text-part{
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -300,6 +364,11 @@
     .slider-container h6 {
         font-size: 16px;
     }
+    .create-videos .right-text-part{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .create-videos .text-part h3 {
         max-width: 100%;
@@ -343,6 +412,9 @@
         display: grid;
         margin: auto;
         margin-bottom: 25px;
+    }
+    .create-videos .text-part {
+        margin-top: 25px;
     }
 
     .create-videos .text-part ul {
@@ -461,13 +533,8 @@
     }
 
 
-
-    .create-videos .text-part h3 {
-        margin-top: 35px;
-    }
-
     .create-videos .text-part ul {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .our-client {
@@ -502,7 +569,10 @@
 }
 
 @media screen and (max-width: 520px) {
-    .item {
+    [dir="rtl"] .review-owlcarousel .item{
+        justify-content: center;
+    }
+    .review-owlcarousel .item {
         justify-content: center;
     }
 
@@ -560,9 +630,6 @@
 }
 
 @media screen and (max-width: 460px) {
-    .our-client .cliet-review .cliet-photo img {
-        width: 80%;
-    }
 
     .our-client .cliet-review .changing-btn {
         display: flex;

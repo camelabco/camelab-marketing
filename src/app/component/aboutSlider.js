@@ -14,7 +14,7 @@ if (typeof window !== "undefined") {
 }
 
 // This is for Next.js. On Rect JS remove this line
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+const OwlCarousel = dynamic(() => import("react-owl-carousel-rtl"), {
     ssr: false,
 });
 
@@ -25,7 +25,7 @@ const AboutSlider = () => {
         nav: false,
         dots: false,
         autoplay: true,
-        // rtl:true,
+        rtl:true,
         loop: true,
         autoWidth: true,
         autoplayTimeout: 2000,

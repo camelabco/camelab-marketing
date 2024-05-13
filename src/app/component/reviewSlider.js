@@ -6,13 +6,21 @@ import Image from "next/image";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+
+const $ = require("jquery");
+if (typeof window !== "undefined") {
+  window.$ = window.jQuery = require("jquery");
+}
+
+const OwlCarousel = dynamic(() => import("react-owl-carousel-rtl"), {
     ssr: false,
 });
 
 const ReviewSlider = () => {
     const options = {
         margin: 20,
+        loop:true,
+        rtl:true,
         responsiveClass: true,
         nav: true,
         navClass: [`${styles['circle-btn']} ${styles['left-btn']}`, `${styles['circle-btn']} ${styles['right-btn']}`],
@@ -40,36 +48,36 @@ const ReviewSlider = () => {
 
     return (
         <div>
-            <OwlCarousel className={`${styles['owlcarousel']}`} navText={["", ""]} loop  {...options}>
+            <OwlCarousel className={`${styles['owlcarousel']} ${styles['review-owlcarousel']}`} rtl={true}  navText={["", ""]} loop  {...options}>
                 <div className={`${styles['item']}`}>
                     <div className={`${styles['cliet-photo']}`}>
-                        <Image src={require('../../assets/images/landing/client-photo.svg').default} width="100%" alt="create-video-img" />
+                        <Image src={require('../../assets/images/landing/client-photo.png').default} loading="eager"  width="100%" alt="create-video-img" />
                     </div>
                     <div className={`${styles['cliet-name']}`}>
                         <h4>Hannah Schmitt</h4>
                         <p>Growth Marketing Consultant</p>
                         <div className={`${styles['review-star']}`}>
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
                         </div>
                     </div>
                 </div>
                 <div className={`${styles['item']}`}>
                     <div className={`${styles['cliet-photo']}`}>
-                        <Image src={require('../../assets/images/landing/client-photo.svg').default} width="100%" alt="create-video-img" />
+                        <Image src={require('../../assets/images/landing/client-photo.png').default} loading="eager" width="100%" alt="create-video-img" />
                     </div>
                     <div className={`${styles['cliet-name']}`}>
                         <h4>Hannah Schmitt</h4>
                         <p>Growth Marketing Consultant</p>
                         <div className={`${styles['review-star']}`}>
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
-                            <Image src={require('../../assets/images/landing/star.svg').default} width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
+                            <Image src={require('../../assets/images/landing/star.svg').default} loading="eager" width={20} height={20} alt="star" />
                         </div>
                     </div>
                 </div>

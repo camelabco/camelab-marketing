@@ -61,9 +61,6 @@ export default function Creator() {
                         <p className="secondary-text">Streamline your creator partnerships with our comprehensive platform, offering everything you need in one convenient location. From discovery to collaboration, we're your one-stop shop for seamless and successful creator collaborations.</p>
                     </div>
 
-
-
-
                     <div className='core-cards'>
                         <Row>
                             <Col lg={4} md={6} className='sub-card'>

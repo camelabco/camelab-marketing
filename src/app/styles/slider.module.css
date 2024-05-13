@@ -10,7 +10,7 @@
 }
 
 .applications {
-    padding: 6px 0;
+    padding: 6px 5px;
     background: linear-gradient(161.99deg, #AA42F9 1.18%, #C87BFB 49.99%, #D5A4FD 98.8%);
     display: flex;
     max-height: 34px;

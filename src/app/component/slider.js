@@ -13,20 +13,20 @@ if (typeof window !== "undefined") {
   window.$ = window.jQuery = require("jquery");
 }
 
-// This is for Next.js. On Rect JS remove this line
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+const OwlCarousel = dynamic(() => import("react-owl-carousel-rtl"), {
   ssr: false,
 });
 
 
 const Slider = () => {
+
   const options = {
     responsiveClass: true,
     nav: false,
     dots: false,
     autoplay: true,
-    rtl: true,
     loop: true,
+    rtl:true,
     autoWidth: true,
     autoplayTimeout: 2000,
     autoplaySpeed: 2000,
@@ -53,7 +53,7 @@ const Slider = () => {
 
   return (
     <div >
-      <OwlCarousel className={`${sliderStyle['owlcarousel']}`} loop  {...options}>
+      <OwlCarousel className={`${sliderStyle['owlcarousel']}`}  rtlClass="owl-rtl" loop  {...options}>
 
 
         <div className={`${sliderStyle['item']}`}>
@@ -104,8 +104,3 @@ const Slider = () => {
 };
 
 export default Slider;
-
-
-
-
-

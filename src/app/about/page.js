@@ -61,8 +61,8 @@ export default function About() {
                   </Row>
                 </div>
               </Col>
-              <Col lg={6} md={12} sm={12}>
-                <div className={`${aboutStyles['about-content-section']}`}>
+              <Col lg={6} md={12} sm={12} className={`${aboutStyles['about-content-section']}`}>
+                <div >
                   <h3 className='main-heading'>
                     Welcome to Camelab.
                     Where <span className={`${aboutStyles['gradient-text']}`}>Creativity</span> Meets Innovation!
