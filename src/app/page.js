@@ -70,7 +70,7 @@ export default function Home() {
                   </div>
                   <div className='text-part'>
                     <h5>People</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                 </div>
               </Col>
@@ -92,7 +92,7 @@ export default function Home() {
                   </div>
                   <div className='text-part'>
                     <h5>Individual creators</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                   </div>
                 </div>
               </Col>
@@ -212,3 +212,4 @@ export default function Home() {
 
   );
 }
+
