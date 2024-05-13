@@ -7,12 +7,28 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Brands from '../component/brands';
 import Footer from '../component/footer';
-import AnimatedImgSection from '../component/animatedImgSection'
+import AboutSlider from '../component/aboutSlider';
+import AnimatedImgSection from '../component/animatedImgSection';
 
 export default function About() {
   return (
     <>
       <Header />
+
+
+
+<Container>
+<AboutSlider/>
+</Container>
+
+
+
+
+
+
+
+
+
       <div className={`${aboutStyles['about-us-section']}`}>
         {/* banner section  */}
         <div className={`${aboutStyles['about-banner-section']}`}>
@@ -197,10 +213,11 @@ export default function About() {
             </div>
           </Container>
         </div>
-        {/* about order section  */}
-        <div className={`${aboutStyles['about-order-section']}`}>
-          <AnimatedImgSection/>
-        </div>
+        {/* content-creator */}
+
+        <section className="content-creator">
+        <AnimatedImgSection/>
+        </section>
         {/* about client and project section  */}
         <div className={`${aboutStyles['about-client-section']}`}>
           <Container>

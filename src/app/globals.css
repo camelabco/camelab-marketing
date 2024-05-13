@@ -398,5 +398,69 @@ body {
     .secondary-text {
         font-size: 16px;
     }
+
+    .content-creator {
+        padding: 30px 0;
+    }
+
+    .content-creator .text-part {
+        margin-bottom: 50px;
+    }
+
+    .card-content {
+        padding: 40px 30px;
+    }
+
+    .card-content .img-part {
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+
+/* bootstrap accordion css */
+
+.accordion-button::after {
+    background-image: url(../assets/images/creator/open-btn.svg) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../assets/images/creator/close-btn.svg) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.accordion {
+    --bs-accordion-border-radius: 0px !important;
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color) !important;
+    background-color: var(--bs-accordion-bg) !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(99, 115, 129, 1) !important;
+}
+
+.accordion-body {
+    padding: 0 1.25rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
 }
 

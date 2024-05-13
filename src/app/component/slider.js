@@ -10,7 +10,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const $ = require("jquery");
 if (typeof window !== "undefined") {
-   window.$ = window.jQuery = require("jquery");
+  window.$ = window.jQuery = require("jquery");
 }
 
 // This is for Next.js. On Rect JS remove this line
@@ -21,15 +21,17 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 
 const Slider = () => {
   const options = {
-    margin: 20,
     responsiveClass: true,
     nav: false,
     dots: false,
     autoplay: true,
-    rtl:true,
-    autoplayTimeout:1000,
-    autoplaySpeed:1000,
-    stagePadding:0,
+    rtl: true,
+    loop: true,
+    autoWidth: true,
+    autoplayTimeout: 2000,
+    autoplaySpeed: 2000,
+    stagePadding: 0,
+    margin: 20,
     responsive: {
       0: {
         items: 1,
@@ -44,53 +46,59 @@ const Slider = () => {
         items: 3,
       },
       1000: {
-        items: 4,
+        items: 5,
       },
     },
   };
 
   return (
     <div >
-    <OwlCarousel className={`${sliderStyle['owlcarousel']}`}  loop  {...options}>
-      <div className={`${sliderStyle['item']}`}>
-        <div>
-        <Image
-             src={require('../../assets/images/slider/slider-img2.svg').default}
-              alt="camelab-logo"
+      <OwlCarousel className={`${sliderStyle['owlcarousel']}`} loop  {...options}>
+
+
+        <div className={`${sliderStyle['item']}`}>
+
+          <div className={`${sliderStyle['sub-item']}`}>
+            <Image
+              src={require('../../assets/images/slider/slider-img1.svg').default}
+              alt="camelab-logo" width={"100%"}
             />
+
+          </div>
+
         </div>
-      </div>
+        <div className={`${sliderStyle['item']}`}>
 
-
-
-      <div className={`${sliderStyle['item']}`}>
-        <div className={`${sliderStyle['item-card']}`}>
-        <Image
-             src={require('../../assets/images/slider/slider-img2.svg').default}
-              alt="camelab-logo"
+          <div className={`${sliderStyle['sub-item']}`}>
+            <Image
+              src={require('../../assets/images/slider/slider-img2.png').default}
+              alt="camelab-logo" width={"100%"}
             />
+
+          </div>
+
         </div>
-      </div>
+
+        <div className={`${sliderStyle['item']}`}>
+          <div className={`${sliderStyle['sub-item']}`}>
+            <div className={`${sliderStyle['img-text-part']}`}>
+              <Image
+                src={require('../../assets/images/slider/slider-img3.png').default}
+                alt="camelab-logo" width={"100%"}
+              />
+              <div className={`${sliderStyle['applications']}`}>
+                <Image
+                  src={require('../../assets/images/slider/right-logo.svg').default}
+                  alt="camelab-logo"
+                />
+                <h4>9793 Applications</h4>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-      <div className={`${sliderStyle['item']}`}>
-        <div className={`${sliderStyle['item-card']}`}>
-        <Image
-             src={require('../../assets/images/slider/slider-img3.svg').default}
-              alt="camelab-logo"
-            />
-        </div>
-      </div>
-
-      <div className={`${sliderStyle['item']}`}>
-        <div className={`${sliderStyle['item-card']}`}>
-        <Image
-             src={require('../../assets/images/slider/slider-img1.svg').default}
-              alt="camelab-logo"
-            />
-        </div>
-      </div>
-    </OwlCarousel>
+      </OwlCarousel>
     </div>
   );
 };

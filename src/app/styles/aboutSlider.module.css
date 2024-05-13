@@ -1,0 +1,42 @@
+.item img {
+    width: 100%;
+
+}
+
+.item-card {
+    max-width: 173px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.slider-text-part {
+    background: linear-gradient(161.99deg, #D5A4FD 1.18%, #C87BFB 49.99%, #AA42F9 98.8%);
+    border-radius: 15px;
+    max-width: 205px;
+    height: 360px;
+    padding: 188px 35px 20px 20px;
+}
+
+.slider-text-part h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    color: white;
+}
+
+.slider-text-part h4 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .owlcarousel {
+        margin-top: 50px;
+    }
+}
