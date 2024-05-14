@@ -170,7 +170,7 @@ export default function Home() {
 
       {/* content-creator */}
 
-      <section className='content-creator'>
+      <section className={`${styles['content-creator']}`}>
         <AnimatedImgSection />
       </section>
 

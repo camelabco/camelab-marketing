@@ -10,14 +10,13 @@ import Footer from '../component/footer';
 import Accordion from 'react-bootstrap/Accordion';
 
 import React from 'react'
-import HorizontalAccordion from '../component/accordion';
+import HorizontalAccordion from '../component/horizontalAccordion';
+import VerticalAccordion from '../component/verticalAccordion';
 
 export default function Creator() {
     return (
         <>
             <Header />
-
-
             <section className={`${creatorStyle['banner-section']}`}>
                 <Container>
                     <div className={`${creatorStyle['text-part']}`}>
@@ -29,7 +28,6 @@ export default function Creator() {
                             <Image src={require('../../assets/images/creator/google-play.svg').default} alt="brands-img" />
                         </div>
                     </div>
-
                 </Container>
 
             </section>
@@ -44,6 +42,7 @@ export default function Creator() {
                             <p className='secondary-text'>Every step is integrated into the platform to streamline your collaborations.</p>
                     </div>
                     <HorizontalAccordion />
+                    <VerticalAccordion/>
                 </Container>
 
             </section>
@@ -65,7 +64,7 @@ export default function Creator() {
                         <Row>
                             <Col lg={4} md={6} className='sub-card'>
                                 <div className='card-content'>
-                                    <div className='logo-part'>
+                                    <div className='logo-part creator-logo-part'>
                                         <Image src={require('../../assets/images/creator/video.svg').default} width={80} height={80} alt="core-cards-img" />
                                     </div>
                                     <div className='text-part'>
@@ -76,7 +75,7 @@ export default function Creator() {
                             </Col>
                             <Col lg={4} md={6} className='sub-card scale-up'>
                                 <div className='card-content'>
-                                    <div className='logo-part'>
+                                    <div className='logo-part creator-logo-part'>
                                         <Image src={require('../../assets/images/creator/rewards.svg').default} width={80} height={80} alt="core-cards-img" />
                                     </div>
                                     <div className='text-part'>
@@ -87,7 +86,7 @@ export default function Creator() {
                             </Col>
                             <Col lg={4} md={12} className='sub-card'>
                                 <div className='card-content'>
-                                    <div className='logo-part'>
+                                    <div className='logo-part creator-logo-part'>
                                         <Image src={require('../../assets/images/creator/setting.svg').default} width={80} height={80} alt="core-cards-img" />
                                     </div>
                                     <div className='text-part'>
@@ -108,7 +107,7 @@ export default function Creator() {
             {/* faq section */}
 
 
-            <section className={`${creatorStyle['faq-section']}`}>
+            <section className={`${creatorStyle['faq-section']} faq-section`}>
                 <Container>
                     <div className={`${creatorStyle['heading-part']}`}>
                         <h3 className="main-heading">FAQ</h3>

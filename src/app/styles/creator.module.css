@@ -196,4 +196,7 @@
         font-size: 16px;
     
     }
+    .horizontal-accordion {
+        padding: 40px 0;
+    }
 }

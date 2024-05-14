@@ -65,5 +65,8 @@
     .contact-section-content p{
         margin-top: 30px;
     }
+    .contact-section-content {
+        margin-top: 40px;
+    }
 }
 

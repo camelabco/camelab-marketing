@@ -412,10 +412,32 @@
     .our-client .cliet-review .changing-btn {
         margin-left: 40px;
     }
-
+    .our-client .cliet-review .circle-btn.right-btn {
+        right: -16%;
+    }
+    .our-client .cliet-review .circle-btn.left-btn {
+        left: 80%;
+    }
 }
 
 @media screen and (max-width: 991px) {
+    .slider-section {
+        padding: 35px 0;
+    }
+    .our-value{
+        padding: 35px 0;
+    }
+    .creations {
+        padding: 40px 0;
+    }
+    .create-videos {
+        padding: 35px 0;
+    }
+    .content-creator{
+        padding: 35px 0;
+    }
+    
+   
     .our-value .sub-card {
         display: grid;
         margin: auto;
@@ -510,7 +532,7 @@
 
     .our-client .cliet-review .circle-btn.right-btn {
         top: 25px;
-        right: 10%;
+        right: 0%;
     }
 }
 

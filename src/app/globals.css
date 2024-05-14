@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Public Sans' !important;
+    overflow: auto !important;
 }
 
 .main-heading {
@@ -26,7 +27,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-secondary);
     width: 90%;
-    margin:auto;
+    margin: auto;
 }
 
 .primary-button {
@@ -53,30 +54,9 @@ body {
 
 /* content creator section */
 
-.content-creator {
-    padding: 80px 0;
-}
 
-.content-creator .img-part img {
-    width: 100%;
-    height: auto;
-}
 
-.content-creator h3 {
-    text-align: right;
-    margin-left: auto;
-}
 
-.content-creator p {
-    width: 70%;
-    text-align: right;
-    margin: 0 0 30px auto;
-}
-
-.content-creator .btn-part {
-    display: flex;
-    justify-content: end;
-}
 
 
 /* core card */
@@ -306,11 +286,11 @@ body {
 
 
 /* underline */
-.underline{
+.underline {
     position: relative;
 }
 
-.underline:after {    
+.underline:after {
     background: none repeat scroll 0 0 transparent;
     bottom: -4px;
     content: "";
@@ -318,14 +298,31 @@ body {
     height: 2px;
     left: 50%;
     position: absolute;
-    background:var(--purple);
+    background: var(--purple);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-  }
-  .underline:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+}
+
+.underline:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.flag .dropdown-toggle::after {
+    display: none !important;
+}
+
+
+@media screen and (min-width: 991px) {
+    .offcanvas-backdrop {
+        display: none;
+    }
+
+    body {
+        overflow: auto !important;
+    }
+}
+
 
 /* responsive  */
 @media screen and (max-width: 1200px) {
@@ -340,13 +337,7 @@ body {
         line-height: 48px;
     }
 
-    .content-creator h3 {
-        width: 100%;
-    }
 
-    .content-creator {
-        padding: 60px 0;
-    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -357,6 +348,7 @@ body {
     .core-cards .sub-card {
         margin-bottom: 25px;
     }
+
     .core-cards .scale-up {
         transform: scale(1);
     }
@@ -373,20 +365,8 @@ body {
         width: 100%;
     }
 
-    .content-creator h3 {
-        text-align: center;
-    }
 
-    .content-creator p {
-        text-align: center;
-        margin: auto;
-        width: 90%;
-    }
 
-    .content-creator .btn-part {
-        margin: 25px 0;
-        justify-content: center !important;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -398,17 +378,7 @@ body {
         padding: 50px 34px;
     }
 
-    .content-creator h3 {
-        width: 100%;
-    }
 
-    .content-creator {
-        padding: 60px 0;
-    }
-
-    .content-creator p {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 520px) {
@@ -418,16 +388,12 @@ body {
         line-height: 40px;
     }
 
+    .common-animated-card .card {
+        padding: 40px 34px;
+    }
+
     .secondary-text {
         font-size: 16px;
-    }
-
-    .content-creator {
-        padding: 30px 0;
-    }
-
-    .content-creator .text-part {
-        margin-bottom: 50px;
     }
 
     .core-cards .card-content {
@@ -438,59 +404,130 @@ body {
         margin-bottom: 25px;
     }
 
+    .vertical-accordion .accordion-body {
+        padding: 25px 25px !important;
+    }
+
+    .vertical-accordion .accordion-button {
+        padding: 15px 20px;
+    }
+
+    .core-cards .card-content .creator-logo-part img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .core-cards .card-content .logo-part {
+        margin-bottom: 48px;
+    }
+    .vertical-accordion .accordion-item {
+        margin-bottom: 20px !important;
+    }
+
 }
 
 
 
 
-/* bootstrap accordion css */
+/* bootstrap faq accordion css */
 
 
 
 
 
-.accordion-button::after {
+.faq-section .accordion-button::after {
     background-image: url(../assets/images/creator/open-btn.svg) !important;
     margin-left: auto !important;
 }
 
-.accordion-button:not(.collapsed)::after {
+.faq-section .accordion-button:not(.collapsed)::after {
     background-image: url(../assets/images/creator/close-btn.svg) !important;
 }
 
-.accordion-button:not(.collapsed) {
+.faq-section .accordion-button:not(.collapsed) {
     background-color: transparent !important;
 }
 
-.accordion-button:focus {
+.faq-section .accordion-button:focus {
     z-index: 3;
     outline: 0;
     box-shadow: none !important;
 }
 
-.accordion {
+.faq-section .accordion {
     --bs-accordion-border-radius: 0px !important;
 }
 
-.accordion-item {
+.faq-section .accordion-item {
     color: var(--bs-accordion-color) !important;
     background-color: var(--bs-accordion-bg) !important;
     border: none !important;
     border-bottom: 1px solid rgba(99, 115, 129, 1) !important;
 }
 
-.accordion-body {
+.faq-section .accordion-body {
     padding: 0 1.25rem !important;
 }
 
-.accordion-button:not(.collapsed) {
+.faq-section .accordion-button:not(.collapsed) {
     box-shadow: none !important;
 }
 
-.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+.faq-section .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
     border-bottom-right-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
 }
 
 
 
+
+
+/* vertical accordion */
+.vertical-accordion .accordion-item {
+    margin-bottom: 32px;
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: none !important;
+    box-shadow: 0px 12px 24px -4px hsla(210, 13%, 62%, 0.12);
+}
+
+
+.vertical-accordion .accordion-button {
+    display: block !important;
+    padding: 20px 24px;
+    font-size: 24px;
+    color: var(--bs-accordion-btn-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 1px solid rgba(219, 219, 219, 1) !important;
+    border-radius: 10px !important;
+    overflow-anchor: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease !important;
+}
+
+.vertical-accordion .accordion-button::after {
+    display: none !important;
+}
+
+.vertical-accordion .accordion-button:not(.collapsed) {
+    background-color: var(--background-paper);
+    border-bottom: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    box-shadow: none !important;
+}
+
+.vertical-accordion .accordion-body {
+    border-top: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 10px;
+    padding: 50px 50px;
+}
+
+.vertical-accordion .accordion-button:focus {
+    box-shadow: none;
+}

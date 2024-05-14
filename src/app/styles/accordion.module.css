@@ -1,3 +1,9 @@
+
+[dir="rtl"] .vertical-accordion .accordion-header h3 {
+    text-align: right;
+}
+
+
 .horizontal-accordion {
     display: flex;
     width: 100%;
@@ -6,7 +12,7 @@
 .horizontal-accordion .accordion-item {
     border: 1px solid hsla(0, 0%, 86%, 1);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: flex 0.5s ease;
     border-radius: 10px;
     box-shadow: 0px 12px 24px -4px hsla(210, 13%, 62%, 0.12);
     margin: 16px;
@@ -55,6 +61,8 @@
 
 .horizontal-accordion .accordion-item .accordion-content {
     display: none;
+    padding: 15px;
+    transition: display 0.5s ease;
 }
 
 
@@ -67,8 +75,6 @@
     flex-direction: column;
     justify-content: center;
     display: flex;
-    margin-left: 40px;
-    text-align: left;
 }
 
 .horizontal-accordion .accordion-content .text-part h3 {
@@ -76,6 +82,7 @@
     font-weight: 700;
     line-height: 40px;
     color: var(--text-primary);
+    margin-bottom: 24px;
 
 }
 
@@ -88,15 +95,99 @@
 }
 
 .horizontal-accordion .accordion-content .img-btn img {
-    margin: 24px 5px 0 0;
+    margin: 24px 5px 0 5px;
 }
 
 .horizontal-accordion .accordion-content .img-part img {
     min-width: 100%;
 }
-.horizontal-accordion .accordion-content .img-part{
-   display: flex;
-   align-items: center;
+
+.horizontal-accordion .accordion-content .img-part {
+    display: flex;
+    align-items: center;
 }
 
-  
+
+
+
+/* vertical-accordion */
+.vertical-accordion .accordion-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0px;
+}
+
+.vertical-accordion .accordion-header h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--purple);
+    margin-bottom: 0px;
+}
+
+.vertical-accordion .accordion-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.vertical-accordion .accordion-content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+
+.vertical-accordion .accordion-content .img-btn img {
+    margin: 5px;
+}
+
+.vertical-accordion .accordion-content .img-part img {
+    width: 100%;
+}
+
+.vertical-accordion{
+    display: none;
+}
+@media screen and (max-width: 991px) {
+    .vertical-accordion{
+        display: block;
+    }
+    .horizontal-accordion{
+        display: none;
+    }
+    .vertical-accordion .accordion-content .text-part {
+        text-align: center;
+    }
+
+    .vertical-accordion .accordion-content .img-btn img {
+        margin: 0px 5px 40px 5px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .vertical-accordion .accordion-header h3 {
+        font-size: 20px;
+    }
+
+    .vertical-accordion .accordion-header h4 {
+        font-size: 20px;
+    }
+
+    .vertical-accordion .accordion-content h3 {
+        font-size: 26px;
+
+    }
+    .vertical-accordion .accordion-content p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+.vertical-accordion .accordion-content .img-btn img {
+    margin: 0px 5px 5px 5px;
+}
+}
