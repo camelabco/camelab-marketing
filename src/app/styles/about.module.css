@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: center;
 }
+.about-content-section .about-text-part{
+    padding-left: 2rem;
+}
 
 .about-content-section h3 {
     margin-bottom: 50px;
@@ -59,7 +62,9 @@
     text-align: right;
     padding: 10px;
 }
-
+.order-content-section p.secondary-text{
+    width: 100%;
+}
 .order-content-section h3 {
     font-size: 46px;
 }

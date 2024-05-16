@@ -12,7 +12,7 @@
 .horizontal-accordion .accordion-item {
     border: 1px solid hsla(0, 0%, 86%, 1);
     cursor: pointer;
-    transition: flex 0.5s ease;
+    /* transition: flex 0.5s ease; */
     border-radius: 10px;
     box-shadow: 0px 12px 24px -4px hsla(210, 13%, 62%, 0.12);
     margin: 16px;
@@ -20,10 +20,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 70px;
+    transition: 0.5s ease;
+    transition-timing-function: ease-in-out;
 }
 
 .horizontal-accordion .accordion-item.active {
-    flex: 3;
+    /* flex: 3; */
+    width: 100%;
 }
 
 .horizontal-accordion .accordion-header {
@@ -62,7 +66,7 @@
 .horizontal-accordion .accordion-item .accordion-content {
     display: none;
     padding: 15px;
-    transition: display 0.5s ease;
+    /* min-width: 900px; */
 }
 
 
@@ -75,6 +79,8 @@
     flex-direction: column;
     justify-content: center;
     display: flex;
+   
+    transition-delay: 5s;
 }
 
 .horizontal-accordion .accordion-content .text-part h3 {
@@ -151,6 +157,15 @@
 .vertical-accordion{
     display: none;
 }
+
+
+@media screen and (min-width:1500px) {
+    .horizontal-accordion .accordion-showText{
+        height: 60vh;
+    }
+}
+
+
 @media screen and (max-width: 991px) {
     .vertical-accordion{
         display: block;

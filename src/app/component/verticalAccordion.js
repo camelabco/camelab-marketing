@@ -14,9 +14,9 @@ export default function VerticalAccordion() {
     return (
         <>
             <Accordion activeKey={activeKey} onSelect={handleAccordionToggle} className={`${accordionStyle['vertical-accordion']} vertical-accordion`} defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
+                <Accordion.Item eventKey="0" className='collapse-horizontal'>
                     <Accordion.Header className={`${accordionStyle['accordion-header']}`}> <div className='d-flex justify-content-between'><h3>Download Camelab App</h3> <h4>01</h4></div>  </Accordion.Header>
-                    <Accordion.Body className={`${accordionStyle['accordion-body']}`}>
+                    <Accordion.Body className={`${accordionStyle['accordion-body']} collapse-horizontal`}>
                         <div className={accordionStyle['accordion-content']}>
                             <Row>
                                 <Col lg={6} className="d-flex align-items-center">

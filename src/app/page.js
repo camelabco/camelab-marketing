@@ -28,12 +28,14 @@ export default function Home() {
           <Row>
             <Col lg={6}>
               <div className={`${styles['left-content']}`}>
+                <div className={`${styles['left-contante-container']}`}>
                 <p className="secondary-text">
                   Share products/services you love, and get rewarded when others make purchases through your recommendations. Join our word-of-mouth commerce platform and turn your influence into income!"
                 </p>
                 <div className={`${styles['signup-part']}`}>
                   <button className="primary-button" >Sign up</button>
                   <Link href="#" className="underline mx-4"><h6>Become a creator</h6></Link>
+                </div>
                 </div>
               </div>
 
