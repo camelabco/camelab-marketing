@@ -15,19 +15,9 @@ export default function About() {
     <>
       <Header />
 
-
-
-<Container>
-<AboutSlider/>
-</Container>
-
-
-
-
-
-
-
-
+      <Container>
+        <AboutSlider />
+      </Container>
 
       <div className={`${aboutStyles['about-us-section']}`}>
         {/* banner section  */}
@@ -216,7 +206,7 @@ export default function About() {
         {/* content-creator */}
 
         <section className="content-creator">
-        <AnimatedImgSection/>
+          <AnimatedImgSection />
         </section>
         {/* about client and project section  */}
         <div className={`${aboutStyles['about-client-section']}`}>
