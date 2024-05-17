@@ -134,7 +134,7 @@ function Header() {
         </Offcanvas.Header>
         <Offcanvas.Body className={`${headerStyles['offcanvas-body']}`} >
          <div className="d-flex flex-column">
-         <Link className={`${headerStyles['header-links']} ${headerStyles['active-page']} `} href="/about">About Us</Link>
+         <Link className={`${headerStyles['header-links']} `} href="/about">About Us</Link>
               <Link className={`${headerStyles['header-links']} `} href="/contact">Contact Us</Link>
               <Link className={`${headerStyles['header-links']} `} href="/creator">Become a creator</Link>
               <Link className={`${headerStyles['header-links']}`} href="#link"> <button className="primary-button" variant="primary">Login</button></Link>
