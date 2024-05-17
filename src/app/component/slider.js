@@ -26,10 +26,15 @@ const Slider = () => {
     loop: true,
     rtl:true,
     autoWidth: true,
-    autoplayTimeout: 2000,
-    autoplaySpeed: 2000,
+    slideTransition: 'linear',
+    autoplayTimeout: 1000,
+    autoplaySpeed: 3000,
+    
     stagePadding: 0,
     margin: 20,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+
     responsive: {
       0: {
         items: 1,
