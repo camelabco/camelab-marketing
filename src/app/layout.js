@@ -6,6 +6,11 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rtlPlugin from 'stylis-plugin-rtl';
 import React, { createContext, useEffect, useState } from "react";
+import dynamic from 'next/dynamic'
+const NoSSR = dynamic(
+  () => import('./component/NoSSR'),
+  { ssr: false }
+)
 
 
 // export const metadata = {
@@ -15,7 +20,7 @@ import React, { createContext, useEffect, useState } from "react";
 
 export const LanguageContext = createContext();
 
-export default function RootLayout({ children }) {
+function RootLayout({ children }) {
   const lang = typeof window !== "undefined" ? localStorage.getItem("selectedLanguage") || "en" : "en"
   const [selectedLanguage, setSelectedLanguage] = useState(lang);
   useEffect(() => {
@@ -29,12 +34,26 @@ export default function RootLayout({ children }) {
   
   return (
     <LanguageContext.Provider value={value}>
-      <html lang={selectedLanguage}>
         {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
-        <body dir={selectedLanguage === "ar" ? "rtl" : "ltr"}>
+        <div dir={selectedLanguage === "ar" ? "rtl" : "ltr"}>
           {children}
-        </body>
-      </html>
+        </div>
     </LanguageContext.Provider>
   );
+}
+
+
+export default function Wrapper({ children }) {
+  return (
+    <html>
+      <body>
+        <NoSSR>
+          <RootLayout>
+            {children}
+          </RootLayout>
+        </NoSSR>
+      </body>
+    </html>
+  ) 
+  
 }
