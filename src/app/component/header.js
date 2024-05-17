@@ -27,14 +27,16 @@ function Header() {
 
 <Navbar expand="lg" className={`${headerStyles['header']}`}>
         <Container>
-          <Navbar.Brand href="/">
-            <Image
-              src={require('../../assets/images/header/nav-logo.svg').default}
-              width={170}
-              height={70}
-              alt="camelab-logo"
-            />
-          </Navbar.Brand>
+          <Link href={'/'}>
+            <Navbar.Brand>
+              <Image
+                src={require('../../assets/images/header/nav-logo.svg').default}
+                width={170}
+                height={70}
+                alt="camelab-logo"
+              />
+            </Navbar.Brand>
+          </Link>
           <NavDropdown  className={`${headerStyles["flag-mobile"]} flag`} title={<span > 
               
               <Image
@@ -74,8 +76,8 @@ function Header() {
             /></div>
           <Navbar.Collapse>
             <Nav className={`${headerStyles['leftside-links']} me-auto align-items-center`}>
-              <Nav.Link className={`${headerStyles['header-links']} ${headerStyles['active-page']} underline`} href="/about">About Us</Nav.Link>
-              <Nav.Link className={`${headerStyles['header-links']} underline`} href="/contact">Contact Us</Nav.Link>
+              <Link className={`${headerStyles['header-links']} ${headerStyles['active-page']} underline`} href="/about">About Us</Link>
+              <Link className={`${headerStyles['header-links']} underline`} href="/contact">Contact Us</Link>
             </Nav>
             <Nav className={`${headerStyles['rightside-links']} ms-auto align-items-center`} >
             <NavDropdown className={`${headerStyles["flag-desktop"]} flag mx-3`} title={<span > 
@@ -109,8 +111,8 @@ function Header() {
                   />
                 </span> Arabic</NavDropdown.Item>
             </NavDropdown>
-              <Nav.Link className={`${headerStyles['header-links']} underline`} href="/creator">Become a creator</Nav.Link>
-              <Nav.Link className={`${headerStyles['header-links']}`} href="#link"> <button className="primary-button" variant="primary">Login</button></Nav.Link>
+              <Link className={`${headerStyles['header-links']} underline`} href="/creator">Become a creator</Link>
+              <Link Link className={`${headerStyles['header-links']}`} href="#link"> <button className="primary-button" variant="primary">Login</button></Link>
             </Nav>
           </Navbar.Collapse>
      
