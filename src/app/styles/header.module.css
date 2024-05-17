@@ -9,9 +9,18 @@
 }
 
 
+.flag-item{
+    font-size: 18px;
+}
 
-
-
+[dir="rtl"] .flag-item{
+    display: flex;
+    justify-content: flex-start;
+}
+[dir="rtl"] .flag-item span{
+    margin-left: 10px;
+    margin-right: 0 !important;
+}
 .header {
     background-color: white;
     padding: 15px 0;
@@ -51,7 +60,9 @@
 .offcanvas-body {
     padding: 25px;
 }
-
+.flag-icon{
+    margin-right: 10px;
+}
 @media screen and (min-width: 991px) {
     .offcanvas{
         display: none;

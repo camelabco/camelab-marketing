@@ -48,7 +48,7 @@ function Header() {
                 alt="flag-icon-us"
               /></span>} id="basic-nav-dropdown">
               <NavDropdown.Item onClick={() => handleLanguageChange('en')} className={`${headerStyles["flag-item"]}`} >
-                <span className={`${headerStyles["flag-icon flag-icon-us"]}`}>
+                <span className={`${headerStyles["flag-icon flag-icon-us"]} me-2`}>
                   <Image
                     src={require('../../assets/images/flag/English.png').default}
                     width={32}
@@ -91,7 +91,7 @@ function Header() {
                 alt="flag-icon-us"
               /></span>} id="basic-nav-dropdown">
               <NavDropdown.Item onClick={() => handleLanguageChange('en')} className={`${headerStyles["flag-item"]}`} >
-                <span className={`${headerStyles["flag-icon flag-icon-us"]}`}>
+                <span className={`${headerStyles[""]} me-2`}>
                   <Image
                     src={require('../../assets/images/flag/English.png').default}
                     width={32}
@@ -102,14 +102,14 @@ function Header() {
                 English
               </NavDropdown.Item>
               <NavDropdown.Item onClick={() => handleLanguageChange('ar')} className={`${headerStyles["flag-item"]}`}>
-                <span className={`${headerStyles["flag-icon flag-icon-sa"]}`}>
+                <span className={`${headerStyles["flag-icon flag-icon-sa"]} me-2`}>
                   <Image
                     src={require('../../assets/images/flag/arabic.png').default}
                     width={32}
                     height={22}
                     alt="flag-icon-sa"
                   />
-                </span> Arabic</NavDropdown.Item>
+                </span>Arabic</NavDropdown.Item>
             </NavDropdown>
               <Link className={`${headerStyles['header-links']} underline`} href="/creator">Become a creator</Link>
               <Link Link className={`${headerStyles['header-links']}`} href="#link"> <button className="primary-button" variant="primary">Login</button></Link>

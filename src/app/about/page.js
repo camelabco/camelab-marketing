@@ -15,7 +15,7 @@ export default function About() {
     <>
       <Header />
 
-      <Container>
+      <Container className='mt-5'>
         <AboutSlider />
       </Container>
 
