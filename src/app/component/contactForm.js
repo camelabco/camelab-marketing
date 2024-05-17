@@ -32,7 +32,6 @@ export default function ContactForm() {
     React.useEffect(() => {
         setRtl(selectedLanguage === 'ar');
     }, [selectedLanguage]);
-    console.log(rtl, "<==== rtl");
 
     const handleChange = () => {
         setRtl(!rtl);
