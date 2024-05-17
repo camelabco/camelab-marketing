@@ -7,6 +7,8 @@ import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 import { prefixer } from 'stylis';
 import Row from 'react-bootstrap/Row';
+import { LanguageContext } from "../layout";
+
 import Col from 'react-bootstrap/Col';
 const theme = (outerTheme) =>
     createTheme({
@@ -19,21 +21,27 @@ const rtlCache = createCache({
 });
 const ltrCache = createCache({
     key: 'mui',
-  });
+});
 
 
 export default function ContactForm() {
 
-    const [rtl, setRtl] = React.useState(false);
+    const { selectedLanguage } = React.useContext(LanguageContext);
+    const [rtl, setRtl] = React.useState(selectedLanguage === 'ar');
+
+    React.useEffect(() => {
+        setRtl(selectedLanguage === 'ar');
+    }, [selectedLanguage]);
 
     const handleChange = () => {
-      setRtl(!rtl);
+        setRtl(!rtl);
     };
+
     return (
         <>
             <CacheProvider value={rtl ? rtlCache : ltrCache}>
                 <ThemeProvider theme={theme}>
-                    <div  dir={rtl ? 'rtl' : ''}>
+                    <div dir={rtl ? 'rtl' : ''}>
                         <Row>
                             <Col lg={6} sm={12}>
                                 <TextField id="outlined-basic"

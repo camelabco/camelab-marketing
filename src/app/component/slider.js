@@ -6,14 +6,12 @@ import Image from "next/image";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-
-
 const $ = require("jquery");
 if (typeof window !== "undefined") {
   window.$ = window.jQuery = require("jquery");
 }
 
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+const OwlCarousel = dynamic(() => import("react-owl-carousel-rtl"), {
   ssr: false,
 });
 

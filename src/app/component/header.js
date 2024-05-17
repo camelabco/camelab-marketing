@@ -1,7 +1,8 @@
 "use client";
 import headerStyles from "../styles/header.module.css"
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Container from 'react-bootstrap/Container';
+import { LanguageContext } from "../layout";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from "next/image";
@@ -9,13 +10,14 @@ import { NavDropdown } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Link from "next/link";
-
+  
 function Header() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext);
+
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
   };
