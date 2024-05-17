@@ -16,7 +16,7 @@ import React, { createContext, useEffect, useState } from "react";
 export const LanguageContext = createContext();
 
 export default function RootLayout({ children }) {
-  const lang = localStorage.getItem("selectedLanguage") || "en"
+  const lang = typeof window !== "undefined" ? localStorage.getItem("selectedLanguage") || "en" : "en"
   const [selectedLanguage, setSelectedLanguage] = useState(lang);
   useEffect(() => {
     localStorage.setItem("selectedLanguage", selectedLanguage);
