@@ -31,7 +31,7 @@ function Header() {
             <Navbar.Brand>
               <Image
                 src={require('../../assets/images/header/nav-logo.svg').default}
-                width={170}
+                width={220}
                 height={70}
                 alt="camelab-logo"
               />

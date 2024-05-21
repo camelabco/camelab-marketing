@@ -15,7 +15,7 @@ function Footer() {
             <div className={`${footerStyles['left-col-content']}`}>
               <Image
                 src={require('../../assets/images/footer/footer-logo.svg').default}
-                width={170}
+                width={220}
                 height={70}
                 alt="camelab-logo"
               />
@@ -50,9 +50,9 @@ function Footer() {
           <Col lg={2} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['list-content']}`}>
               <h5>Resources</h5>
-                <Link href="#"><h6>Become a Creator</h6></Link>
-                <Link href="#"><h6>About Us</h6></Link>
-                <Link href="#"><h6>Contact Us</h6></Link>
+                <Link href="#" className={`${footerStyles['resource-link']}`}><h6>Become a Creator</h6></Link>
+                <Link href="#" className={`${footerStyles['resource-link']}`}><h6>About Us</h6></Link>
+                <Link href="#" className={`${footerStyles['resource-link']}`}><h6>Contact Us</h6></Link>
             </div>
           </Col>
           <Col lg={3} className={`${footerStyles['col-content']}`}>

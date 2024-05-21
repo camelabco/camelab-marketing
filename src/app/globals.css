@@ -1,9 +1,11 @@
 @import "./fonts.css";
 
 :root {
-    --text-primary: #212B36;
+    /* --text-primary: #212B36; */
+    --text-primary: #230e45;
     --text-secondary: #637381;
-    --purple: #8224E3;
+    /* --purple: #8224E3; */
+    --purple: #f4793c;
     --background-paper: #FFFFFF;
 }
 
@@ -102,13 +104,13 @@ body {
 
 .core-cards .card-content .img-part::after {
     content: ' ';
-    width: 45px;
-    height: 45px;
-    background-color: #8E33FF14;
-    top: 7px;
+    width: 80px;
+    height: 80px;
+    background-color: #9186a20a;
+    top: -11px;
     position: absolute;
     border-radius: 50%;
-    left: 115px;
+    left: 109px;
 }
 
 .core-cards .card-content .text-part {
@@ -163,6 +165,8 @@ body {
     text-align: center;
     text-decoration: none;
     display: flex;
+    font-size: 18px;
+    line-height: 36px;
 }
 
 .common-animated-card {
