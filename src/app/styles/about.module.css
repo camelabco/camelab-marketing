@@ -31,7 +31,7 @@
 }
 
 .gradient-text {
-    background: linear-gradient(89.62deg, #48147D 27.79%, #A864EA 65.31%) !important;
+    background: linear-gradient(193.88deg, #FF7A00 0%, #F2B643 90.09%);
     -webkit-background-clip: text !important;
     background-clip: text !important;
     color: transparent;
@@ -126,6 +126,10 @@
     .about-content-section{
         margin-top: 30px;
     }
+    .about-content-section .about-text-part{
+        padding-left: 0;
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {

@@ -9,6 +9,146 @@
 }
 
 
+
+.header {
+    background-color: white;
+    padding: 15px 0;
+}
+
+.leftside-links {
+    margin-left: 64px;
+}
+
+.header-links {
+    margin-right: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--text-primary);
+    padding: 0px 0px !important;
+}
+
+.header-links {
+    text-decoration: none;
+}
+
+.header-links:hover {
+    color: var(--purple);
+}
+
+.header-links.active-page {
+    color: var(--purple);
+}
+
+.offcanvas-header {
+    padding: 25px;
+}
+
+.offcanvas-body {
+    padding: 25px;
+}
+
+@media screen and (min-width: 991px) {
+    .offcanvas{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .leftside-links {
+        margin-left: 0px;
+    }
+
+    .header .navbar-toggler {
+        display: block !important;
+    }
+
+    .header-links {
+        margin-bottom: 30px;
+
+    }
+
+    .flag-mobile {
+        margin-left: auto;
+        padding-right: 25px;
+        display: block !important;
+    }
+
+    .flag-desktop {
+        display: none;
+    }
+
+    [dir="rtl"] .leftside-links {
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+    [dir="rtl"] .flag-mobile {
+        margin-right: auto;
+        margin-left: 30px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 520px) {
+    .offcanvas.offcanvas-start {
+        width: 300px !;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .offcanvas.offcanvas-start {
+        width: 250px !important;
+    }
+}
+
+.header .navbar-toggler {
+    display: none;
+}
+
+
+.header .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.header .navbar-toggler {
+    border: none !important;
+}
+
+.flag-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flag-icon-us {
+    margin-right: 5px;
+}
+
+.flag-mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* [dir="rtl"] .leftside-links {
+    margin-left: 0px;
+    margin-right: 80px !important;
+}
+
+[dir="rtl"] .rightside-links {
+    margin-right: auto;
+    margin-left: 0 !important;
+}
+
+
 .flag-item{
     font-size: 18px;
 }
@@ -108,13 +248,19 @@
 
 @media screen and (max-width: 520px) {
     .offcanvas.offcanvas-start {
-        width: 300px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .offcanvas.offcanvas-start {
+        width: 200px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .offcanvas.offcanvas-start {
-        width: 250px;
+        width: 200px;
     }
 }
 
@@ -142,4 +288,4 @@
 
 .flag-mobile {
     display: none;
-}
+} */

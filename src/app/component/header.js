@@ -89,7 +89,10 @@ function Header() {
                 width={32}
                 height={22}
                 alt="flag-icon-us"
-              /></span>} id="basic-nav-dropdown">
+              />
+              </span>} 
+              id="basic-nav-dropdown"
+              >
               <NavDropdown.Item onClick={() => handleLanguageChange('en')} className={`${headerStyles["flag-item"]}`} >
                 <span className={`${headerStyles[""]} me-2`}>
                   <Image
@@ -130,7 +133,11 @@ function Header() {
               height={70}
               alt="camelab-logo"
             />
-          </Link></Offcanvas.Title>
+          </Link>
+          </Offcanvas.Title>
+          <Button variant="close" onClick={handleClose} aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+          </Button>
         </Offcanvas.Header>
         <Offcanvas.Body className={`${headerStyles['offcanvas-body']}`} >
          <div className="d-flex flex-column">

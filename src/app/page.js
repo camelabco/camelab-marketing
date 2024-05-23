@@ -176,19 +176,14 @@ export default function Home() {
         <AnimatedImgSection />
       </section>
 
-
-
-
       {/* our client section */}
-
-
 
       <section className={`${styles['our-client']}`}>
         <Container>
           <Row>
             <Col lg={6}>
-              <div className={`${styles['img-part']}`}>
-                <Image src={require('../assets/images/landing/our-client-img.svg').default} width={"100%"} alt="create-video-img" />
+              <div className={`${styles['client-img-part']}`}>  
+                <Image src={require('../assets/images/landing/our-client-img.png').default} className={`${styles['client-img']}`} alt="create-video-img" />
               </div>
             </Col>
             <Col lg={6}>

@@ -94,7 +94,7 @@
 }
 
 .banner-text span {
-    background: linear-gradient(90deg, #48147D, #8636D3);
+    background: linear-gradient(193.88deg, #FF7A00 0%, #F2B643 90.09%);;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -109,7 +109,7 @@
     overflow: hidden;
 }
 .slider-container .left-contante-container{
-    max-width: 74%;
+    max-width: 100%;
 }
 .slider-container .left-content{
     display: flex;
@@ -119,8 +119,6 @@
     height: 100%;
 }
 .slider-container .left-content p {
-    /* margin: 0px auto 40px 0;
-    width: 74%; */
     width: 100%;
     margin-bottom: 40px;
 }
@@ -145,12 +143,8 @@
 .signup-part {
     display: flex;
     align-items: center;
+    justify-content: left;
 }
-
-
-
-
-
 
 
 
@@ -183,8 +177,15 @@
 
 .img-part {
     display: flex;
+    margin-top:20px;
+    align-items: center;
 }
 
+.client-img-part{
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+}
 .img-set {
     display: flex;
     flex-direction: column;
@@ -263,6 +264,16 @@
 
 .our-client .text-part p {
     margin: 0 auto 0 0;
+}
+
+.client-img-part{
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.client-img{
+    width: 100%;
 }
 
 .item {
@@ -544,6 +555,9 @@
     .our-client .cliet-review .circle-btn.right-btn {
         top: 25px;
         right: 0%;
+    }
+    .signup-part{
+        justify-content: center;
     }
 }
 

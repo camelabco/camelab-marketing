@@ -16,36 +16,31 @@
 
 .left-col-content .social-icon {
     margin-right: 24px;
-    transition: all 0.2s;
 }
 
 .list-content h5 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 15px;
 }
 
 .list-content h6 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 22px;
     color: var(--text-secondary);
     position: relative;
-    margin-bottom: 0px;
-}
-.list-content a.resource-link h6{
     margin-bottom: 10px;
 }
+
 .social-icon:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .list-icon {
     gap: 10px;
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
 }
 
 .main-content a {
@@ -91,7 +86,7 @@
 }
 
 .copy-right-part h6 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--text-secondary);
 

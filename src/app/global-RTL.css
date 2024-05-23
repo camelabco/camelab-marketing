@@ -16,3 +16,9 @@
     margin-left: 0 !important;
     margin-right: auto;
 }
+
+
+[dir="rtl"] .dropdown-menu[data-bs-popper] {
+    right: auto !important;
+    left:0 !important;
+}

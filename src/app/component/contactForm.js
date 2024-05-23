@@ -8,6 +8,7 @@ import createCache from '@emotion/cache';
 import { prefixer } from 'stylis';
 import Row from 'react-bootstrap/Row';
 import { LanguageContext } from "../layout";
+import contactFormStyles from '../styles/contactForm.module.css'
 
 import Col from 'react-bootstrap/Col';
 const theme = (outerTheme) =>
@@ -44,11 +45,12 @@ export default function ContactForm() {
                     <div dir={rtl ? 'rtl' : ''}>
                         <Row>
                             <Col lg={6} sm={12}>
-                                <TextField id="outlined-basic"
+                                <div className='text-field'>
+                                    <TextField id="outlined-basic"
                                     label="First Name"
                                     variant="outlined"
                                     placeholder="Enter your first name"
-                                    className='mb-5'
+                                    className={`${contactFormStyles['text-field']}`}
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
@@ -70,13 +72,14 @@ export default function ContactForm() {
                                         },
                                     }}
                                 />
+                                </div>
                             </Col>
                             <Col lg={6} sm={12}>
                                 <TextField id="outlined-basic"
                                     label="Last Name"
                                     variant="outlined"
                                     placeholder="Enter your last name"
-                                    className='mb-5'
+                                    className={`${contactFormStyles['text-field']}`}
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
@@ -104,7 +107,7 @@ export default function ContactForm() {
                                     label="Phone number"
                                     variant="outlined"
                                     placeholder="Enter phone number"
-                                    className='mb-5'
+                                    className={`${contactFormStyles['text-field']}`}
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
@@ -132,7 +135,7 @@ export default function ContactForm() {
                                     label="Email address"
                                     variant="outlined"
                                     placeholder="Enter email"
-                                    className='mb-5'
+                                    className={`${contactFormStyles['text-field']}`}
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
@@ -162,7 +165,7 @@ export default function ContactForm() {
                                     placeholder='write something here..'
                                     multiline
                                     rows={3}
-                                    className='mb-5'
+                                    className={`${contactFormStyles['text-field']}`}
                                     sx={{
                                         width: '100%',
                                         '& .MuiInputLabel-root': {
