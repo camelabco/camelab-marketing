@@ -82,10 +82,15 @@
 }
 
 /* about client section  */
+
 .about-client-section {
     padding: 80px 0px;
 }
 .client-content-section{
+    width: 100%;
+}
+
+.client-content-section p{
     width: 100%;
 }
 

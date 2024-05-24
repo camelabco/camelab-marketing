@@ -101,6 +101,8 @@
     }
     .order-image-section{
         margin-top: 25px;
+        width: 80%;
+        margin: auto;
     }
     .content-creator {
         padding: 35px 0;

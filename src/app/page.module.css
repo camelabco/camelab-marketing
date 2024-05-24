@@ -41,6 +41,9 @@
     margin-left: 24px;
     margin-right: 0;
 }
+[dir="rtl"] .cliet-review{
+    margin-right: 86px;
+}
 
 @media screen and (max-width: 991px) {
     [dir="rtl"] .signup-part {
@@ -184,7 +187,7 @@
 .client-img-part{
     margin-top: 20%;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .img-set {
     display: flex;
@@ -485,6 +488,10 @@
         padding: 0;
         margin-top: 40px;
     }
+    .client-img-part {
+        width: 80%;
+        margin: auto;
+    }
 
     .create-videos .right-text-part {
         padding: 0;
@@ -612,6 +619,9 @@
         width: 100%;
     }
 
+    .client-img-part {
+        width: 100%;
+    }
     .our-client .cliet-review .cliet-name h4 {
         font-size: 18px;
 

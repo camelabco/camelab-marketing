@@ -147,7 +147,7 @@ export default function Home() {
           <Row>
             <Col lg={5}>
               <div className={`${styles['img-part']}`}>
-                <Image src={require('../assets/images/landing/create-video-img.svg').default} width="100%" alt="create-video-img" />
+                <Image src={require('../assets/images/landing/create-video-img.png').default} width="100%" alt="create-video-img" />
               </div>
             </Col>
             <Col lg={7} className={`${styles['right-text-part']} px-5`}>
