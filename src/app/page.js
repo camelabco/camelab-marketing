@@ -34,7 +34,7 @@ export default function Home() {
                 </p>
                 <div className={`${styles['signup-part']}`}>
                   <button className="primary-button" >Sign up</button>
-                  <Link href="#" className="underline mx-4"><h6>Become a creator</h6></Link>
+                  <Link href="/creator" className="underline mx-4"><h6>Become a creator</h6></Link>
                 </div>
                 </div>
               </div>
