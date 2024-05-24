@@ -40,12 +40,14 @@ export default function Contact() {
                   </div>
                 </Col>
                 <Col lg={6}>
+                  <div className={`${contactStyles['image-right-section']}`}>
                   <div className={`${contactStyles['contact-desktop-img-section']}`}>
                     <Image
                       src={require('../../assets/images/contact/contact-banner.png').default}
                       alt="contact banner image"
                       className={`${contactStyles['contact-img']}`}
                     />
+                  </div>
                   </div>
                 </Col>
               </Row>
