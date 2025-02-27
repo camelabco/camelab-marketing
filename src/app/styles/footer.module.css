@@ -114,6 +114,14 @@
     .footer-content {
         padding: 0px 0 24px 0;
     }
+
+    .left-col-content{
+        margin: 30px 0;
+    }
+
+    .list-content{
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -128,7 +136,7 @@
 
     .left-col-content p {
         max-width: 90%;
-        margin: 0px 0 40px 0;
+        margin: 0px 0 20px 0;
     }
 
     .copy-right-part {

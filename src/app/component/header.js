@@ -24,7 +24,10 @@ function Header() {
     setSelectedLanguage(language);
   };
 
-  const isActive = (path) => pathname === path;
+  const isActive = (path) => {
+    return typeof window !== 'undefined' && window.location.pathname === path;
+  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -33,6 +36,7 @@ function Header() {
           <Link href={'/'}>
             <Navbar.Brand>
               <Image
+                 className={`${headerStyles['header-logo']}`}
                 src={require('../../assets/images/header/nav-logo.svg').default}
                 width={220}
                 height={70}
@@ -81,8 +85,67 @@ function Header() {
           </div>
           <Navbar.Collapse>
             <Nav className={`${headerStyles['leftside-links']} me-auto align-items-center`}>
-              <Link href="/about" className={`${headerStyles['header-links']} ${isActive('/about') ? headerStyles['active-page'] : ''} underline`}>About Us</Link>
-              <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''} underline`}>Contact Us</Link>
+            {/* <Link href="/home" className={`${headerStyles['header-links']} ${isActive('/home') ? headerStyles['active-page'] : ''} underline`}
+              >Home</Link> */}
+           <NavDropdown
+           className="solution-dropdown"
+        title={
+          <span
+            className={`${headerStyles['dropdown-menu']} ${
+              isActive('/home') ? headerStyles['active-page'] : ''
+            } underline`}
+            onMouseEnter={() => setIsOpen(true)}
+          >
+            Solutions
+            <Image
+              src={
+                isOpen
+                  ? require('../../assets/images/header/up_arrow.svg').default
+                  : require('../../assets/images/header/down_arrow.svg').default
+              }
+              width={32}
+              height={22}
+              alt="dropdown arrow"
+              className={headerStyles['custom-arrow']}
+            />
+          </span>
+        }
+  
+        show={isOpen}
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)} 
+      >
+        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
+          UGC
+        </NavDropdown.Item>
+        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
+          Creators
+        </NavDropdown.Item>
+        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+          Content AI
+        </NavDropdown.Item>
+        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+          Campaigns
+        </NavDropdown.Item>
+        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+          Surveys & Polls
+        </NavDropdown.Item>
+        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+          Shopper Marketing
+        </NavDropdown.Item>
+        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+          New Product Launches
+        </NavDropdown.Item>
+        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+          Events
+        </NavDropdown.Item>
+      </NavDropdown>
+            <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/features') ? headerStyles['active-page'] : ''} underline`}>Features</Link>
+            <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
+            <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/pricing') ? headerStyles['active-page'] : ''} underline`}>Pricing</Link>
+            <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/creators') ? headerStyles['active-page'] : ''} underline`}>Creators</Link>
+              {/* <Link href="/about" className={`${headerStyles['header-links']} ${isActive('/about') ? headerStyles['active-page'] : ''} underline`}>About Us</Link>
+              <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''} underline`}>Contact Us</Link> */}
             </Nav>
             <Nav className={`${headerStyles['rightside-links']} ms-auto align-items-center`}>
               <NavDropdown className={`${headerStyles["flag-desktop"]} flag mx-3`} title={<span>
@@ -139,13 +202,72 @@ function Header() {
           </Link>
           </Offcanvas.Title>
           <Button variant="close" onClick={handleClose} aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        
           </Button>
         </Offcanvas.Header>
         <Offcanvas.Body className={`${headerStyles['offcanvas-body']}`}>
           <div className="d-flex flex-column">
-            <Link href="/about" className={`${headerStyles['header-links']} ${isActive('/about') ? headerStyles['active-page'] : ''}`}>About Us</Link>
-            <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''}`}>Contact Us</Link>
+          {/* <Link href="/home" className={`${headerStyles['header-links']} ${isActive('/home') ? headerStyles['active-page'] : ''} underline`}
+              >Home</Link> */}
+                 <NavDropdown
+           className="solution-dropdown"
+        title={
+          <span
+            className={`${headerStyles['dropdown-menu']} ${
+              isActive('/home') ? headerStyles['active-page'] : ''
+            } underline`}
+            onMouseEnter={() => setIsOpen(true)}
+          >
+            Solutions
+            <Image
+              src={
+                isOpen
+                  ? require('../../assets/images/header/up_arrow.svg').default
+                  : require('../../assets/images/header/down_arrow.svg').default
+              }
+              width={32}
+              height={22}
+              alt="dropdown arrow"
+              className={headerStyles['custom-arrow']}
+            />
+          </span>
+        }
+  
+        show={isOpen}
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)} 
+      >
+        <NavDropdown.Item href="/solutions/ugc" className={headerStyles['dropdown-link']}>
+          UGC
+        </NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/creators" className={headerStyles['dropdown-link']}>
+          Creators
+        </NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/content" className={headerStyles['dropdown-link']}>
+          Content AI
+        </NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/campaings" className={headerStyles['dropdown-link']}>
+          Campaigns
+        </NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/surveys" className={headerStyles['dropdown-link']}>
+          Surveys & Polls
+        </NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/shopper" className={headerStyles['dropdown-link']}>
+          Shopper Marketing
+        </NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/product" className={headerStyles['dropdown-link']}>
+          New Product Launches
+        </NavDropdown.Item>
+        <NavDropdown.Item href="/solutions/events" className={headerStyles['dropdown-link']}>
+          Events
+        </NavDropdown.Item>
+      </NavDropdown>
+      <Link href="/features" className={`${headerStyles['header-links']} ${isActive('/features') ? headerStyles['active-page'] : ''} underline`}>Features</Link>
+            <Link href="/stories" className={`${headerStyles['header-links']} ${isActive('/stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
+            <Link href="/pricing" className={`${headerStyles['header-links']} ${isActive('/pricing') ? headerStyles['active-page'] : ''} underline`}>Pricing</Link>
+            <Link href="/creators" className={`${headerStyles['header-links']} ${isActive('/creators') ? headerStyles['active-page'] : ''} underline`}>Creators</Link>
+            {/* <Link href="/about" className={`${headerStyles['header-links']} ${isActive('/about') ? headerStyles['active-page'] : ''}`}>About Us</Link>
+            <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''}`}>Contact Us</Link> */}
             <Link href="/creator" className={`${headerStyles['header-links']} ${isActive('/creator') ? headerStyles['active-page'] : ''}`}>Become a creator</Link>
             <Link href="#link" className={`${headerStyles['header-links']}`}>
               <button className="primary-button" variant="primary">Login</button>
