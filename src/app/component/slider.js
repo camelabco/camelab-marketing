@@ -24,12 +24,11 @@ const Slider = () => {
     dots: false,
     autoplay: true,
     loop: true,
-    rtl:true,
+    rtl: true,
     autoWidth: true,
     slideTransition: 'linear',
     autoplayTimeout: 1000,
     autoplaySpeed: 3000,
-    
     stagePadding: 0,
     margin: 20,
     animateOut: 'slideOutDown',
@@ -37,26 +36,20 @@ const Slider = () => {
 
     responsive: {
       0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      700: {
         items: 3,
       },
+      700: {
+        items: 4,
+      },
       1000: {
-        items: 5,
+        items: 7,
       },
     },
   };
 
   return (
     <div >
-      <OwlCarousel className={`${sliderStyle['owlcarousel']}`}  rtlClass="owl-rtl" loop  {...options}>
+      <OwlCarousel className={`${sliderStyle['owlcarousel']}`} rtlClass="owl-rtl" loop  {...options}>
 
 
         <div className={`${sliderStyle['item']}`}>

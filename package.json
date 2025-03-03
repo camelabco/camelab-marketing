@@ -24,6 +24,7 @@
     "react-owl-carousel-rtl": "^1.0.0",
     "styled-components": "^6.1.11",
     "stylis-plugin-rtl": "^2.1.1",
+    "swiper": "^11.2.4",
     "yarn": "^1.22.22"
   },
   "devDependencies": {

@@ -31,10 +31,10 @@ function Header() {
 
   return (
     <>
-      <Navbar expand="lg" className={`${headerStyles['header']}`}>
-        <Container>
+      <Navbar expand="lg" className={`${headerStyles['header']} header`}>
+        <Container className={`${headerStyles['navbar-container']}`}>
           <Link href={'/'}>
-            <Navbar.Brand>
+            <Navbar.Brand className={`${headerStyles['navbar-brand']}`}>
               <Image
                  className={`${headerStyles['header-logo']}`}
                 src={require('../../assets/images/header/nav-logo.svg').default}
@@ -118,7 +118,7 @@ function Header() {
         <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
           UGC
         </NavDropdown.Item>
-        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="/solution-creator" className={headerStyles['dropdown-link']}>
           Creators
         </NavDropdown.Item>
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
@@ -181,9 +181,9 @@ function Header() {
                   </span>Arabic
                 </NavDropdown.Item>
               </NavDropdown>
-              <Link href="/creator" className={`${headerStyles['header-links']} ${isActive('/creator') ? headerStyles['active-page'] : ''} underline`}>Become a creator</Link>
-              <Link href="#link" className={`${headerStyles['header-links']}`}>
-                <button className="primary-button" variant="primary">Login</button>
+              <Link href="/creator" className={`${headerStyles['header-links']} ${isActive('/creator') ? headerStyles['active-page'] : ''} underline me-3`}>Become a creator</Link>
+              <Link href="#link" className={`${headerStyles['header-links']} me-0`}>
+                <button className={`${headerStyles['primary-button']} primary-button`} variant="primary">Login</button>
               </Link>
             </Nav>
           </Navbar.Collapse>

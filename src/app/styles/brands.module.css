@@ -1,5 +1,6 @@
 .brands-img {
     justify-content: center;
+    display: flex;
 }
 
 .all-brands {
