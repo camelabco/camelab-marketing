@@ -7,11 +7,10 @@ import Image from "next/image";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Footer from '../component/footer';
-import Accordion from 'react-bootstrap/Accordion';
-
 import React from 'react'
 import HorizontalAccordion from '../component/horizontalAccordion';
 import VerticalAccordion from '../component/verticalAccordion';
+import FAQ from '../component/FAQ';
 
 export default function Creator() {
     return (
@@ -39,10 +38,10 @@ export default function Creator() {
                     <div className={`${creatorStyle['text-part']}`}>
                         <h3 className='main-heading'>Start working with <span>creators</span> in
                             4 easy steps</h3>
-                            <p className='secondary-text'>Every step is integrated into the platform to streamline your collaborations.</p>
+                        <p className='secondary-text'>Every step is integrated into the platform to streamline your collaborations.</p>
                     </div>
                     <HorizontalAccordion />
-                    <VerticalAccordion/>
+                    <VerticalAccordion />
                 </Container>
 
             </section>
@@ -105,74 +104,7 @@ export default function Creator() {
 
 
             {/* faq section */}
-
-
-            <section className={`${creatorStyle['faq-section']} faq-section`}>
-                <Container>
-                    <div className={`${creatorStyle['heading-part']}`}>
-                        <h3 className="main-heading">FAQ</h3>
-                    </div>
-
-
-                    <Accordion defaultActiveKey="0">
-
-
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header className={`${creatorStyle['accordion-header']}`}> <h3>How to use Camelab for user?</h3> </Accordion.Header>
-                            <Accordion.Body className={`${creatorStyle['accordion-body']}`}>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="1">
-                            <Accordion.Header className={`${creatorStyle['accordion-header']}`}> <h3>Where can I see my video submission?</h3> </Accordion.Header>
-                            <Accordion.Body className={`${creatorStyle['accordion-body']}`}>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-
-                        <Accordion.Item eventKey="2">
-                            <Accordion.Header className={`${creatorStyle['accordion-header']}`}> <h3>Where can I can see graph in dashboard?</h3> </Accordion.Header>
-                            <Accordion.Body className={`${creatorStyle['accordion-body']}`}>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-
-                        <Accordion.Item eventKey="3">
-                            <Accordion.Header className={`${creatorStyle['accordion-header']}`}> <h3>How make payment?</h3> </Accordion.Header>
-                            <Accordion.Body className={`${creatorStyle['accordion-body']}`}>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-
-                        <Accordion.Item eventKey="4">
-                            <Accordion.Header className={`${creatorStyle['accordion-header']}`}> <h3>How create new campaign?</h3> </Accordion.Header>
-                            <Accordion.Body className={`${creatorStyle['accordion-body']}`}>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-
-                        <Accordion.Item eventKey="5">
-                            <Accordion.Header className={`${creatorStyle['accordion-header']}`}> <h3>How check bill receipt?</h3> </Accordion.Header>
-                            <Accordion.Body className={`${creatorStyle['accordion-body']}`}>
-                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-
-
-
-                    </Accordion>
-
-
-                </Container>
-
-            </section>
-
-
+            <FAQ />
 
 
             <Footer />

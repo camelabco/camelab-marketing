@@ -64,11 +64,115 @@
     margin: 0 auto;
 }
 
+.ultimate-hub-section .hub-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 120px;
+    position: relative;
+    z-index: 1;
+}
 
+.ultimate-hub-section .hub-text-content::after {
+    position: absolute;
+    content: "";
+    top: -24px;
+    left: 0;
+    background-image: url(/images/solution-creator/dotted-curve-line.png);
+    width: 100%;
+    height: 132px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 0;
+}
 
+.ultimate-hub-section .hub-text-content .text-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
 
+.ultimate-hub-section .hub-text-content .text-content .logo-img {
+    width: 80px;
+    height: 80px;
+    background-color: #f9f0ec;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.ultimate-hub-section .hub-text-content .text-content h4 {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.ultimate-hub-section .hub-text-content .text-content p {
+    font-family: "Public Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--text-secondary);
+    min-height: 80px;
+}
+
+/* revolutionize-section */
+.revolutionize-section {
+    padding: 80px 0;
+}
+
+.revolutionize-section .text-content h3 {
+    text-align: start;
+}
+
+.revolutionize-section .text-content h6 {
+    text-align: start;
+}
+
+.revolutionize-section .animated-section {
+    padding-top: 160px;
+}
+
+.revolutionize-section .revolutionize-img {
+    justify-content: end;
+}
+
+@media screen and (max-width: 1200px) {
+    .ultimate-hub-section .hub-text-content::after {
+        top: -20px;
+        left: 17%;
+        width: 70%;
+    }
+
+    .revolutionize-section .animated-section {
+        padding-top: 80px;
+    }
+}
 
 @media screen and (max-width: 991px) {
+    .ultimate-hub-section .hub-text-content::after {
+        display: none;
+    }
+
+    .ultimate-hub-section .hub-text-content {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 60px;
+    }
+
     .newcreator-section h4 {
         font-family: "Public Sans";
         font-weight: 600;
@@ -84,10 +188,25 @@
         max-width: 100%;
     }
 
+    .revolutionize-section .revolutionize-img {
+        justify-content: center;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
+    .revolutionize-section {
+        padding: 60px 0;
+    }
+    .ultimate-hub-section .hub-text-content {
+        margin-top: 30px;
+        gap: 0;
+    }
+
+    .revolutionize-section .animated-section {
+        padding-top: 40px;
+    }
+
     .newcreator-section h4 {
         font-size: 18px;
         line-height: 24px;
@@ -103,6 +222,9 @@
 }
 
 @media screen and (max-width: 520px) {
+    .revolutionize-section {
+        padding: 40px 0;
+    }
     .newcreator-section .profile-img-text h6 {
         font-size: 14px;
         line-height: 20px;
@@ -121,4 +243,9 @@
     .ultimate-hub-section {
         padding: 40px 0;
     }
+    .ultimate-hub-section .hub-text-content .text-content h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
 }

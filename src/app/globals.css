@@ -20,6 +20,12 @@ body {
     line-height: 64px;
     color: var(--text-primary);
     margin-bottom: 24px;
+
+    span {
+        background: linear-gradient(to bottom, #FF7A00 0%, #F2B643 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }
 
 .secondary-text {
@@ -30,6 +36,13 @@ body {
     color: var(--text-secondary);
     width: 90%;
     margin: auto;
+}
+
+.section-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-secondary);
 }
 
 .primary-button {
@@ -439,29 +452,10 @@ body {
 
 
 /* responsive  */
-@media screen and (max-width: 1200px) {
-    .secondary-text {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
-    }
-
-    .main-heading {
-        font-size: 42px;
-        margin-bottom: 20px;
-        line-height: 48px;
-    }
-
-
-}
 
 @media only screen and (max-width: 991px) {
 
     /* additional pages style */
-    .primary-heading {
-        font-size: 40px;
-        line-height: 46px;
-    }
 
     .heading-text-part {
         max-width: 100%;
@@ -486,6 +480,11 @@ body {
         margin-bottom: 15px;
         line-height: 44px;
         text-align: center;
+    }
+
+    .section-text {
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .secondary-text {
@@ -513,6 +512,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
     /* additional pages style */
     .primary-heading {
         font-size: 28px;
@@ -520,10 +520,6 @@ body {
         margin-bottom: 14px;
     }
 
-    .secondary-heading {
-        font-size: 18px;
-        line-height: 24px;
-    }
     /*  */
     .main-heading {
         font-size: 38px;
@@ -537,11 +533,8 @@ body {
 }
 
 @media screen and (max-width: 520px) {
-    /* additional pages style */
-    .secondary-heading {
-        font-size: 16px;
-    }
 
+    /* additional pages style */
     .primary-heading {
         font-size: 24px;
         line-height: 34px;
@@ -551,11 +544,17 @@ body {
     .heading-text-part {
         margin-top: 36px;
     }
+
     /*  */
     .main-heading {
-        font-size: 28px;
+        font-size: 26px;
         margin-bottom: 10px;
-        line-height: 40px;
+        line-height: 36px;
+    }
+
+    .section-text {
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .common-animated-card .card {

@@ -118,7 +118,7 @@ function Header() {
         <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
           UGC
         </NavDropdown.Item>
-        <NavDropdown.Item href="/solution-creator" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="/solutions/creator" className={headerStyles['dropdown-link']}>
           Creators
         </NavDropdown.Item>
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
@@ -127,7 +127,7 @@ function Header() {
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
           Campaigns
         </NavDropdown.Item>
-        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item  href="/solutions/surveys-polls" className={headerStyles['dropdown-link']}>
           Surveys & Polls
         </NavDropdown.Item>
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
