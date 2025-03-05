@@ -121,7 +121,7 @@ function Header() {
         <NavDropdown.Item href="/solutions/creator" className={headerStyles['dropdown-link']}>
           Creators
         </NavDropdown.Item>
-        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item  href="/solutions/contain-ai" className={headerStyles['dropdown-link']}>
           Content AI
         </NavDropdown.Item>
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
