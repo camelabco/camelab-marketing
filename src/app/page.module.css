@@ -457,6 +457,11 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .review-owlcarousel .circle-btn.right-btn {
+        right: -5%;
+    }
+}
 @media screen and (max-width: 991px) {
     .slider-section {
         padding: 35px 0;

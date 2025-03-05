@@ -1,0 +1,125 @@
+
+.card-section .card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+.card-section .card-row .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: calc(25% - 30px);
+}
+
+.card-section .card-row .card .card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-primary);
+  padding-top: 39px;
+  padding-bottom: 8px;
+}
+.card-section .card-row .card .card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+}
+.card-section .card-row .card .card-img-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-section .card-row .card:hover .card-img-section::before {
+  height: 50px;
+  width: 50px;
+  opacity: 0.9;
+}
+.card-section .card-row .card:hover .card-img {
+  animation: tada 0.8s ease-in-out;
+}
+.card-section .card-row .card .card-img-section::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f4783c14;
+  top: 37px;
+  left: 37px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: height 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+}
+@keyframes tada {
+  0% {
+    transform: scale(1);
+  }
+  10%,
+  20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  80% {
+    transform: scale(1) rotate(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 991px) {
+  .card-section .card-row {
+    gap: 20px;
+  }
+  .card-section .card-row .card {
+    max-width: calc(33% - 14px);
+  }
+}
+@media (max-width: 768px) {
+  .card-section .card-row .card {
+    max-width: calc(50% - 10px);
+  }
+}
+@media (max-width: 520px) {
+  .card-section .card-row .card .card-title {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  .card-section .card-row .card .card-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .card-section .card-row {
+    margin-top: 30px;
+  }
+  .card-section .card-row .card .card-img-section .card-img {
+    width: 73%;
+  }
+  .card-section .card-row .card .card-img-section::before {
+    height: 30px;
+    width: 30px;
+    top: 32px;
+    left: 36px;
+  }
+  .card-section .card-row .card {
+    max-width: 72%;
+    margin: 0 auto;
+  }
+}

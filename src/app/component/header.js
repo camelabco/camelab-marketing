@@ -124,7 +124,7 @@ function Header() {
         <NavDropdown.Item  href="/solutions/content-ai" className={headerStyles['dropdown-link']}>
           Content AI
         </NavDropdown.Item>
-        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item  href="/solutions/campaigns" className={headerStyles['dropdown-link']}>
           Campaigns
         </NavDropdown.Item>
         <NavDropdown.Item  href="/solutions/surveys-polls" className={headerStyles['dropdown-link']}>
@@ -246,7 +246,7 @@ function Header() {
         <NavDropdown.Item href="/solutions/content-ai" className={headerStyles['dropdown-link']}>
           Content AI
         </NavDropdown.Item>
-        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="/solutions/campaigns" className={headerStyles['dropdown-link']}>
           Campaigns
         </NavDropdown.Item>
         <NavDropdown.Item href="/solutions/surveys-polls" className={headerStyles['dropdown-link']}>
