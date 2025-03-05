@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import SolutionCreatorStyle from "@/app/styles/solutionCreator.module.css";
+import SolutionCreatorStyle from "@/app/styles/solutionCreatorPage.module.css";
 import Header from '@/app/component/header';
 import Footer from '@/app/component/footer';
 import dynamic from "next/dynamic";

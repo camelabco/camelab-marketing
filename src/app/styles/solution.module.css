@@ -1,0 +1,137 @@
+.survey-section {
+    padding: 80px 0;
+    background: linear-gradient(193.88deg, #FF7A00 0%, #F2B643 90.09%);
+    box-shadow: 0px 12px 24px -4px #919EAB1F;
+    margin-top: 120px;
+}
+
+.survey-section .survey-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.survey-section .survey-content p {
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+}
+
+.survey-section .survey-content h6 {
+    font-family: 'Public Sans';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+}
+
+.survey-card {
+    padding: 80px 40px;
+    background-color: #FFFFFF3D;
+    border-radius: 16px;
+    min-width: 396px;
+}
+
+.survey-section .survey-content h3 {
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: white;
+}
+
+.survey-section .survey-content h4 {
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+}
+.enhance-Survey-section{
+    background: linear-gradient(180deg, #F2F5F7 0%, #FFFFFF 100%);
+}
+
+@media screen and (max-width: 991px) {
+    .survey-section .survey-content {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .survey-section {
+        padding: 60px 0;
+        margin-top: 60px;
+    }
+
+    .survey-section .survey-content p {
+        font-size: 20px;
+        line-height: 24px;
+        ;
+    }
+
+    .survey-section .survey-content h6 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .survey-card {
+        padding: 60px 20px;
+        min-width: 396px;
+    }
+
+    .survey-section .survey-content h3 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .survey-section .survey-content h4 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .survey-section {
+        padding: 40px 0px;
+        margin-top: 40px;
+    }
+
+    .survey-section .survey-content p {
+        font-size: 16px;
+        line-height: 20px;
+        ;
+    }
+
+    .survey-section .survey-content h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .survey-card {
+        padding: 30px 20px;
+        max-width: 300px;
+        min-width: auto;
+        border-radius: 8px;
+    }
+
+    .survey-section .survey-content h3 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .survey-section .survey-content h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
