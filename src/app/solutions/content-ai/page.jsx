@@ -1,5 +1,5 @@
 import Header from '@/app/component/header'
-import ContainAiStyles from '@/app/styles/containAi.module.css';
+import ContainAiStyles from '@/app/styles/contentAi.module.css';
 import React from 'react';
 import Image from 'next/image';
 import ReviewSlider from '@/app/component/reviewSlider';

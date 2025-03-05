@@ -121,7 +121,7 @@ function Header() {
         <NavDropdown.Item href="/solutions/creator" className={headerStyles['dropdown-link']}>
           Creators
         </NavDropdown.Item>
-        <NavDropdown.Item  href="/solutions/contain-ai" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item  href="/solutions/content-ai" className={headerStyles['dropdown-link']}>
           Content AI
         </NavDropdown.Item>
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
@@ -136,7 +136,7 @@ function Header() {
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
           New Product Launches
         </NavDropdown.Item>
-        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item  href="/solutions/events" className={headerStyles['dropdown-link']}>
           Events
         </NavDropdown.Item>
       </NavDropdown>
@@ -237,25 +237,25 @@ function Header() {
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)} 
       >
-        <NavDropdown.Item href="/solutions/ugc" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
           UGC
         </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/creators" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="/solutions/creator" className={headerStyles['dropdown-link']}>
           Creators
         </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/content" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="/solutions/content-ai" className={headerStyles['dropdown-link']}>
           Content AI
         </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/campaings" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
           Campaigns
         </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/surveys" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="/solutions/surveys-polls" className={headerStyles['dropdown-link']}>
           Surveys & Polls
         </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/shopper" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
           Shopper Marketing
         </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/product" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
           New Product Launches
         </NavDropdown.Item>
         <NavDropdown.Item href="/solutions/events" className={headerStyles['dropdown-link']}>

@@ -1,0 +1,45 @@
+.banner-section {
+  background-image: url("/images/events/banner-bg.png");
+  padding: 300px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.connection-section .img-content {
+  padding-right: 60px;
+}
+
+.next-section {
+  background: linear-gradient(180deg, #f2f5f7 0%, #ffffff 100%);
+}
+
+.next-section .img-content {
+  padding-left: 80px;
+}
+
+.next-section .text-content .note-text {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .connection-section .img-content {
+        padding-right: 0px;
+      }
+
+  .next-section .img-content {
+    padding-left: 0;
+  }
+
+  .banner-section {
+    padding:200px 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+    .banner-section {
+        padding:100px 0;
+      }
+}
