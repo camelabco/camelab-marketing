@@ -37,7 +37,7 @@
     justify-content: left;
 }
 
-[dir="rtl"] .our-client .cliet-review .cliet-photo img {
+[dir="rtl"] .review-owlcarousel .cliet-photo img {
     margin-left: 24px;
     margin-right: 0;
 }
@@ -285,13 +285,13 @@
     margin-top: 64px;
 }
 
-.our-client .cliet-review .cliet-photo img {
-    width: 93px;
+.review-owlcarousel .cliet-photo img {
+    width: 93px !important;
     height: 93px;
     margin-right: 24px;
 }
 
-.our-client .cliet-review .cliet-name h4 {
+.review-owlcarousel .cliet-name h4 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28.2px;
@@ -299,17 +299,17 @@
 
 }
 
-.our-client .cliet-review .review-star {
+.review-owlcarousel .review-star {
     display: flex;
 
 }
 
-.our-client .cliet-review .review-star img {
-    width: 20px;
+.review-owlcarousel .review-star img {
+    width: 20px !important;
     height: 20px;
 }
 
-.our-client .cliet-review .cliet-name p {
+.review-owlcarousel .cliet-name p {
     font-size: 18px;
     font-weight: 400;
     line-height: 21.15px;
@@ -317,14 +317,14 @@
     margin-bottom: 16px;
 }
 
-.our-client .cliet-review .changing-btn {
+.review-owlcarousel .changing-btn {
     display: flex;
     gap: 30px;
     margin-left: 70px;
 
 }
 
-.our-client .cliet-review .circle-btn {
+.review-owlcarousel .circle-btn {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -335,7 +335,7 @@
     align-items: center;
 }
 
-.our-client .cliet-review .circle-btn.left-btn {
+.review-owlcarousel .circle-btn.left-btn {
     background-image: url(../assets/images/landing/white-arrow-left.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -344,7 +344,7 @@
     left: 76%;
 }
 
-.our-client .cliet-review .circle-btn.right-btn {
+.review-owlcarousel .circle-btn.right-btn {
     background-image: url(../assets/images/landing/white-arrow-right.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -353,15 +353,15 @@
     right: 0%;
 }
 
-.our-client .cliet-review .circle-btn:hover {
+.review-owlcarousel .circle-btn:hover {
     background-color: var(--background-paper);
 }
 
-.our-client .cliet-review .circle-btn:hover.left-btn {
+.review-owlcarousel .circle-btn:hover.left-btn {
     background-image: url(../assets/images/landing/arrow-left.svg);
 }
 
-.our-client .cliet-review .circle-btn:hover.right-btn {
+.review-owlcarousel .circle-btn:hover.right-btn {
     background-image: url(../assets/images/landing/arrow-right.svg);
 }
 
@@ -436,23 +436,23 @@
         width: 100%;
     }
 
-    .our-client .cliet-review .cliet-name h4 {
+    .review-owlcarousel .cliet-name h4 {
         font-size: 18px;
 
     }
 
-    .our-client .cliet-review .cliet-name p {
+    .review-owlcarousel .cliet-name p {
         font-size: 14px;
         margin-bottom: 0px;
     }
 
-    .our-client .cliet-review .changing-btn {
+    .review-owlcarousel .changing-btn {
         margin-left: 40px;
     }
-    .our-client .cliet-review .circle-btn.right-btn {
-        right: -16%;
+    .review-owlcarousel .circle-btn.right-btn {
+        right: -10%;
     }
-    .our-client .cliet-review .circle-btn.left-btn {
+    .review-owlcarousel .circle-btn.left-btn {
         left: 80%;
     }
 }
@@ -544,7 +544,7 @@
         margin: auto;
     }
 
-    .our-client .cliet-review .changing-btn {
+    .review-owlcarousel .changing-btn {
         display: flex;
         justify-content: center;
         margin: 30px auto auto auto;
@@ -572,12 +572,12 @@
         padding: 30px 0 60px 0;
     }
 
-    .our-client .cliet-review .circle-btn.left-btn {
+    .review-owlcarousel .circle-btn.left-btn {
         top: 25px;
         left: 70%;
     }
 
-    .our-client .cliet-review .circle-btn.right-btn {
+    .review-owlcarousel .circle-btn.right-btn {
         top: 25px;
         right: 0%;
     }
@@ -640,17 +640,17 @@
     .client-img-part {
         width: 100%;
     }
-    .our-client .cliet-review .cliet-name h4 {
+    .review-owlcarousel .cliet-name h4 {
         font-size: 18px;
 
     }
 
-    .our-client .cliet-review .cliet-name p {
+    .review-owlcarousel .cliet-name p {
         font-size: 14px;
         margin-bottom: 0px;
     }
 
-    .our-client .cliet-review .changing-btn {
+    .review-owlcarousel .changing-btn {
         margin-left: 40px;
     }
 
@@ -679,12 +679,12 @@
         margin-bottom: 0px;
     }
 
-    .our-client .cliet-review .circle-btn.left-btn {
+    .review-owlcarousel .circle-btn.left-btn {
         top: 124%;
         left: 35%;
     }
 
-    .our-client .cliet-review .circle-btn.right-btn {
+    .review-owlcarousel .circle-btn.right-btn {
         top: 124%;
         right: 35%;
     }
@@ -730,22 +730,22 @@
 
 @media screen and (max-width: 460px) {
 
-    .our-client .cliet-review .changing-btn {
+    .review-owlcarousel .changing-btn {
         display: flex;
         justify-content: center;
         margin: 30px auto auto auto;
     }
 
-    .our-client .cliet-review .circle-btn {
+    .review-owlcarousel .circle-btn {
         width: 40px;
         height: 40px;
     }
 
-    .our-client .cliet-review .circle-btn.left-btn {
+    .review-owlcarousel .circle-btn.left-btn {
         background-size: 16px;
     }
 
-    .our-client .cliet-review .circle-btn.right-btn {
+    .review-owlcarousel .circle-btn.right-btn {
         background-size: 16px;
     }
 }

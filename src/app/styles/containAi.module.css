@@ -1,0 +1,86 @@
+.advance-ai-section {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(244, 120, 60, 0.08) 100%
+  );
+}
+
+.visual-search-section .text-content {
+  padding-left: 56px;
+  margin-top: 20px;
+}
+
+.scoring-section .img-content {
+  padding-left: 56px;
+}
+
+.personalized-section .img-content {
+  padding-right: 80px;
+}
+
+.review-section {
+  background: linear-gradient(180deg, #f2f5f7 0%, #ffffff 100%);
+}
+
+.review-section .img-content {
+  padding-right: 80px;
+}
+
+.review-section .review-slider {
+  margin-top: 40px;
+}
+
+.analysis-section .img-content {
+  padding-left: 56px;
+}
+
+.scale-section .img-content {
+  padding-right: 80px;
+}
+
+.visulize-section .img-content {
+  padding-left: 56px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .visual-search-section .text-content {
+    padding-left: 16px;
+    margin-top: 0;
+  }
+  
+  .scoring-section .img-content {
+    padding-left: 28px;
+  }
+  
+  .personalized-section .img-content {
+    padding-right: 40px;
+  }
+  
+  .review-section .img-content {
+    padding-right: 40px;
+  }
+  
+  .analysis-section .img-content {
+    padding-left: 24px;
+  }
+  
+  .scale-section .img-content {
+    padding-right: 40px;
+  }
+  
+  .visulize-section .img-content {
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .reverse-row{
+    flex-direction: column-reverse;
+  }
+
+  .section-row{
+    gap:60px;
+  }
+}

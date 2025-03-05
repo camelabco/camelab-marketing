@@ -11,7 +11,7 @@ function Footer() {
     <div className={`${footerStyles['main-content']}`}>
       <Container>
         <Row className={`${footerStyles['footer-content']}`} >
-          <Col lg={7} className={`${footerStyles['col-content']}`}>
+          <Col lg={5} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['left-col-content']}`}>
               <Image
                 src={require('../../assets/images/footer/footer-logo.svg').default}
@@ -50,9 +50,21 @@ function Footer() {
           <Col lg={2} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['list-content']}`}>
               <h5>Resources</h5>
-                <Link href="/creator" className={`${footerStyles['resource-link']}`}><h6>Become a Creator</h6></Link>
-                <Link href="/about" className={`${footerStyles['resource-link']}`}><h6>About Us</h6></Link>
-                <Link href="/contact" className={`${footerStyles['resource-link']}`}><h6>Contact Us</h6></Link>
+                <Link href="#" className={`${footerStyles['resource-link']}`}><h6>Success Stories</h6></Link>
+                <Link href="#" className={`${footerStyles['resource-link']}`}><h6>Pricing</h6></Link>
+                <Link href="#" className={`${footerStyles['resource-link']}`}><h6>Creators</h6></Link>
+            </div>
+          </Col>
+          <Col lg={2} className={`${footerStyles['col-content']}`}>
+            <div className={`${footerStyles['list-content']}`}>
+              <h5>Solution</h5>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>UGC</h6></Link>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>Creator</h6></Link>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>Campaigns</h6></Link>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>Surveys & Polls</h6></Link>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>Shopper Marketing</h6></Link>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>New Product Lunches </h6></Link>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>Events</h6></Link>
             </div>
           </Col>
           <Col lg={3} className={`${footerStyles['col-content']}`}>
