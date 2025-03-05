@@ -11,6 +11,8 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import Brands from '@/app/component/brands';
 import AnimatedImgSection from '@/app/component/animatedImgSection';
 import FAQ from '@/app/component/FAQ';
+import NewsletterSection from '@/app/component/newsletterSection';
+import solutionCommonStyle from "@/app/styles/solutionCommon.module.css";
 
 const $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -57,8 +59,8 @@ export default function page() {
   return (
     <div>
       <Header />
-      <div className="container">
-        <div className='heading-text-part'>
+      <div className="container common-spacing">
+        <div className={`${solutionCommonStyle['heading-text-part']}`}>
           <h3 className={`main-heading text-center`}>
             Genuine Influencer Network to
             Amplify <span>Impact & Engagement</span>
@@ -96,7 +98,7 @@ export default function page() {
       </section>
 
       {/* ultimate hub section */}
-      <section className={`${SolutionCreatorStyle['ultimate-hub-section']}`}>
+      <section className={`${SolutionCreatorStyle['ultimate-hub-section']} common-spacing`}>
         <div className="container">
           <div className={`${SolutionCreatorStyle['ultimate-hub-heading']}`}>
             <h3 className={`main-heading text-center`}>
@@ -129,7 +131,7 @@ export default function page() {
       </section>
 
       {/* revolutionize section */}
-      <div className={`${SolutionCreatorStyle['revolutionize-section']}`}>
+      <div className={`${SolutionCreatorStyle['revolutionize-section']} common-spacing`}>
         <div className="container">
           <div className='row gy-3'>
             <div className="col-lg-5">
@@ -153,14 +155,14 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className={`${SolutionCreatorStyle['animated-section']}`}>
+        </div>
+        <div className={`common-spacing`}>
           <AnimatedImgSection reverse />
         </div>
-      </div>
+  
 
       <FAQ />
-
-
+      <NewsletterSection heading='Revolutionize Collaboration with Creators & Influencers' description='Simplify influencer partnerships, expand your reach, unlock growth opportunities, and create meaningful connections with your audience.' />
       <Footer />
     </div>
   )

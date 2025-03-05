@@ -26,6 +26,7 @@ body {
     -webkit-background-clip: text;
     color: transparent;
   }
+
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -399,11 +400,6 @@ body {
   color: var(--text-secondary);
 }
 
-.heading-text-part {
-  max-width: 67%;
-  margin: 0 auto;
-  margin-top: 70px;
-}
 
 /* curve-carousel */
 .curve-carousel-container {
@@ -445,6 +441,7 @@ body {
 }
 
 @media screen and (min-width: 991px) {
+
   .offcanvas-backdrop {
     display: none;
   }
@@ -473,17 +470,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
+  .reverse-row {
+    flex-direction: column-reverse;
+  }
   .common-animated-card .card {
     margin-top: 30px;
   }
 
-  /* additional pages style */
-  .heading-text-part {
-    max-width: 100%;
-    margin-top: 50px;
-  }
-  /*  */
   .common-animated-card .card {
     margin-top: 30px;
   }
@@ -508,6 +502,7 @@ body {
     line-height: 24px;
     text-align: center;
   }
+
   .main-heading {
     font-size: 38px;
     margin-bottom: 15px;
@@ -589,10 +584,6 @@ body {
     margin-bottom: 10px;
   }
 
-  .heading-text-part {
-    margin-top: 36px;
-  }
-
   /*  */
   .main-heading {
     font-size: 26px;
@@ -617,6 +608,7 @@ body {
   .common-spacing {
     padding: 40px 0;
   }
+
   .secondary-text {
     font-size: 16px;
     line-height: 26px;
@@ -642,6 +634,7 @@ body {
     width: 60px;
     height: 60px;
   }
+
   .core-cards .card-content .creator-logo-part img {
     width: 60px;
     height: 60px;
@@ -650,9 +643,11 @@ body {
   .core-cards .card-content .logo-part {
     margin-bottom: 48px;
   }
+
   .vertical-accordion .accordion-item {
     margin-bottom: 20px !important;
   }
+
   .core-cards .card-content .logo-part {
     margin-bottom: 48px;
   }
@@ -707,10 +702,7 @@ body {
   box-shadow: none !important;
 }
 
-.faq-section
-  .accordion-item:last-of-type
-  > .accordion-header
-  .accordion-button.collapsed {
+.faq-section .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
   border-bottom-right-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
 }

@@ -1,5 +1,10 @@
+/* heading */
+.heading-text-part {
+    max-width: 67%;
+    margin: 0 auto;
+}
+
 .survey-section {
-    padding: 80px 0;
     background: linear-gradient(193.88deg, #FF7A00 0%, #F2B643 90.09%);
     box-shadow: 0px 12px 24px -4px #919EAB1F;
     margin-top: 120px;
@@ -58,7 +63,8 @@
     text-align: center;
     color: white;
 }
-.enhance-Survey-section{
+
+.light-gradient-bg {
     background: linear-gradient(180deg, #F2F5F7 0%, #FFFFFF 100%);
 }
 
@@ -66,11 +72,14 @@
     .survey-section .survey-content {
         flex-wrap: wrap;
     }
+
+    .heading-text-part {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .survey-section {
-        padding: 60px 0;
         margin-top: 60px;
     }
 
@@ -103,7 +112,6 @@
 
 @media screen and (max-width: 767px) {
     .survey-section {
-        padding: 40px 0px;
         margin-top: 40px;
     }
 

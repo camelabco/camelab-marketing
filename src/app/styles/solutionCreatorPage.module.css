@@ -55,7 +55,6 @@
 }
 
 .ultimate-hub-section {
-    padding: 80px 0;
     background: linear-gradient(180deg, #F2F5F7 0%, #FFFFFF 100%);
 }
 
@@ -130,9 +129,6 @@
 }
 
 /* revolutionize-section */
-.revolutionize-section {
-    padding: 80px 0;
-}
 
 .revolutionize-section .text-content h3 {
     text-align: start;
@@ -140,10 +136,6 @@
 
 .revolutionize-section .text-content h6 {
     text-align: start;
-}
-
-.revolutionize-section .animated-section {
-    padding-top: 160px;
 }
 
 .revolutionize-section .revolutionize-img {
@@ -155,10 +147,6 @@
         top: -20px;
         left: 17%;
         width: 70%;
-    }
-
-    .revolutionize-section .animated-section {
-        padding-top: 80px;
     }
 }
 
@@ -195,16 +183,9 @@
 }
 
 @media screen and (max-width: 767px) {
-    .revolutionize-section {
-        padding: 60px 0;
-    }
     .ultimate-hub-section .hub-text-content {
         margin-top: 30px;
         gap: 0;
-    }
-
-    .revolutionize-section .animated-section {
-        padding-top: 40px;
     }
 
     .newcreator-section h4 {
@@ -215,16 +196,9 @@
     .newcreator-section {
         padding: 30px 16px;
     }
-
-    .ultimate-hub-section {
-        padding: 60px 0;
-    }
 }
 
 @media screen and (max-width: 520px) {
-    .revolutionize-section {
-        padding: 40px 0;
-    }
     .newcreator-section .profile-img-text h6 {
         font-size: 14px;
         line-height: 20px;
@@ -240,12 +214,9 @@
         line-height: 20px;
     }
 
-    .ultimate-hub-section {
-        padding: 40px 0;
-    }
     .ultimate-hub-section .hub-text-content .text-content h4 {
         font-size: 18px;
         line-height: 22px;
     }
-    
+
 }
