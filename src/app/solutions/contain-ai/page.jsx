@@ -25,7 +25,7 @@ export default function ContainAiPage() {
 
             <section className={ContainAiStyles['visual-search-section']}>
                 <div className='container common-spacing'>
-                    <div className='row'>
+                <div className={`row ${ContainAiStyles['section-row']}`}>
                         <div className='col-lg-6'>
                             <div className={ContainAiStyles['img-content']}>
                                 <Image src='/images/content-ai/visual-search.png' alt='visual search image' height={418} width={536} layout="responsive" />
@@ -77,7 +77,7 @@ export default function ContainAiPage() {
 
             <section className={ContainAiStyles['personalized-section']}>
                 <div className='container common-spacing'>
-                    <div className='row align-items-center'>
+                <div className={`row align-items-center ${ContainAiStyles['section-row']}`}>
                         <div className='col-lg-6'>
                             <div className={ContainAiStyles['img-content']}>
                                 <Image src='/images/content-ai/personalized.svg' alt='section image' height={418} width={536} layout="responsive" />
@@ -99,7 +99,7 @@ export default function ContainAiPage() {
 
             <section className={ContainAiStyles['review-section']}>
                 <div className='container common-spacing'>
-                    <div className='row align-items-center'>
+                <div className={`row align-items-center ${ContainAiStyles['section-row']}`}>
                         <div className='col-lg-6'>
                             <div className={ContainAiStyles['img-content']}>
                                 <Image src='/images/content-ai/client-testimonial.png' alt='section image' height={418} width={536} layout="responsive" />
@@ -122,7 +122,7 @@ export default function ContainAiPage() {
 
             <section className={ContainAiStyles['analysis-section']}>
                 <div className='container common-spacing'>
-                    <div className='row align-items-center'>
+                <div className={`row align-items-center ${ContainAiStyles['reverse-row']} ${ContainAiStyles['section-row']}`}>
                         <div className='col-lg-6'>
                             <div className={ContainAiStyles['text-content']}>
                                 <h3 className='main-heading'>
@@ -145,7 +145,7 @@ export default function ContainAiPage() {
 
             <section className={ContainAiStyles['scale-section']}>
                 <div className='container'>
-                    <div className='row align-items-center'>
+                <div className={`row align-items-cente ${ContainAiStyles['section-row']}`}>
                         <div className='col-lg-6'>
                             <div className={ContainAiStyles['img-content']}>
                                 <Image src='/images/content-ai/scale-img.png' alt='section image' height={418} width={536} layout="responsive" />
@@ -167,7 +167,7 @@ export default function ContainAiPage() {
 
             <section className={ContainAiStyles['visulize-section']}>
                 <div className='container common-spacing'>
-                    <div className='row align-items-center'>
+                <div className={`row align-items-center ${ContainAiStyles['reverse-row']} ${ContainAiStyles['section-row']}`}>
                         <div className='col-lg-6'>
                             <div className={ContainAiStyles['text-content']}>
                                 <h3 className='main-heading'>

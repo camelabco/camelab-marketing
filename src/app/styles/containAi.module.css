@@ -81,6 +81,34 @@
   }
 
   .section-row{
-    gap:60px;
+    gap:40px;
+  }
+
+  .visual-search-section .text-content {
+    padding-left: 0px;
+  }
+  
+  .scoring-section .img-content {
+    padding-left: 0px;
+  }
+  
+  .personalized-section .img-content {
+    padding-right: 0px;
+  }
+  
+  .review-section .img-content {
+    padding-right: 0px;
+  }
+  
+  .analysis-section .img-content {
+    padding-left: 0px;
+  }
+  
+  .scale-section .img-content {
+    padding-right: 0px;
+  }
+  
+  .visulize-section .img-content {
+    padding-left: 0px;
   }
 }
