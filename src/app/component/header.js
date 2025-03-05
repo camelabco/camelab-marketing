@@ -130,10 +130,10 @@ function Header() {
         <NavDropdown.Item  href="/solutions/surveys-polls" className={headerStyles['dropdown-link']}>
           Surveys & Polls
         </NavDropdown.Item>
-        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item  href="/solutions/shopper-marketing" className={headerStyles['dropdown-link']}>
           Shopper Marketing
         </NavDropdown.Item>
-        <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>
+        <NavDropdown.Item  href="/solutions/newProductLaunch" className={headerStyles['dropdown-link']}>
           New Product Launches
         </NavDropdown.Item>
         <NavDropdown.Item  href="#" className={headerStyles['dropdown-link']}>

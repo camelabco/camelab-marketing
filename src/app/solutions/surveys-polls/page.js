@@ -1,3 +1,4 @@
+"use client"
 import AnimatedImgSection from '@/app/component/animatedImgSection'
 import Brands from '@/app/component/brands';
 import Footer from '@/app/component/footer'
@@ -6,6 +7,9 @@ import SolutionsHeroSectionStyle from "@/app/styles/solutionsHeroSection.module.
 import solutionCommonStyle from "@/app/styles/solutionCommon.module.css";
 import React from 'react'
 import Image from 'next/image';
+import BlogsSection from '@/app/component/blogsSection';
+import FAQ from '@/app/component/FAQ';
+import NewsletterSection from '@/app/component/newsletterSection';
 
 export default function page() {
   return (
@@ -112,6 +116,37 @@ export default function page() {
           </div>
         </div>
       </div>
+      {/* Brands Trust */}
+      <div className={`${solutionCommonStyle['brands-trust']} common-spacing`}>
+        <div className="container">
+          <h3 className='main-heading text-center'>Why Top Brands Trust Camelab</h3>
+          <div className={`${solutionCommonStyle['brands-content']}`}>
+            <div className="row">
+              <div className="col-lg-8">
+                <div className='d-flex flex-column justify-content-center h-100'>
+                  <h4>Sir Kensington’s Uses Community Surveys to Create Eater Profiles in Audience Targeting</h4>
+                  <p className='section-text'>Unilever’s Sir Kensington’s brand launched its Taste Buds community and deploys surveys and polls often to understand its audience better and inform media targeting. See how they achieved more than 50,000 survey responses. </p>
+                  <div className='d-flex justify-content-center justify-content-lg-start w-100'><button className='primary-button white'>View Case Study</button></div>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <Image src='/images/surveysandpolls/brands-trust-img1.png' width={336} height={380} layout='responsive' alt='img' />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Blogs Section */}
+      <BlogsSection />
+      {/* faq section */}
+      <FAQ />
+
+      {/* news letter */}
+      <NewsletterSection smallNewsletter={true} />
+
+
       <Footer />
     </div>
   )
