@@ -3,7 +3,7 @@ import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import CardsStyles from "@/app/styles/cards.module.css";
 
-const Card = ({ heading, cards }) => {
+const Cards = ({ heading, cards }) => {
   return (
     <section className= {`${CardsStyles["card-section"]} common-spacing`}>
       <Container>
@@ -34,4 +34,4 @@ const Card = ({ heading, cards }) => {
   );
 };
 
-export default Card;
+export default Cards;

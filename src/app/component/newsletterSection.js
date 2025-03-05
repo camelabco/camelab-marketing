@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import newletterStyles from '@/app/styles/newsletter.module.css';
 
 const NewsletterSection = ({ heading = 'Don’t miss out on the power of user-generated content', description = 'With our advanced platform and a world class team ready to help you, it’s easy to get started with TINT. - for camelab', smallNewsletter = false }) => {
-  // const [smallNewsletter, setsmallNewsletter] = useState(false)
   return (
     <>
       {smallNewsletter ? (<section className={newletterStyles['newsletter-section']}>

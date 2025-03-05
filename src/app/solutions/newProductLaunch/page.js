@@ -10,6 +10,32 @@ import Image from 'next/image';
 import BlogsSection from '@/app/component/blogsSection';
 import FAQ from '@/app/component/FAQ';
 import NewsletterSection from '@/app/component/newsletterSection';
+import Cards from '@/app/component/cards';
+const commonCards =[
+  {
+    imageSrc: "/images/cards/card_9.svg",
+    title: "Fast & Easy to Launch",
+    description:
+      "Launch a fully customizable owned community in 4 weeks, no coding required.",
+  },
+  {
+    imageSrc: "/images/cards/card_10.svg",
+    title: "20+ Survey Question Types",
+    description:
+      "Deliver tailored surveys to collect audience feedback.",
+  },
+  {
+    imageSrc: "/images/cards/card_11.svg",
+    title: "Dynamic Profiles & Grouping",
+    description:
+      "Survey data is linked to each consumer’s profile, enabling audience segmentation by traits.",
+  },
+  {
+    imageSrc: "/images/cards/card_12.svg",
+    title: "Survey Personalization",
+    description: "Camelab’s survey platform adapts in real time to gather precise insights from the right audience.",
+  }
+]
 const blogData = [
     {
         imgSrc: '/images/blog/blog7.png',
@@ -116,7 +142,7 @@ export default function page() {
                     </div>
                 </div>
             </div>
-
+            <Cards heading='Smart & Personalized Surveys' cards={commonCards} />
     
             {/* Brands Trust */}
             <div className={`${solutionCommonStyle['brands-trust']} common-spacing`}>
