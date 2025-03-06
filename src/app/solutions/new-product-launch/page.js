@@ -112,7 +112,7 @@ export default function page() {
             {/*  */}
             <div className={`common-spacing`}>
                 <div className="container">
-                    <div className="row g-4">
+                    <div className="row g-4 align-items-center">
                         <div className="col-lg-6">
                             <Image src='/images/Client-Testimonial-img.svg' width={536} height={604} layout='responsive' />
                         </div>

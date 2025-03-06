@@ -93,18 +93,7 @@ body {
 }
 
 .white.primary-button:hover {
-  background-color: var(--purple);
-  color: white;
-}
-
-.white.primary-button {
-  background-color: white;
-  color: var(--purple);
-  border: 1px solid white;
-}
-
-.white.primary-button:hover {
-  background-color: var(--purple);
+  background-color: transparent;
   color: white;
 }
 
@@ -680,6 +669,10 @@ body {
   .primary-button {
     padding: 6px 24px;
     font-size: 16px;
+  }
+
+  .curve-carousel-container img {
+    height:300px;
   }
 }
 

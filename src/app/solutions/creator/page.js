@@ -45,13 +45,16 @@ export default function page() {
     autoplayHoverPause: true,
     responsive: {
       0: {
-        items: 1
+        items: 2
       },
       600: {
         items: 3
       },
       1000: {
         items: 6
+      },
+      1500: {
+        items: 8
       }
     }
   };
@@ -92,7 +95,7 @@ export default function page() {
             <div className={`${SolutionCreatorStyle['profile-img-text']}`}><Image width={72} height={24} src="/images/solution-creator/profiles-logo.png" alt="logo" />
               <h6>900K+ have become new creators</h6></div>
             <h4>Over 60% of marketers say influencer content not only boosts conversions but also enhances brand trust and authenticity.</h4>
-            <button className={`${SolutionCreatorStyle['primary-button']} primary-button`}>Become a Creator</button>
+            <button className= 'primary-button white'>Become a Creator</button>
           </div>
         </div>
       </section>
@@ -148,7 +151,7 @@ export default function page() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7">
+            <div className="col-lg-6 offset-lg-1">
               <div className={`${SolutionCreatorStyle['revolutionize-img']} d-flex align-items-center`}>
                 <Image width={536} height={445} layout='responsive' src="/images/solution-creator/revolutionize.png" alt="img" />
               </div>

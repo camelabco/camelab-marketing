@@ -20,12 +20,10 @@ export default function AnimatedImgSection({ reverse = false , heighLight="", ti
                         <div className={`${animatedImgStyles['order-image-section']}`}>
                             <div className={`${animatedImgStyles['order-img-div']}`}>
                                 <div className={`${animatedImgStyles['like-section']}`}>
-                                    <div className={`${animatedImgStyles['like-img']}`}>
                                         <Image
                                             src={require('../../assets/images/animated-img/like.svg').default}
                                             alt="like image"
                                         />
-                                    </div>
                                     <div className={`${animatedImgStyles['like-text']}`}><h3>180k </h3></div>
                                 </div>
                                 <Image
@@ -34,12 +32,10 @@ export default function AnimatedImgSection({ reverse = false , heighLight="", ti
                                     className={`${animatedImgStyles['order-img']}`}
                                 />
                                 <div className={`${animatedImgStyles['comment-section']}`}>
-                                    <div className={`${animatedImgStyles['comment-img']}`}>
                                         <Image
                                             src={require('../../assets/images/animated-img/comment.svg').default}
                                             alt="comment image"
                                         />
-                                    </div>
                                     <div className={`${animatedImgStyles['like-text']}`}><h3> 45k </h3></div>
                                 </div>
                             </div>

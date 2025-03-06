@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import newletterStyles from '@/app/styles/newsletter.module.css';
 
-const NewsletterSection = ({ heading = 'Don’t miss out on the power of user-generated content', description = 'With our advanced platform and a world class team ready to help you, it’s easy to get started with TINT. - for camelab', smallNewsletter = false }) => {
+const NewsletterSection = ({ heading = 'Don’t miss out on the power of user-generated content', description = 'With our advanced platform and a world class team ready to help you, it’s easy to get started with TINT. - for camelab', smallNewsletter = false, isButton=false ,buttonText='Learn More' }) => {
   return (
     <>
       {smallNewsletter ? (<section className={newletterStyles['newsletter-section']}>
@@ -25,6 +25,7 @@ const NewsletterSection = ({ heading = 'Don’t miss out on the power of user-ge
               <div className={newletterStyles['left-part']}>
                 <h6>{heading}</h6>
                 <p>{description}</p>
+                {isButton?(<button className={`${newletterStyles["newsletter-btn"]} primary-button white mt-4`}>{buttonText}</button>): (<></>)}
               </div>
               <div className={newletterStyles['right-part']}>
                 <div className='d-flex flex-column align-items-lg-end justify-content-lg-end gap-3'>

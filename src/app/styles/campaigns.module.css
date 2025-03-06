@@ -85,6 +85,11 @@
 .review-section .review-slider {
   margin-top: 40px;
 }
+
+.client-section .brands-part{
+  margin-top: 80px;
+}
+
 @media only screen and (max-width: 1280px) {
   .review-section .img-content {
     padding-right: 40px;
@@ -98,8 +103,15 @@
   .review-section .img-content {
     padding-right: 0px;
   }
+
+  .client-section .brands-part{
+    margin-top: 60px;
+  }
 }
 @media (max-width: 768px) {
+  .client-section .brands-part{
+    margin-top: 40px;
+  }
 }
 @media (max-width: 520px) {
   .build-section

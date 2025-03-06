@@ -63,7 +63,7 @@ export default function page() {
     <div>
       <Header />
       <section className={`${CampaignStyles["experience-section"]} common-spacing`}>
-        <Container>
+        <div className="container">
           <div className={`${CampaignStyles["experience-info"]} text-center`}>
             <h3 className="main-heading">
               <span> Experience </span>Builder
@@ -88,7 +88,7 @@ export default function page() {
               layout="responsive"
             />
           </div>
-        </Container>
+        </div>
       </section>
       <section className={`${CampaignStyles["build-section"]} common-spacing`}>
         <Container>
@@ -320,8 +320,9 @@ export default function page() {
             innovative solutions empower clients and partners to realize their
             business aspirations
           </p>
-          <div className="common-spacing"></div>
+          <div className={CampaignStyles["brands-part"]}>
           <Brands />
+          </div>
         </div>
       </section>
 

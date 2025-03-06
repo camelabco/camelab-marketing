@@ -43,18 +43,6 @@
     max-width: 68%;
 }
 
-.newcreator-section .primary-button {
-    background-color: white;
-    color: var(--purple);
-    border: 1px solid white;
-}
-
-.newcreator-section .primary-button:hover {
-    background-color: var(--purple);
-    color: white;
-    border: 1px solid white;
-}
-
 .ultimate-hub-section {
     background: linear-gradient(180deg, #F2F5F7 0%, #FFFFFF 100%);
 }

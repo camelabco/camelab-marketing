@@ -97,7 +97,7 @@ export default function page() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <Image src='/images/surveysandpolls/track-audience.png' width={536} height={604} layout='responsive' />
+              <Image src='/images/surveysandpolls/track-audience.svg' width={536} height={604} layout='responsive' />
             </div>
             <div className="col-lg-6">
               <div className='d-flex flex-column justify-content-center h-100'>
