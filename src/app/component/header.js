@@ -142,7 +142,7 @@ function Header() {
         </NavDropdown.Item>
       </NavDropdown>
             <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/features') ? headerStyles['active-page'] : ''} underline`}>Features</Link>
-            <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
+            <Link  href="/success-stories" className={`${headerStyles['header-links']} ${isActive('/success-stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
             {/* <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/pricing') ? headerStyles['active-page'] : ''} underline`}>Pricing</Link> */}
             <NavDropdown
            className="solution-dropdown"
@@ -184,7 +184,7 @@ function Header() {
        
       </NavDropdown>
 
-            <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/creators') ? headerStyles['active-page'] : ''} underline`}>Creators</Link>
+            <Link  href="/creators" className={`${headerStyles['header-links']} ${isActive('/creators') ? headerStyles['active-page'] : ''} underline`}>Creators</Link>
               {/* <Link href="/about" className={`${headerStyles['header-links']} ${isActive('/about') ? headerStyles['active-page'] : ''} underline`}>About Us</Link>
               <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''} underline`}>Contact Us</Link> */}
             </Nav>

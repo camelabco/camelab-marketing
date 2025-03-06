@@ -10,7 +10,18 @@ import Footer from "@/app/component/footer";
 import ReviewSlider from "@/app/component/reviewSlider";
 
 export default function page() {
-  const commonCards =[
+  const cardData = [
+    { imgSrc: "/images/campaigns/small_card_1.svg", title: "Sweepstakes" },
+    { imgSrc: "/images/campaigns/small_card_2.svg", title: "Launch Countdown" },
+    { imgSrc: "/images/campaigns/small_card_3.svg", title: "Social Contests" },
+    { imgSrc: "/images/campaigns/small_card_4.svg", title: "Social Galleries" },
+    { imgSrc: "/images/campaigns/small_card_5.svg", title: "Polls & Upvotes" },
+    { imgSrc: "/images/campaigns/small_card_6.svg", title: "Landing Pages" },
+    { imgSrc: "/images/campaigns/small_card_1.svg", title: "Influencer Collaboration" },
+    { imgSrc: "/images/campaigns/small_card_1.svg", title: "Tag-o-War" },
+    { imgSrc: "/images/campaigns/small_card_1.svg", title: "Live Counter" },
+  ];
+  const commonCards = [
     {
       imageSrc: "/images/campaigns/card_1.svg",
       title: "Pre-built layouts",
@@ -102,150 +113,25 @@ export default function page() {
             <div
               className={`${CampaignStyles["build-small-card"]} d-flex justify-content-center align-items-center flex-wrap`}
             >
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_1.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
+              {cardData.map((card, index) => (
+                <div
+                  key={index}
+                  className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
+                >
+                  <div className={CampaignStyles["build-small-card-img-section"]}>
+                    <Image
+                      src={card.imgSrc}
+                      alt={`${card.title} img`}
+                      width={24}
+                      height={24}
+                      className={CampaignStyles["build-small-card-img"]}
+                    />
+                  </div>
+                  <div className={CampaignStyles["build-small-card-text"]}>
+                    {card.title}
+                  </div>
                 </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Sweepstakes
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_2.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Launch Countdown
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_3.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Social Contests
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_4.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Social Galleries
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_5.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Polls & Upvotes
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_6.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Landing Pages
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_1.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Influencer Collaboration
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_1.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Tag-o-War
-                </div>
-              </div>
-              <div
-                className={`${CampaignStyles["build-small-card-info"]} d-flex justify-content-center align-items-center`}
-              >
-                <div className={CampaignStyles["build-small-card-img-section"]}>
-                  <Image
-                    src="/images/campaigns/small_card_1.svg"
-                    alt="build small card img"
-                    width={24}
-                    height={24}
-                    className={CampaignStyles["build-small-card-img"]}
-                  />
-                </div>
-                <div className={CampaignStyles["build-small-card-text"]}>
-                  Live Counter
-                </div>
-              </div>
+              ))}
             </div>
             <div className={`${CampaignStyles["build-travel"]}`}>
               <Image

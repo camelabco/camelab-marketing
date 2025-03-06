@@ -2,7 +2,6 @@
 import Brands from '@/app/component/brands';
 import Footer from '@/app/component/footer'
 import Header from '@/app/component/header'
-import SolutionsHeroSectionStyle from "@/app/styles/solutionsHeroSection.module.css";
 import solutionCommonStyle from "@/app/styles/solutionCommon.module.css";
 import React from 'react'
 import Image from 'next/image';
@@ -59,7 +58,7 @@ export default function page() {
     return (
         <div>
             <Header />
-            <div className={`${SolutionsHeroSectionStyle['hero-section']} common-spacing`}>
+            <div className={`hero-section common-spacing`}>
                 <SolutionsHeroSection title='Shopper Marketing Powered by' heighLight='Community' description='Whether boosting in-store traffic, leveraging e-commerce, or balancing both, Camelab’s community platform maximizes your shopper marketing impact.' />
             </div>
             <Brands />
