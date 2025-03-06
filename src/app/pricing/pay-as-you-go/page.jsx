@@ -6,6 +6,7 @@ import ContainAiStyles from '@/app/styles/contentAi.module.css';
 import Image from 'next/image';
 import ReviewSlider from '@/app/component/reviewSlider';
 import NewsletterSection from '@/app/component/newsletterSection';
+import BlogsSection from '@/app/component/blogsSection';
 
 export default function PayAsYouGoPage() {
     return (
@@ -93,6 +94,8 @@ export default function PayAsYouGoPage() {
                     </div>
                 </div>
             </section>
+
+            <BlogsSection/>
 
             <NewsletterSection heading='Revolutionize Collaboration with Creators & Influencers' description='Simplify influencer partnerships, expand your reach, unlock growth opportunities, and create meaningful connections with your audience.'/>
             
