@@ -3,7 +3,6 @@ import AnimatedImgSection from '@/app/component/animatedImgSection'
 import Brands from '@/app/component/brands';
 import Footer from '@/app/component/footer'
 import Header from '@/app/component/header'
-import SolutionsHeroSectionStyle from "@/app/styles/solutionsHeroSection.module.css";
 import solutionCommonStyle from "@/app/styles/solutionCommon.module.css";
 import React from 'react'
 import Image from 'next/image';
@@ -41,7 +40,7 @@ export default function page() {
   return (
     <div>
       <Header />
-      <div className={`${SolutionsHeroSectionStyle['hero-section']} common-spacing`}>
+      <div className={`hero-section common-spacing`}>
         <AnimatedImgSection title='Gather On-Demand Insights with Community Powered' heighLight='Surveys & Polls' description='Harness real-time data collection to make informed decisions, adapt to changing trends, and keep your finger on the pulse of your audience’s preferences.' />
       </div>
       <Brands />

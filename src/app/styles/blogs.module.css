@@ -64,4 +64,8 @@
     .blogs-section p {
         margin: 0;
     }
+    .blogs-section h4 {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
 }

@@ -17,20 +17,20 @@
   margin-top: 32px;
 }
 
-.build-section .build-info .build-small-card {
+.build-small-card {
   gap: 8px;
   margin-top: 40px;
+  transition: all 0.47s ease-in-out;
 }
-.build-section .build-info .build-small-card .build-small-card-info {
+.build-small-card .build-small-card-info {
   gap: 8px;
-  transition: all 0.3s ease;
+  transition: all 0.47s ease-in-out;
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 8px;
+  cursor: pointer;
 }
 
-.build-section
-  .build-info
   .build-small-card
   .build-small-card-info
   .build-small-card-text {
@@ -39,21 +39,16 @@
   line-height: 22px;
   color: var(--text-secondary);
 }
-.build-section .build-info .build-small-card .build-small-card-info:hover {
+.build-small-card .build-small-card-info:hover {
   border: 1px solid var(--purple);
   border-radius: 8px;
   background-color: #f4783c14;
 }
-.build-section
-  .build-info
   .build-small-card
   .build-small-card-info:hover
   .build-small-card-text {
   color: var(--purple);
-  cursor: pointer;
 }
-.build-section
-  .build-info
   .build-small-card
   .build-small-card-info:hover
   .build-small-card-img {
@@ -102,8 +97,6 @@
 @media (max-width: 768px) {
 }
 @media (max-width: 520px) {
-  .build-section
-    .build-info
     .build-small-card
     .build-small-card-info
     .build-small-card-img-section
@@ -122,19 +115,17 @@
   .build-section .build-info .build-travel .build-travel-img-section {
     max-width: calc(50% - 8px);
   }
-  .build-section
-    .build-info
     .build-small-card
     .build-small-card-info
     .build-small-card-text {
     font-size: 12px;
     line-height: 0px;
   }
-  .build-section .build-info .build-small-card .build-small-card-info {
+.build-small-card .build-small-card-info {
     gap: 0px;
     padding: 4px;
   }
-  .build-section .build-info .build-small-card {
+.build-small-card {
     gap: 4px;
     margin-top: 0px;
   }

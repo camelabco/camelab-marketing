@@ -41,7 +41,8 @@
     margin-left: 24px;
     margin-right: 0;
 }
-[dir="rtl"] .cliet-review{
+
+[dir="rtl"] .cliet-review {
     margin-right: 86px;
 }
 
@@ -97,7 +98,8 @@
 }
 
 .banner-text span {
-    background: linear-gradient(193.88deg, #FF7A00 0%, #F2B643 90.09%);;
+    background: linear-gradient(193.88deg, #FF7A00 0%, #F2B643 90.09%);
+    ;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -111,16 +113,19 @@
     padding: 64px 0px 80px 120px;
     overflow: hidden;
 }
-.slider-container .left-contante-container{
+
+.slider-container .left-contante-container {
     max-width: 70%;
 }
-.slider-container .left-content{
+
+.slider-container .left-content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     height: 100%;
 }
+
 .slider-container .left-content p {
     width: 100%;
     margin-bottom: 40px;
@@ -180,15 +185,16 @@
 
 .img-part {
     display: flex;
-    margin-top:20px;
+    margin-top: 20px;
     align-items: center;
 }
 
-.client-img-part{
+.client-img-part {
     margin-top: 20%;
     width: 100%;
     height: auto;
 }
+
 .img-set {
     display: flex;
     flex-direction: column;
@@ -269,7 +275,7 @@
     margin: 0 auto 0 0;
 }
 
-.client-img{
+.client-img {
     width: 80%;
 }
 
@@ -328,15 +334,16 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--purple);
+    background-color: white;
     border: 1px solid var(--purple);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
 
 .review-owlcarousel .circle-btn.left-btn {
-    background-image: url(../assets/images/landing/white-arrow-left.svg);
+    background-image: url(../assets/images/landing/arrow-left.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -345,7 +352,7 @@
 }
 
 .review-owlcarousel .circle-btn.right-btn {
-    background-image: url(../assets/images/landing/white-arrow-right.svg);
+    background-image: url(../assets/images/landing/arrow-right.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -354,33 +361,37 @@
 }
 
 .review-owlcarousel .circle-btn:hover {
-    background-color: var(--background-paper);
+    background-color: var(--purple);
 }
 
 .review-owlcarousel .circle-btn:hover.left-btn {
-    background-image: url(../assets/images/landing/arrow-left.svg);
+    background-image: url(../assets/images/landing/white-arrow-left.svg);
+    box-shadow: 0px 0px 14px 0px #F4783C99;
 }
 
 .review-owlcarousel .circle-btn:hover.right-btn {
-    background-image: url(../assets/images/landing/arrow-right.svg);
+    background-image: url(../assets/images/landing/white-arrow-right.svg);
+    box-shadow: 0px 0px 14px 0px #F4783C99;
 }
 
-.client-img{
+.client-img {
     width: 80%;
 }
 
 /* responsive css */
-@media  screen and (min-width: 1440) {
-    .slider-container .left-content{
+@media screen and (min-width: 1440) {
+    .slider-container .left-content {
         max-width: 80% !important;
-    } 
-       
+    }
+
 }
-@media  screen and (max-width: 1440px){
-    .client-img{
+
+@media screen and (max-width: 1440px) {
+    .client-img {
         width: 100%;
     }
-    .slider-container .left-contante-container{
+
+    .slider-container .left-contante-container {
         width: 100%;
         max-width: 100%;
     }
@@ -416,6 +427,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .create-videos .text-part ul li {
         font-size: 20px;
     }
@@ -428,7 +440,8 @@
     .our-client {
         padding: 60px 0;
     }
-    .our-client .text-part{
+
+    .our-client .text-part {
         padding: 0;
     }
 
@@ -449,9 +462,11 @@
     .review-owlcarousel .changing-btn {
         margin-left: 40px;
     }
+
     .review-owlcarousel .circle-btn.right-btn {
         right: -10%;
     }
+
     .review-owlcarousel .circle-btn.left-btn {
         left: 80%;
     }
@@ -462,29 +477,35 @@
         right: -5%;
     }
 }
+
 @media screen and (max-width: 991px) {
     .slider-section {
         padding: 35px 0;
     }
-    .our-value{
+
+    .our-value {
         padding: 35px 0;
     }
+
     .creations {
         padding: 40px 0;
     }
+
     .create-videos {
         padding: 35px 0;
     }
-    .content-creator{
+
+    .content-creator {
         padding: 35px 0;
     }
-    
-   
+
+
     .our-value .sub-card {
         display: grid;
         margin: auto;
         margin-bottom: 25px;
     }
+
     .create-videos .text-part ul li {
         margin-bottom: 5px;
     }
@@ -501,18 +522,20 @@
     .our-client {
         padding: 40px 0;
     }
-    .our-client .text-part{
+
+    .our-client .text-part {
         padding: 0;
         margin-top: 40px;
     }
+
     .client-img-part {
         width: 80%;
         height: auto;
         margin: auto;
     }
 
-    .client-img-part img{
-        width:100%;
+    .client-img-part img {
+        width: 100%;
         height: auto;
     }
 
@@ -586,7 +609,8 @@
         top: 25px;
         right: 0%;
     }
-    .signup-part{
+
+    .signup-part {
         justify-content: center;
     }
 }
@@ -645,6 +669,7 @@
     .client-img-part {
         width: 100%;
     }
+
     .review-owlcarousel .cliet-name h4 {
         font-size: 18px;
 
@@ -657,6 +682,9 @@
 
     .review-owlcarousel .changing-btn {
         margin-left: 40px;
+    }
+    .review-owlcarousel{
+        margin-bottom: 60px;
     }
 
     .creations-img {
@@ -680,6 +708,7 @@
     .our-client .cliet-review {
         padding-bottom: 95px;
     }
+
     .create-videos .text-part ul li {
         margin-bottom: 0px;
     }
@@ -707,6 +736,7 @@
     .our-value {
         padding: 30px 0 0 0;
     }
+
     .core-cards {
         margin-top: 40px;
     }
@@ -755,11 +785,12 @@
     }
 }
 
-.slider-content{
+.slider-content {
     position: relative;
     padding-left: 20px;
 }
-.slider-content::before{
+
+.slider-content::before {
     position: absolute;
     content: "";
     width: 20%;
@@ -769,7 +800,8 @@
     transform: rotate(180deg);
     left: 0;
 }
-[dir="rtl"] .slider-content::before{
+
+[dir="rtl"] .slider-content::before {
     right: 0;
     left: auto;
     transform: rotate(0deg);

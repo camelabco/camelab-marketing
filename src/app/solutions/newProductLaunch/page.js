@@ -3,7 +3,6 @@ import SolutionsHeroSection from '@/app/component/solutionsHeroSection';
 import Brands from '@/app/component/brands';
 import Footer from '@/app/component/footer'
 import Header from '@/app/component/header'
-import SolutionsHeroSectionStyle from "@/app/styles/solutionsHeroSection.module.css";
 import solutionCommonStyle from "@/app/styles/solutionCommon.module.css";
 import React from 'react'
 import Image from 'next/image';
@@ -58,7 +57,7 @@ export default function page() {
     return (
         <div>
             <Header />
-            <div className={`${SolutionsHeroSectionStyle['hero-section']} common-spacing`}>
+            <div className={`hero-section common-spacing`}>
                 <SolutionsHeroSection title='Ensure a Successful Product Launch With' heighLight='Community Powered Marketing' description='Harness authentic UGC and reviews with Camelab to gain key insights and ensure go-to-market success, driving immediate sales impact.' src='/images/hero-section/new-product.png' />
             </div>
             <Brands />
