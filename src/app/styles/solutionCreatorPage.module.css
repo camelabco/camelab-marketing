@@ -52,6 +52,7 @@
 .newcreator-section .primary-button:hover {
     background-color: var(--purple);
     color: white;
+    border: 1px solid white;
 }
 
 .ultimate-hub-section {
