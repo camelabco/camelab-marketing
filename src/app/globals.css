@@ -87,6 +87,17 @@ body {
   border: 1px solid var(--purple);
 }
 
+.white.primary-button {
+  background-color: white;
+  color: var(--purple);
+  border: 1px solid white;
+}
+
+.white.primary-button:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
 /* content creator section */
 
 /* core card */
