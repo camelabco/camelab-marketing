@@ -6,16 +6,16 @@ import Col from 'react-bootstrap/Col';
 import animatedImgStyles from '../styles/animatedImg.module.css'
 
 
-export default function SolutionsHeroSection({ reverse = false, src = '/images/hero-section/shopper-marketing.png', heighLight = "", title = "Our Content Creators are ready to make Brand Collaboration", description = "Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging." }) {
+export default function SolutionsHeroSection({ reverse = false, src = '/images/hero-section/shopper-marketing.png', highLight = "", title = "Our Content Creators are ready to make Brand Collaboration", description = "Social is a user-generated content creation hub that connects brands with a community of over 17,000 Saudi based content creators. Brands can easily collaborate with these creators to produce authentic and engaging." , buttonText='Get Started'}) {
     return (
         <div className={`${animatedImgStyles['order-content-section']}`}>
             <Container>
                 <Row className={reverse ? 'flex-row-reverse' : ''}>
                     <Col lg={6} md={12} sm={12} className='d-flex align-items-center'>
                         <div className={`${animatedImgStyles['order-content-text-part']} px-4`}>
-                            <h3 className='main-heading'>{title} <span>{heighLight}</span></h3>
+                            <h3 className='main-heading'>{title} <span>{highLight}</span></h3>
                             <p className='secondary-text'>{description}</p>
-                            <div className={`${animatedImgStyles['button-part']}`}>  <button className='primary-button mt-3'>Order Now</button></div>
+                            <div className={`${animatedImgStyles['button-part']}`}>  <button className='primary-button mt-3'>{buttonText}</button></div>
                         </div>
                     </Col>
                     <Col lg={6} md={12} sm={12}>

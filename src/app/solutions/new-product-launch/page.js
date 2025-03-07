@@ -1,4 +1,3 @@
-"use client"
 import SolutionsHeroSection from '@/app/component/solutionsHeroSection';
 import Brands from '@/app/component/brands';
 import Footer from '@/app/component/footer'
@@ -58,7 +57,7 @@ export default function page() {
         <div>
             <Header />
             <div className={`hero-section common-spacing`}>
-                <SolutionsHeroSection title='Ensure a Successful Product Launch With' heighLight='Community Powered Marketing' description='Harness authentic UGC and reviews with Camelab to gain key insights and ensure go-to-market success, driving immediate sales impact.' src='/images/hero-section/new-product.png' />
+                <SolutionsHeroSection title='Ensure a Successful Product Launch With' highLight='Community Powered Marketing' description='Harness authentic UGC and reviews with Camelab to gain key insights and ensure go-to-market success, driving immediate sales impact.' src='/images/hero-section/new-product.png' />
             </div>
             <Brands />
             {/* survey-section */}

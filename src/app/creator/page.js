@@ -1,5 +1,3 @@
-"use client";
-
 import Header from '../component/header'
 import creatorStyle from "../styles/creator.module.css"
 import Container from 'react-bootstrap/Container';
