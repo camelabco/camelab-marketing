@@ -1,4 +1,3 @@
-"use client"
 import AnimatedImgSection from '@/app/component/animatedImgSection'
 import Brands from '@/app/component/brands';
 import Footer from '@/app/component/footer'
@@ -41,7 +40,7 @@ export default function page() {
     <div>
       <Header />
       <div className={`hero-section common-spacing`}>
-        <AnimatedImgSection title='Gather On-Demand Insights with Community Powered' heighLight='Surveys & Polls' description='Harness real-time data collection to make informed decisions, adapt to changing trends, and keep your finger on the pulse of your audience’s preferences.' />
+        <AnimatedImgSection title='Gather On-Demand Insights with Community Powered' highLight='Surveys & Polls' description='Harness real-time data collection to make informed decisions, adapt to changing trends, and keep your finger on the pulse of your audience’s preferences.' />
       </div>
       <Brands />
       {/* survey-section */}

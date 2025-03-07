@@ -85,7 +85,7 @@ export default function page() {
             <Header />
             {/*  */}
             <div className='common-spacing hero-section'>
-                <SolutionsHeroSection title='Here’s how Camelab empowers' heighLight='brands like yours' description='These 20+ brands drove engagement, boosted conversions, and scaled their marketing using Camelab' />
+                <SolutionsHeroSection title='Here’s how Camelab empowers' highLight='brands like yours' description='These 20+ brands drove engagement, boosted conversions, and scaled their marketing using Camelab' buttonText='Discover More' />
             </div>
             {/*  */}
             <Brands />

@@ -50,7 +50,7 @@ export default function page() {
 
             <Header />
             <section className={`hero-section common-spacing`}>
-                <SolutionsHeroSection title='900k+ creators ready to boost your' heighLight='brand with Camelab' description='Find top creators for your niche, hand-picked for quality and performance on TikTok and Meta with Camelab.' />
+                <SolutionsHeroSection title='900k+ creators ready to boost your' highLight='brand with Camelab' description='Find top creators for your niche, hand-picked for quality and performance on TikTok and Meta with Camelab.' buttonText='Discover More' />
             </section>
             {/*  */}
             <section className={`${Styles['creators-video-section']}`}>

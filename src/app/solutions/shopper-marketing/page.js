@@ -1,4 +1,3 @@
-"use client"
 import Brands from '@/app/component/brands';
 import Footer from '@/app/component/footer'
 import Header from '@/app/component/header'
@@ -59,7 +58,7 @@ export default function page() {
         <div>
             <Header />
             <div className={`hero-section common-spacing`}>
-                <SolutionsHeroSection title='Shopper Marketing Powered by' heighLight='Community' description='Whether boosting in-store traffic, leveraging e-commerce, or balancing both, Camelab’s community platform maximizes your shopper marketing impact.' />
+                <SolutionsHeroSection title='Shopper Marketing Powered by' highLight='Community' description='Whether boosting in-store traffic, leveraging e-commerce, or balancing both, Camelab’s community platform maximizes your shopper marketing impact.' />
             </div>
             <Brands />
             {/* survey-section */}

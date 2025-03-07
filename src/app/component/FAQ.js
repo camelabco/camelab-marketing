@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 import creatorStyle from "../styles/creator.module.css"

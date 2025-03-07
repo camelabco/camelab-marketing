@@ -66,8 +66,7 @@ export default function page() {
         <div className={`${solutionCommonStyle['heading-text-part']}`}>
           <h3 className={`main-heading text-center`}>
             Genuine Influencer Network to
-            Amplify <span>Impact & Engagement</span>
-          </h3>
+           </h3>
           <h6 className={`section-text text-center`}>
             Curate, analyze, interact, and transform standout content from top creators & influencers—effortlessly collaborate and elevate your brand with Camelab.
           </h6>
