@@ -25,11 +25,14 @@ function Header() {
   };
 
   const isActive = (path) => {
-    return typeof window !== 'undefined' && window.location.pathname === path;
+    return pathname === path;
   };
   const [showSolutions, setShowSolutions] = useState(false);
   const [showPricing, setShowPricing] = useState(false);
 
+
+  //   const [showMobileSolutions, setShowMobileSolutions] = useState(false);
+  // const [showPricing, setShowPricing] = useState(false);
   return (
     <>
       <Navbar expand="lg" className={`${headerStyles['header']} header`}>
@@ -37,7 +40,7 @@ function Header() {
           <Link href={'/'}>
             <Navbar.Brand className={`${headerStyles['navbar-brand']}`}>
               <Image
-                 className={`${headerStyles['header-logo']}`}
+                className={`${headerStyles['header-logo']}`}
                 src={require('../../assets/images/header/nav-logo.svg').default}
                 width={220}
                 height={70}
@@ -86,105 +89,110 @@ function Header() {
           </div>
           <Navbar.Collapse>
             <Nav className={`${headerStyles['leftside-links']} me-auto align-items-center`}>
-            {/* <Link href="/home" className={`${headerStyles['header-links']} ${isActive('/home') ? headerStyles['active-page'] : ''} underline`}
+              {/* <Link href="/home" className={`${headerStyles['header-links']} ${isActive('/home') ? headerStyles['active-page'] : ''} underline`}
               >Home</Link> */}
-           <NavDropdown
-           className="solution-dropdown"
-        title={
-          <span
-            className={`${headerStyles['dropdown-menu']} ${
-              isActive('/home') ? headerStyles['active-page'] : ''
-            } underline`}
-            onMouseEnter={() => setShowSolutions(true)}
-          >
-            Solutions
-            <Image
-              src={
-                showSolutions
-                  ? require('../../assets/images/header/up_arrow.svg').default
-                  : require('../../assets/images/header/down_arrow.svg').default
-              }
-              width={24}
-              height={22}
-              alt="dropdown arrow"
-              className={headerStyles['custom-arrow']}
-            />
-          </span>
-        }
-  
-        show={showSolutions}
-        onMouseEnter={() => setShowSolutions(true)}
-        onMouseLeave={() => setShowSolutions(false)} 
-      >
-        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
-          UGC
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/creator" className={headerStyles['dropdown-link']}>
-          Creators
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/solutions/content-ai" className={headerStyles['dropdown-link']}>
-          Content AI
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/solutions/campaigns" className={headerStyles['dropdown-link']}>
-          Campaigns
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/solutions/surveys-polls" className={headerStyles['dropdown-link']}>
-          Surveys & Polls
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/solutions/shopper-marketing" className={headerStyles['dropdown-link']}>
-          Shopper Marketing
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/solutions/new-product-launch" className={headerStyles['dropdown-link']}>
-          New Product Launches
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/solutions/events" className={headerStyles['dropdown-link']}>
-          Events
-        </NavDropdown.Item>
-      </NavDropdown>
-            <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/features') ? headerStyles['active-page'] : ''} underline`}>Features</Link>
-            <Link  href="/success-stories" className={`${headerStyles['header-links']} ${isActive('/success-stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
-            {/* <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/pricing') ? headerStyles['active-page'] : ''} underline`}>Pricing</Link> */}
-            <NavDropdown
-           className="solution-dropdown"
-        title={
-          <span
-            className={`${headerStyles['dropdown-menu']} ${
-              isActive('/home') ? headerStyles['active-page'] : ''
-            } underline`}
-            onMouseEnter={() => setShowPricing(true)}
-          >
-            Pricing
-            <Image
-              src={
-                showPricing
-                  ? require('../../assets/images/header/up_arrow.svg').default
-                  : require('../../assets/images/header/down_arrow.svg').default
-              }
-              width={24}
-              height={22}
-              alt="dropdown arrow"
-              className={headerStyles['custom-arrow']}
-            />
-          </span>
-        }
-  
-        show={showPricing}
-        onMouseEnter={() => setShowPricing(true)}
-        onMouseLeave={() => setShowPricing(false)} 
-      >
-        <NavDropdown.Item href="/pricing/pay-as-you-go" className={headerStyles['dropdown-link']}>
-          pay as you go
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/pricing/credit-packs" className={headerStyles['dropdown-link']}>
-         credit packs
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/pricing/enterprise" className={headerStyles['dropdown-link']}>
-          Enterprise
-        </NavDropdown.Item>
-       
-      </NavDropdown>
+              <NavDropdown
+                className="solution-dropdown"
+                title={
+                  <span
+                    className={`${headerStyles['dropdown-menu']} ${isActive('/solutions') ? headerStyles['active-page'] : ''
+                      } underline`}
+                    onMouseEnter={() => setShowSolutions(true)}
+                  >
+                    Solutions
+                    <Image
+                      src={
+                        showSolutions
+                          ? require('../../assets/images/header/up_arrow.svg').default
+                          : require('../../assets/images/header/down_arrow.svg').default
+                      }
+                      width={24}
+                      height={22}
+                      alt="dropdown arrow"
+                      className={headerStyles['custom-arrow']}
+                    />
+                  </span>
+                }
 
-            <Link  href="/creators" className={`${headerStyles['header-links']} ${isActive('/creators') ? headerStyles['active-page'] : ''} underline`}>Creators</Link>
+                show={showSolutions}
+                onMouseEnter={() => setShowSolutions(true)}
+                onMouseLeave={() => setShowSolutions(false)}
+              >
+                <NavDropdown.Item href="#" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/UGC') ? headerStyles['active-page'] : ''}`}>
+                  UGC
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  href="/solutions/creator"
+                  className={`${headerStyles['dropdown-link']} ${isActive('/solutions/creator') ? headerStyles['active-page'] : ''}`}
+                >
+                  Creators
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/solutions/content-ai"
+                  className={`${headerStyles['dropdown-link']} ${isActive('/solutions/content-ai') ? headerStyles['active-page'] : ''}`}
+                >
+                  Content AI
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="/solutions/campaigns"
+                  className={`${headerStyles['dropdown-link']} ${isActive('/solutions/campaigns') ? headerStyles['active-page'] : ''}`}>
+                  Campaigns
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/solutions/surveys-polls" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/surveys-polls') ? headerStyles['active-page'] : ''}`}>
+                  Surveys & Polls
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/solutions/shopper-marketing" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/shopper-marketing') ? headerStyles['active-page'] : ''}`}>
+                  Shopper Marketing
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/solutions/new-product-launch" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/new-product-launch') ? headerStyles['active-page'] : ''}`}>
+                  New Product Launches
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/solutions/events" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/events') ? headerStyles['active-page'] : ''}`}>
+                  Events
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Link href="#link" className={`${headerStyles['header-links']} ${isActive('/features') ? headerStyles['active-page'] : ''} underline`}>Features</Link>
+              <Link href="/success-stories" className={`${headerStyles['header-links']} ${isActive('/success-stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
+              {/* <Link  href="#" className={`${headerStyles['header-links']} ${isActive('/pricing') ? headerStyles['active-page'] : ''} underline`}>Pricing</Link> */}
+              <NavDropdown
+                className="solution-dropdown"
+                title={
+                  <span
+                    className={`${headerStyles['dropdown-menu']} ${isActive('/home') ? headerStyles['active-page'] : ''
+                      } underline`}
+                    onMouseEnter={() => setShowPricing(true)}
+                  >
+                    Pricing
+                    <Image
+                      src={
+                        showPricing
+                          ? require('../../assets/images/header/up_arrow.svg').default
+                          : require('../../assets/images/header/down_arrow.svg').default
+                      }
+                      width={24}
+                      height={22}
+                      alt="dropdown arrow"
+                      className={headerStyles['custom-arrow']}
+                    />
+                  </span>
+                }
+
+                show={showPricing}
+                onMouseEnter={() => setShowPricing(true)}
+                onMouseLeave={() => setShowPricing(false)}
+              >
+                <NavDropdown.Item href="/pricing/pay-as-you-go" className={`${headerStyles['dropdown-link']} ${isActive('/pricing/pay-as-you-go') ? headerStyles['active-page'] : ''}`}>
+                  pay as you go
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/pricing/credit-packs" className={`${headerStyles['dropdown-link']} ${isActive('/pricing/credit-packs') ? headerStyles['active-page'] : ''}`}>
+                  credit packs
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/pricing/enterprise" className={`${headerStyles['dropdown-link']} ${isActive('/pricing/enterprise') ? headerStyles['active-page'] : ''}`}>
+                  Enterprise
+                </NavDropdown.Item>
+
+              </NavDropdown>
+              <Link href="/creators" className={`${headerStyles['header-links']} ${isActive('/creators') ? headerStyles['active-page'] : ''} underline`}>Creators</Link>
               {/* <Link href="/about" className={`${headerStyles['header-links']} ${isActive('/about') ? headerStyles['active-page'] : ''} underline`}>About Us</Link>
               <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''} underline`}>Contact Us</Link> */}
             </Nav>
@@ -222,7 +230,7 @@ function Header() {
                   </span>Arabic
                 </NavDropdown.Item>
               </NavDropdown>
-              <Link href="/creator" className={`${headerStyles['header-links']} ${isActive('/creator') ? headerStyles['active-page'] : ''} underline me-3`}>Become a creator</Link>
+              <Link href="/become-creator" className={`${headerStyles['header-links']} ${isActive('/become-creator') ? headerStyles['active-page'] : ''}  underline me-3`}>Become a creator</Link>
               <Link href="#link" className={`${headerStyles['header-links']} me-0`}>
                 <button className={`${headerStyles['primary-button']} primary-button`} variant="primary">Login</button>
               </Link>
@@ -243,112 +251,103 @@ function Header() {
           </Link>
           </Offcanvas.Title>
           <Button variant="close" onClick={handleClose} aria-label="Close">
-        
           </Button>
         </Offcanvas.Header>
         <Offcanvas.Body className={`${headerStyles['offcanvas-body']}`}>
           <div className="d-flex flex-column">
-          {/* <Link href="/home" className={`${headerStyles['header-links']} ${isActive('/home') ? headerStyles['active-page'] : ''} underline`}
+            {/* <Link href="/home" className={`${headerStyles['header-links']} ${isActive('/home') ? headerStyles['active-page'] : ''} underline`}
               >Home</Link> */}
-                 <NavDropdown
-           className="solution-dropdown"
-        title={
-          <span
-            className={`${headerStyles['dropdown-menu']} ${
-              isActive('/home') ? headerStyles['active-page'] : ''
-            } underline`}
-            onMouseEnter={() => setShowSolutions(true)}
-          >
-            Solutions
-            <Image
-              src={
-                showSolutions
-                  ? require('../../assets/images/header/up_arrow.svg').default
-                  : require('../../assets/images/header/down_arrow.svg').default
+            <NavDropdown
+              className="solution-dropdown"
+              title={
+                <span
+                  className={`${headerStyles['dropdown-menu']} ${isActive('/home') ? headerStyles['active-page'] : ''
+                    } underline`}
+                >
+                  Solutions
+                  <Image
+                    src={
+                      showSolutions
+                        ? require('../../assets/images/header/up_arrow.svg').default
+                        : require('../../assets/images/header/down_arrow.svg').default
+                    }
+                    width={24}
+                    height={22}
+                    alt="dropdown arrow"
+                    className={headerStyles['custom-arrow']}
+                  />
+                </span>
               }
-              width={24}
-              height={22}
-              alt="dropdown arrow"
-              className={headerStyles['custom-arrow']}
-            />
-          </span>
-        }
-  
-        show={showSolutions}
-        onMouseEnter={() => setShowSolutions(true)}
-        onMouseLeave={() => setShowSolutions(false)} 
-      >
-        <NavDropdown.Item href="#" className={headerStyles['dropdown-link']}>
-          UGC
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/creator" className={headerStyles['dropdown-link']}>
-          Creators
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/content-ai" className={headerStyles['dropdown-link']}>
-          Content AI
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/campaigns" className={headerStyles['dropdown-link']}>
-          Campaigns
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/surveys-polls" className={headerStyles['dropdown-link']}>
-          Surveys & Polls
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/shopper-marketing" className={headerStyles['dropdown-link']}>
-          Shopper Marketing
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/new-product-launch" className={headerStyles['dropdown-link']}>
-          New Product Launches
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/solutions/events" className={headerStyles['dropdown-link']}>
-          Events
-        </NavDropdown.Item>
-      </NavDropdown>
-      <Link href="/features" className={`${headerStyles['header-links']} ${isActive('/features') ? headerStyles['active-page'] : ''} underline`}>Features</Link>
-            <Link href="/stories" className={`${headerStyles['header-links']} ${isActive('/stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
+              show={showSolutions}
+              onToggle={() => setShowSolutions(!showSolutions)}
+            >
+              <NavDropdown.Item href="#" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/UGC') ? headerStyles['active-page'] : ''}`}>
+                UGC
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/solutions/creator" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/creator') ? headerStyles['active-page'] : ''}`}>
+                Creators
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/solutions/content-ai" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/content-ai') ? headerStyles['active-page'] : ''}`}>
+                Content AI
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/solutions/campaigns" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/campaigns') ? headerStyles['active-page'] : ''}`}>
+                Campaigns
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/solutions/surveys-polls" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/surveys-polls') ? headerStyles['active-page'] : ''}`}>
+                Surveys & Polls
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/solutions/shopper-marketing" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/shopper-marketing') ? headerStyles['active-page'] : ''}`}>
+                Shopper Marketing
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/solutions/new-product-launch" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/new-product-launch') ? headerStyles['active-page'] : ''}`}>
+                New Product Launches
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/solutions/events" className={`${headerStyles['dropdown-link']} ${isActive('/solutions/events') ? headerStyles['active-page'] : ''}`}>
+                Events
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Link href="#" className={`${headerStyles['header-links']} ${isActive('/features') ? headerStyles['active-page'] : ''} underline`}>Features</Link>
+            <Link href="/success-stories" className={`${headerStyles['header-links']} ${isActive('/success-stories') ? headerStyles['active-page'] : ''} underline`}>Success stories</Link>
             {/* <Link href="/pricing" className={`${headerStyles['header-links']} ${isActive('/pricing') ? headerStyles['active-page'] : ''} underline`}>Pricing</Link> */}
             <NavDropdown
-           className="solution-dropdown"
-        title={
-          <span
-            className={`${headerStyles['dropdown-menu']} ${
-              isActive('/home') ? headerStyles['active-page'] : ''
-            } underline`}
-            onMouseEnter={() => setShowPricing(true)}
-          >
-            Pricing
-            <Image
-              src={
-                showPricing
-                  ? require('../../assets/images/header/up_arrow.svg').default
-                  : require('../../assets/images/header/down_arrow.svg').default
+              className="solution-dropdown"
+              title={
+                <span
+                  className={`${headerStyles['dropdown-menu']} ${isActive('/home') ? headerStyles['active-page'] : ''
+                    } underline`}
+                >
+                  Pricing
+                  <Image
+                    src={
+                      showPricing
+                        ? require('../../assets/images/header/up_arrow.svg').default
+                        : require('../../assets/images/header/down_arrow.svg').default
+                    }
+                    width={24}
+                    height={22}
+                    alt="dropdown arrow"
+                    className={headerStyles['custom-arrow']}
+                  />
+                </span>
               }
-              width={24}
-              height={22}
-              alt="dropdown arrow"
-              className={headerStyles['custom-arrow']}
-            />
-          </span>
-        }
-  
-        show={showPricing}
-        onMouseEnter={() => setShowPricing(true)}
-        onMouseLeave={() => setShowPricing(false)} 
-      >
-        <NavDropdown.Item href="/pricing/pay-as-you-go" className={headerStyles['dropdown-link']}>
-          pay as you go
-        </NavDropdown.Item>
-        <NavDropdown.Item href="/pricing/credit-packs" className={headerStyles['dropdown-link']}>
-         credit packs
-        </NavDropdown.Item>
-        <NavDropdown.Item  href="/pricing/enterprise" className={headerStyles['dropdown-link']}>
-          Enterprise
-        </NavDropdown.Item>
-       
-      </NavDropdown>
+              show={showPricing}
+              onToggle={() => setShowPricing(!showPricing)}
+            >
+              <NavDropdown.Item href="/pricing/pay-as-you-go" className={`${headerStyles['dropdown-link']} ${isActive('/pricing/pay-as-you-go') ? headerStyles['active-page'] : ''}`}>
+                pay as you go
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/pricing/credit-packs" className={`${headerStyles['dropdown-link']} ${isActive('/pricing/credit-packs') ? headerStyles['active-page'] : ''}`}>
+                credit packs
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/pricing/enterprise" className={`${headerStyles['dropdown-link']} ${isActive('/pricing/enterprise') ? headerStyles['active-page'] : ''}`}>
+                Enterprise
+              </NavDropdown.Item>
+
+            </NavDropdown>
             <Link href="/creators" className={`${headerStyles['header-links']} ${isActive('/creators') ? headerStyles['active-page'] : ''} underline`}>Creators</Link>
             {/* <Link href="/about" className={`${headerStyles['header-links']} ${isActive('/about') ? headerStyles['active-page'] : ''}`}>About Us</Link>
             <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''}`}>Contact Us</Link> */}
-            <Link href="/creator" className={`${headerStyles['header-links']} ${isActive('/creator') ? headerStyles['active-page'] : ''}`}>Become a creator</Link>
+            <Link href="/become-creator" className={`${headerStyles['header-links']} ${isActive('/become-creator') ? headerStyles['active-page'] : ''}`}>Become a creator</Link>
             <Link href="#link" className={`${headerStyles['header-links']}`}>
               <button className="primary-button" variant="primary">Login</button>
             </Link>

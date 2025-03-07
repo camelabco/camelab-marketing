@@ -50,7 +50,10 @@
 }
 
 .header-links.active-page {
-    color: var(--purple);
+    color: var(--purple) !important;
+}
+.dropdown-link.active-page {
+    color: var(--purple) !important;
 }
 .leftside-links{
     gap: 24px;
@@ -122,6 +125,10 @@
 }
 
 @media screen and (max-width: 991px) {
+    .dropdown-link:hover {
+        background-color: transparent !important;
+        color: var(--text-primary) !important;
+    }
     .leftside-links {
         margin-left: 0px;
     }

@@ -436,6 +436,18 @@ body {
 .curve-carousel-container::before {
   content: "";
   position: absolute;
+  top: -69px;
+  left: -5%;
+  width: 110%;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 100%;
+  z-index: 5;
+}
+
+/* .curve-carousel-container::before {
+  content: "";
+  position: absolute;
   top: -70px;
   left: -10%;
   width: 120%;
@@ -443,9 +455,21 @@ body {
   background: #ffffff;
   border-radius: 100%;
   z-index: 5;
-}
+} */
 
 .curve-carousel-container::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -5%;
+  width: 110%;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 100%;
+  z-index: 5;
+}
+
+/* .curve-carousel-container::after {
   content: "";
   position: absolute;
   bottom: -60px;
@@ -455,10 +479,10 @@ body {
   background: #ffffff;
   border-radius: 100%;
   z-index: 5;
-}
+} */
 
 .curve-carousel-container img {
-  height: 400px;
+  height: 450px;
   width: 230px;
   object-fit: cover;
 }
@@ -675,6 +699,10 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .underline::after {
+    display: none;
+  }
+
   .reverse-row {
     flex-direction: column-reverse;
   }
@@ -738,7 +766,6 @@ body {
     position: relative !important;
     top: -44px !important;
     border: 0;
-    display: flex !important;
     flex-direction: column;
     gap: 10px;
   }
@@ -802,6 +829,10 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+  .curve-carousel-container {
+    margin: 0;
+  }
+
   .main-heading {
     font-size: 28px;
     margin-bottom: 10px;
@@ -898,7 +929,7 @@ body {
   }
 
   .curve-carousel-container img {
-    height:300px;
+    height: 300px;
   }
 
   .transparent-btn {

@@ -86,7 +86,7 @@ export default function page() {
                     <div className={`${Styles['creators-video-part']}`}>
                         {/* video */}
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-sm-6 col-6">
                                 <div className='d-flex flex-column align-items-center justify-content-center'>
                                     <div className={`${Styles['creators-video']}`}>
                                         <video
@@ -104,7 +104,7 @@ export default function page() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-sm-6 col-6">
                                 <div className='d-flex flex-column align-items-center justify-content-center'>
                                     <div className={`${Styles['creators-video']}`}>
                                         <video
@@ -122,7 +122,7 @@ export default function page() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-sm-6 col-6">
                                 <div className='d-flex flex-column align-items-center justify-content-center'>
                                     <div className={`${Styles['creators-video']}`}>
                                         <video

@@ -94,7 +94,7 @@ export default function page() {
                 </div>
             </div>
             {/* enhance-Survey-section */}
-            <section className={`${solutionCommonStyle['light-gradient-bg']} common-spacing`}>
+            <section className={`${solutionCommonStyle['light-gradient-bg']} common-spacing pt-0`}>
                 <div className="container">
                     <div className="row reverse-row gy-3">
                         <div className="col-lg-6">

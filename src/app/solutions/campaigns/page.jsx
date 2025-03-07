@@ -170,7 +170,7 @@ export default function page() {
             <div className="col-lg-6">
               <div className={CampaignStyles["img-content"]}>
                 <Image
-                  src="/images/content-ai/client-testimonial.png"
+                  src="/images/Client-Testimonial-img.svg"
                   alt="section image"
                   height={418}
                   width={536}
@@ -181,9 +181,7 @@ export default function page() {
             <div className="col-lg-6">
               <div className={CampaignStyles["text-content"]}>
                 <p className="section-text">
-                  "Camelab’s machine learning refines the search, helping me
-                  find the most relevant user-generated content that we can
-                  utilize, obtain rights for, and repurpose effectively."
+                "Camelab makes it effortless for us to create visually stunning and impactful campaigns."
                 </p>
                 <div className={CampaignStyles["review-slider"]}>
                   <ReviewSlider />

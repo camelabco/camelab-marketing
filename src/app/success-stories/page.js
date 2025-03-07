@@ -90,7 +90,7 @@ export default function page() {
             {/*  */}
             <Brands />
             <BlogsSection mainHeading='' blogs={blogData.slice(0, blog)} />
-            {blog < blogData.length && <div className='d-flex justify-content-center common-spacing'><button onClick={loadMoreBlog} className="primary-button">Discover More</button></div>}
+            {blog < blogData.length && <div className='d-flex justify-content-center common-spacing pt-0'><button onClick={loadMoreBlog} className="primary-button">Discover More</button></div>}
             {/*  */}
             <section className={ContainAiStyles['review-section']}>
                 <div className='container common-spacing'>

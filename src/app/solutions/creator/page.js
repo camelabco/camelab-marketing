@@ -51,10 +51,13 @@ export default function page() {
         items: 3
       },
       1000: {
-        items: 6
+        items: 4
+      },
+      1200:{
+        items: 5
       },
       1500: {
-        items: 8
+        items: 7
       }
     }
   };

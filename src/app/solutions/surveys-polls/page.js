@@ -92,7 +92,7 @@ export default function page() {
         </div>
       </section>
       {/*  */}
-      <div className={`common-spacing`}>
+      <div className={`common-spacing pt-0`}>
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -126,7 +126,7 @@ export default function page() {
       </div>
 
       {/*  */}
-      <div className={`common-spacing`}>
+      <div className={`common-spacing pt-0`}>
         <div className="container">
           <div className="row gx-4">
             <div className="col-lg-6">
