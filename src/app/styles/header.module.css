@@ -160,7 +160,9 @@
         margin-right: auto;
         margin-left: 30px;
     }
-
+    .offcanvas.offcanvas-start {
+        height: 100vh !important;
+    }
 
 
 }
@@ -168,14 +170,21 @@
 
 @media screen and (max-width: 520px) {
     .offcanvas.offcanvas-start {
-        width: 300px !;
+        width: 300px !important;
+        height: 100vh !important;
     }
+    .header .navbar-toggler img{
+        width: 24px;
+        height: 24px;
+    }
+   
 }
 
 @media screen and (max-width: 375px) {
     .offcanvas.offcanvas-start {
         width: 250px !important;
     }
+  
 }
 
 .header .navbar-toggler {

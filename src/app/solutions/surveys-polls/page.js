@@ -75,7 +75,7 @@ export default function page() {
         </div>
       </div>
       {/* enhance-Survey-section */}
-      <section className={`${solutionCommonStyle['light-gradient-bg']} common-spacing`}>
+      <section className={`${solutionCommonStyle['light-gradient-bg']} common-spacing pb-lg-4 pb-0`}>
         <div className="container">
           <div className="row reverse-row gy-3">
             <div className="col-lg-6">
@@ -95,7 +95,7 @@ export default function page() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <Image src='/images/surveysandpolls/track-audience.svg' width={536} height={604} layout='responsive' />
+              <Image src='/images/surveysandpolls/track-audience.svg' width={536} height={536} layout='responsive' />
             </div>
             <div className="col-lg-6">
               <div className='d-flex flex-column justify-content-center h-100'>

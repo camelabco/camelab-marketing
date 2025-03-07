@@ -34,7 +34,7 @@ const NewsletterSection = ({ heading = 'Don’t miss out on the power of user-ge
                     <p>900K+ Download Application</p>
                   </div>
 
-                  <div className='d-flex gap-2 align-items-center'>
+                  <div className={`${newletterStyles['apps-img']} d-flex gap-2 align-items-center`}>
                     <Image src='/images/newsletter/app-store.png' alt='app store' height={40} width={140} />
                     <Image src='/images/newsletter/google-play.png' alt='google play' height={40} width={140} />
                   </div>

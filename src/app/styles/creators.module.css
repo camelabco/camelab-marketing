@@ -403,7 +403,7 @@
         height: 10px;
     }
 
-    .creators-video-part .creators-video .play-btn img{
+    .creators-video-part .creators-video .play-btn img {
         width: 45px;
         height: 45px;
     }
@@ -414,4 +414,24 @@
     .find-section-btn {
         margin-top: 0px;
     }
+
+    .table-part tr {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .table-part tr td img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .table-part th:nth-child(n + 2) {
+        font-size: 14px;
+    }
+
+    .table-part button {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
 }

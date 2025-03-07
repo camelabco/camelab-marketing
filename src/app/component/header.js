@@ -72,7 +72,7 @@ function Header() {
               <span className={`${headerStyles["flag-icon flag-icon-sa"]}`}>
                 <Image
                   src={require('../../assets/images/flag/arabic.png').default}
-                  width={24}
+                  width={32}
                   height={22}
                   alt="flag-icon-sa"
                 />
@@ -202,7 +202,7 @@ function Header() {
                   src={selectedLanguage === 'en'
                     ? require('../../assets/images/flag/English.png').default
                     : require('../../assets/images/flag/arabic.png').default}
-                  width={24}
+                  width={32}
                   height={22}
                   alt="flag-icon-us"
                 />

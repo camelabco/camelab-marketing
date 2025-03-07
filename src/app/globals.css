@@ -669,6 +669,10 @@ body {
 /* meadia queries */
 
 @media screen and (min-width: 991px) {
+  .offcanvas {
+    display: none !important;
+    visibility: hidden !important;
+  }
 
   .offcanvas-backdrop {
     display: none;
@@ -924,8 +928,8 @@ body {
   }
 
   .primary-button {
-    padding: 6px 24px;
-    font-size: 16px;
+    padding: 5px 20px;
+    font-size: 14px;
   }
 
   .curve-carousel-container img {
