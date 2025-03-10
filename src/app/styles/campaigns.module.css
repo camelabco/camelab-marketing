@@ -1,0 +1,153 @@
+
+.experience-section {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(244, 120, 60, 0.08) 100%
+  );
+}
+
+.experience-section .experience-info .experience-info-button {
+  margin-top: 24px;
+}
+.experience-section .experience-img-section {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+.build-small-card {
+  gap: 8px;
+  margin-top: 40px;
+  transition: all 0.47s ease-in-out;
+}
+.build-small-card .build-small-card-info {
+  gap: 8px;
+  transition: all 0.47s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+  .build-small-card
+  .build-small-card-info
+  .build-small-card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-secondary);
+}
+.build-small-card .build-small-card-info:hover {
+  border: 1px solid var(--purple);
+  border-radius: 8px;
+  background-color: #f4783c14;
+}
+  .build-small-card
+  .build-small-card-info:hover
+  .build-small-card-text {
+  color: var(--purple);
+}
+  .build-small-card
+  .build-small-card-info:hover
+  .build-small-card-img {
+  filter: hue-rotate(167deg) saturate(5) brightness(1.4);
+}
+.build-section .build-info .build-travel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.build-section .build-info-button {
+  margin-top: 40px;
+}
+
+.review-section {
+  background: linear-gradient(180deg, #f2f5f7 0%, #ffffff 100%);
+  
+}
+
+.review-section .img-content {
+  padding-right: 80px;
+}
+
+.review-section .review-slider {
+  margin-top: 40px;
+}
+
+.client-section .brands-part{
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .review-section .img-content {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .build-section .build-info .build-travel .build-img {
+    width: 44%;
+    height: auto;
+  }
+  .review-section .img-content {
+    padding-right: 0px;
+  }
+
+  .client-section .brands-part{
+    margin-top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .client-section .brands-part{
+    margin-top: 40px;
+  }
+}
+@media (max-width: 520px) {
+    .build-small-card
+    .build-small-card-info
+    .build-small-card-img-section
+    .build-small-card-img {
+    width: 65%;
+    height: auto;
+  }
+  .build-section .build-info .build-travel .build-img {
+    width: 70%;
+    height: auto;
+  }
+  .build-section .build-info .build-travel {
+    margin-top: 20px;
+    gap: 12px;
+  }
+  .build-section .build-info .build-travel .build-travel-img-section {
+    max-width: calc(50% - 8px);
+  }
+    .build-small-card
+    .build-small-card-info
+    .build-small-card-text {
+    font-size: 12px;
+    line-height: 0px;
+  }
+.build-small-card .build-small-card-info {
+    gap: 0px;
+    padding: 4px;
+  }
+.build-small-card {
+    gap: 4px;
+    margin-top: 0px;
+  }
+  .experience-section .experience-info .experience-info-button {
+    margin-top: 14px;
+  }
+  .experience-section .experience-img-section {
+    width: 100%;
+  }
+  .build-section .build-info-button {
+    margin-top: 20px;
+  }
+}

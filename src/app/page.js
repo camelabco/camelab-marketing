@@ -183,7 +183,7 @@ export default function Home() {
           <Row>
             <Col lg={6}>
               <div className={`${styles['client-img-part']}`}>  
-                <Image src={require('../assets/images/landing/our-client-img.png').default} className={`${styles['client-img']}`} alt="create-video-img" />
+                <Image src='/images/Client-Testimonial-img.svg' width={490} height={284} layout="responsive" className={`${styles['client-img']}`} alt="create-video-img" />
               </div>
             </Col>
             <Col lg={6}>

@@ -1,0 +1,203 @@
+/* heading */
+.heading-text-part {
+    max-width: 67%;
+    margin: 0 auto;
+}
+
+.survey-section {
+    background: linear-gradient(193.88deg, #FF7A00 0%, #F2B643 90.09%);
+    box-shadow: 0px 12px 24px -4px #919EAB1F;
+    margin-top: 120px;
+}
+
+.survey-section .survey-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.survey-section .survey-content p {
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+}
+
+.survey-section .survey-content h6 {
+    font-family: 'Public Sans';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+}
+
+.survey-card {
+    padding: 80px 40px;
+    background-color: #FFFFFF3D;
+    border-radius: 16px;
+    min-width: 396px;
+}
+
+.survey-section .survey-content h3 {
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: white;
+}
+
+.survey-section .survey-content h4 {
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+}
+
+.light-gradient-bg {
+    background: linear-gradient(180deg, #F2F5F7 0%, #FFFFFF 100%);
+}
+
+.brands-trust {
+    background: linear-gradient(83.59deg, #FF7F50 0.69%, #FFA500 99.31%);
+}
+
+.brands-trust h3 {
+    color: white;
+}
+
+.brands-trust .brands-content {
+    background-color: #FFFFFF14;
+    padding: 40px 80px;
+    border-radius: 16px;
+}
+
+.brands-trust .brands-content h4 {
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: white;
+}
+
+.brands-trust .brands-content p {
+    color: white;
+    font-weight: 300;
+    margin: 24px 0;
+}
+
+.brands-trust .brands-content button {
+    width: fit-content;
+}
+
+@media screen and (max-width: 991px) {
+    .survey-section .survey-content {
+        flex-wrap: wrap;
+    }
+
+    .heading-text-part {
+        max-width: 100%;
+    }
+
+    .brands-trust .brands-content h4 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .survey-section {
+        margin-top: 60px;
+    }
+
+    .brands-trust .brands-content {
+        padding: 20px 30px;
+        border-radius: 8px;
+    }
+
+    .brands-trust .brands-content h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .survey-section .survey-content p {
+        font-size: 20px;
+        line-height: 24px;
+        ;
+    }
+
+    .survey-section .survey-content h6 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .survey-card {
+        padding: 60px 20px;
+        min-width: 396px;
+    }
+
+    .survey-section .survey-content h3 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .survey-section .survey-content h4 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .brands-trust .brands-content h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .brands-trust .brands-content {
+        padding: 20px 10px;
+    }
+    .survey-section {
+        margin-top: 40px;
+    }
+
+    .brands-trust .brands-content p {
+        margin: 10px 0;
+    }
+
+    .survey-section .survey-content p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .survey-section .survey-content h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .survey-card {
+        padding: 30px 20px;
+        max-width: 300px;
+        min-width: auto;
+        border-radius: 8px;
+    }
+
+    .survey-section .survey-content h3 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .survey-section .survey-content h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

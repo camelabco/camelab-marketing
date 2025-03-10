@@ -11,7 +11,7 @@ function Footer() {
     <div className={`${footerStyles['main-content']}`}>
       <Container>
         <Row className={`${footerStyles['footer-content']}`} >
-          <Col lg={7} className={`${footerStyles['col-content']}`}>
+          <Col lg={5} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['left-col-content']}`}>
               <Image
                 src={require('../../assets/images/footer/footer-logo.svg').default}
@@ -50,9 +50,21 @@ function Footer() {
           <Col lg={2} className={`${footerStyles['col-content']}`}>
             <div className={`${footerStyles['list-content']}`}>
               <h5>Resources</h5>
-                <Link href="/creator" className={`${footerStyles['resource-link']}`}><h6>Become a Creator</h6></Link>
-                <Link href="/about" className={`${footerStyles['resource-link']}`}><h6>About Us</h6></Link>
-                <Link href="/contact" className={`${footerStyles['resource-link']}`}><h6>Contact Us</h6></Link>
+                <Link href="/success-stories" className={`${footerStyles['resource-link']}`}><h6>Success Stories</h6></Link>
+                <Link href="/pricing/pay-as-you-go" className={`${footerStyles['resource-link']}`}><h6>Pricing</h6></Link>
+                <Link href="/creators" className={`${footerStyles['resource-link']}`}><h6>Creators</h6></Link>
+            </div>
+          </Col>
+          <Col lg={2} className={`${footerStyles['col-content']}`}>
+            <div className={`${footerStyles['list-content']}`}>
+              <h5>Solution</h5>
+                <Link href='#' className={`${footerStyles['resource-link']}`}><h6>UGC</h6></Link>
+                <Link href='/solutions/creator' className={`${footerStyles['resource-link']}`}><h6>Creator</h6></Link>
+                <Link href='/solutions/campaigns' className={`${footerStyles['resource-link']}`}><h6>Campaigns</h6></Link>
+                <Link href='/solutions/surveys-polls' className={`${footerStyles['resource-link']}`}><h6>Surveys & Polls</h6></Link>
+                <Link href='/solutions/shopper-marketing' className={`${footerStyles['resource-link']}`}><h6>Shopper Marketing</h6></Link>
+                <Link href='/solutions/new-product-launch' className={`${footerStyles['resource-link']}`}><h6>New Product Lunches </h6></Link>
+                <Link href='/solutions/events' className={`${footerStyles['resource-link']}`}><h6>Events</h6></Link>
             </div>
           </Col>
           <Col lg={3} className={`${footerStyles['col-content']}`}>
@@ -66,8 +78,8 @@ function Footer() {
           </Col>
         </Row>
 
-        <div className={`${footerStyles['footer-apps']}`}>
-          <p>Become a creator</p>
+        <div className={`${footerStyles['footer-apps']} ${footerStyles['list-content']}`}>
+        <Link href="/become-creator" className={`${footerStyles['resource-link']}`}><h6>Become a creator</h6></Link>
           <div className={`${footerStyles['apps-part']}`}>
             <Link href="#"><Image src={require('../../assets/images/footer/app-store.svg').default} width="100%" alt="instagram-logo" /></Link>
             <Link href="#" ><Image className={`${footerStyles['custom-mt']}`} src={require('../../assets/images/footer/google-play.svg').default} width="100%" alt="instagram-logo" /></Link>

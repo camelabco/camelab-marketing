@@ -1,0 +1,166 @@
+.brands-part {
+  margin-bottom: 120px;
+}
+
+.passion-section .passion-card {
+  gap: 32px;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.passion-section .passion-card .passion-info {
+  max-width: calc(33% - 21px);
+}
+.passion-section
+  .passion-card
+  .passion-info
+  .passion-img-section
+  .passion-head {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--purple);
+  margin-bottom: 0px !important;
+}
+.passion-section .passion-card .passion-info .passion-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-primary);
+  margin: 20px 0px;
+}
+
+.passion-section .passion-card .passion-info .passion-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+}
+
+.passion-section .passion-card .passion-info .passion-img-section {
+  position: relative;
+}
+
+.passion-section .passion-card .passion-info .passion-img-section::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f4783c14;
+  top: 42px;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: height 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+}
+
+.passion-section
+  .passion-card
+  .passion-info:hover
+  .passion-img-section::before {
+  height: 50px;
+  width: 50px;
+  opacity: 0.9;
+}
+
+.passion-section .passion-btn {
+  margin-top: 40px;
+}
+
+.inspiration-section .inspiration-images {
+  margin-top: 40px;
+  gap: 24px;
+}
+.inspiration-section .inspiration-images .inspiration-img-section {
+  gap: 24px;
+}
+.inspiration-section .inspiration-btn {
+  margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+  .passion-section .passion-card .passion-info {
+    max-width: calc(50% - 32px);
+  }
+  .passion-section .passion-card {
+    gap: 10px;
+  }
+  .inspiration-section .inspiration-images {
+    gap: 10px;
+  }
+  .inspiration-section .inspiration-images .inspiration-img-section {
+    gap: 10px;
+  }
+
+  .brands-part {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .passion-section .passion-card .passion-info {
+    max-width: calc(100%);
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .brands-part {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 520px) {
+  .passion-section
+    .passion-card
+    .passion-info
+    .passion-img-section
+    .passion-head {
+    font-size: 34px;
+  }
+
+  .passion-section .passion-card .passion-info .passion-img-section::before {
+    height: 30px;
+    width: 30px;
+    top: 36px;
+    left: 20px;
+  }
+  .passion-section .passion-card .passion-info .passion-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 12px 0px;
+  }
+  .passion-section .passion-card .passion-info .passion-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .passion-section .passion-card {
+    margin-top: 20px;
+  }
+  .passion-section
+    .passion-card
+    .passion-info:hover
+    .passion-img-section::before {
+    height: 40px;
+    width: 40px;
+    opacity: 0.9;
+  }
+  .passion-section .passion-btn {
+    margin-top: 10px;
+  }
+  .inspiration-section .inspiration-images {
+    margin-top: 20px;
+  }
+  .inspiration-section .inspiration-btn {
+    margin-top: 20px;
+  }
+  .inspiration-section .inspiration-images {
+    gap: 6px;
+  }
+  .inspiration-section .inspiration-images .inspiration-img-section {
+    gap: 6px;
+  }
+
+  .brands-part {
+    margin-bottom: 40px;
+  }
+}

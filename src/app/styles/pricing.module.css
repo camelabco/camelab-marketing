@@ -1,0 +1,267 @@
+.pricing-cards {
+  margin: 40px 0;
+}
+
+.pricing-cards .pricing-card:nth-child(1) {
+  background: #ff8a50;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.pricing-cards .pricing-card:nth-child(2) {
+  background: #f4783c;
+  border-bottom-left-radius: 16px;
+}
+
+.pricing-cards .pricing-card:nth-child(2)::before {
+  content: "";
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-image: url("/images/pricing/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.pricing-cards .pricing-card:nth-child(3) {
+  background: #e06630;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.credit-packs-page .pricing-cards .pricing-card:nth-child(3) {
+  border-bottom-right-radius: 0px;
+}
+
+.pricing-cards .pricing-card:nth-child(4) {
+  background: #cc5a28;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.credit-packs-page .pricing-cards .pricing-card:nth-child(4) {
+  border-bottom-left-radius: 16px;
+}
+
+.pricing-cards .pricing-card {
+  padding: 24px;
+  width: 100%;
+  position: relative;
+}
+
+.pricing-cards .pricing-card .time-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--background-paper);
+}
+
+.pricing-cards .pricing-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--background-paper);
+  margin-top: 4px;
+}
+
+.pricing-cards .pricing-card .price-text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--background-paper);
+  margin: 0;
+}
+
+.pricing-cards .pricing-card .price-text span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.pricing-cards .pricing-card button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.pricing-cards .pricing-card ul {
+  list-style: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: var(--background-paper);
+  margin-top: 16px;
+  padding-left: 32px;
+}
+
+.pricing-cards .pricing-card ul li {
+  margin-top: 8px;
+  position: relative;
+}
+
+.pricing-cards .pricing-card ul li::before {
+  content: "";
+  width: 14px;
+  height: 12px;
+  background: url("/images/pricing/list-marker.svg");
+  position: absolute;
+  left: -28px;
+  top: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.enterprice-section .enterprice-content {
+  background: linear-gradient(83.59deg, #ff7f50 0.69%, #ffa500 99.31%);
+  box-shadow: 0px 12px 24px -4px #919eab1f;
+  padding: 40px 112px;
+  border-radius: 16px;
+}
+
+.enterprice-section .enterprice-content h6 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: var(--background-paper);
+  margin-bottom: 24px;
+}
+
+.enterprice-section .enterprice-content .chips {
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.enterprice-section .enterprice-content .chips .chip {
+  background: #ffffff29;
+  padding: 4px 12px 4px 36px;
+  border-radius: 100px;
+  position: relative;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--background-paper);
+}
+
+.enterprice-section .enterprice-content .chips .chip::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 14px;
+  background-image: url("/images/pricing/list-marker.svg");
+  top: 9px;
+  left: 14px;
+  background-position: center;
+  background-size: cover
+}
+
+@media screen and (max-width: 1280px) {
+  .enterprice-section .enterprice-content {
+    padding:40px 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pricing-cards {
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .pricing-cards .pricing-card {
+    border-radius: 16px;
+    width: calc(50% - 12px);
+  }
+
+  .credit-packs-page .pricing-cards .pricing-card:nth-child(3) {
+    border-bottom-right-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-cards .pricing-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .pricing-cards .pricing-card .time-text {
+    font-size: 20px;
+  }
+
+  .pricing-cards .pricing-card .price-text {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .credit-packs-page .pricing-cards .pricing-card .price-text {
+    margin-bottom:8px;
+  }
+
+  .credit-packs-page .pricing-cards .pricing-card p {
+    margin-bottom:0
+  }
+
+  .pricing-cards .pricing-card button {
+    margin-top: 20px;
+  }
+
+  .pricing-cards {
+    margin: 20px 0;
+    gap: 20px;
+  }
+
+  .enterprice-section .enterprice-content {
+    padding:24px;
+  }
+
+  .enterprice-section .enterprice-content .chips{
+    gap:10px;
+  }
+
+  .enterprice-section .enterprice-content .chips .chip {
+    padding: 4px 6px 4px 24px;
+    font-size: 12px;
+  }
+  
+  .enterprice-section .enterprice-content .chips .chip::before {
+    height: 8px;
+    width: 10px;
+    top: 9px;
+    left: 10px;
+  }
+  
+  .enterprice-section .enterprice-content h6 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  
+}
+
+
+@media screen and (max-width: 520px) {
+  .enterprice-section .enterprice-content .chips{
+    gap:8px;
+    margin-top: 16px;
+  }
+
+  .enterprice-section .enterprice-content .chips .chip {
+    padding: 4px 6px 4px 16px;
+    font-size: 10px;
+  }
+
+  .enterprice-section .enterprice-content .chips .chip::before {
+    height: 6px;
+    width: 8px;
+    top: 9px;
+    left: 5px;
+  }
+
+  .enterprice-section .enterprice-content h6 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .enterprice-section .enterprice-content p{
+    font-size: 14px;
+  }
+}
