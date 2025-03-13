@@ -77,7 +77,7 @@ export default function ContainAiPage() {
 
             <section className={ContainAiStyles['personalized-section']}>
                 <div className='container common-spacing'>
-                    <div className={`row align-items-center ${ContainAiStyles['section-row']}`}>
+                    <div className={`row align-items-center`}>
                         <div className='col-lg-6'>
                             <div className={ContainAiStyles['img-content']}>
                                 <Image src='/images/content-ai/personalized.svg' alt='section image' height={418} width={536} layout="responsive" />
@@ -196,8 +196,9 @@ export default function ContainAiPage() {
                     <p className='section-text text-center'>
                         Embark on transformative journeys with Camelab, exploring how our innovative solutions empower clients and partners to realize their business aspirations
                     </p>
-                    <div className='common-spacing'></div>
+                    <div className={ContainAiStyles['brands-part']}>
                     <Brands />
+                    </div>
                 </div>
             </section>
 

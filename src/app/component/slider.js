@@ -26,7 +26,7 @@ const Slider = () => {
     loop: true,
     rtl: true,
     autoWidth: true,
-    slideTransition: 'linear',
+    // slideTransition: 'linear',
     autoplayTimeout: 2000,
     autoplaySpeed: 2000,
     stagePadding: 0,

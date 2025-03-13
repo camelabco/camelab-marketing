@@ -53,7 +53,7 @@ export default function EventsPage() {
                                         Talk to a Camelab Community Marketing Specialist.
                                     </button>
                                 </div>
-                                <p className={`${eventStyles['note-text']} text-lg-start text-center`}>Here’s to the next decade of building connections and telling stories — together.</p>
+                                <p className={`${eventStyles['note-text']}`}>Here’s to the next decade of building connections and telling stories — together.</p>
                             </div>
                         </div>
                         <div className='col-lg-6'>

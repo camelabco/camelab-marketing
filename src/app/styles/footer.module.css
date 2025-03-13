@@ -128,7 +128,7 @@
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
     .copy-right-part {
         flex-wrap: wrap;
         padding: 20px 0 20px 0;
@@ -152,7 +152,9 @@
         font-size: 16px;
     }
 
-
+    .col-content {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 343px) {

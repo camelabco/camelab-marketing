@@ -113,6 +113,10 @@
   margin-bottom: 16px;
 }
 
+[dir='rtl'] .creative-section .creative .creative-info .custom-list li {
+  padding-left: 0;
+}
+
 .creative-section .creative .creative-info .custom-list li::before {
   content: "";
   position: absolute;
@@ -123,6 +127,11 @@
   height: 11px;
   background: url("/images/enterprise/true.svg") no-repeat;
   background-size: contain;
+}
+
+[dir='rtl'] .creative-section .creative .creative-info .custom-list li::before {
+  left: unset;
+  right:-32px;
 }
 
 .creative-section .creative .creative-info .custom-list .custom-list-text {

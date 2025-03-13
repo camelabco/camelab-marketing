@@ -57,7 +57,7 @@ function Header() {
               height={22}
               alt="flag-icon-us"
             /></span>} id="basic-nav-dropdown">
-            <NavDropdown.Item onClick={() => handleLanguageChange('en')} className={`${headerStyles["flag-item"]}`}>
+            <NavDropdown.Item onClick={() => handleLanguageChange('en')} className={`${headerStyles["flag-item"]} d-flex`}>
               <span className={`${headerStyles["flag-icon flag-icon-us"]} me-2`}>
                 <Image
                   src={require('../../assets/images/flag/English.png').default}
@@ -68,8 +68,8 @@ function Header() {
               </span>
               English
             </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleLanguageChange('ar')} className={`${headerStyles["flag-item"]}`}>
-              <span className={`${headerStyles["flag-icon flag-icon-sa"]}`}>
+            <NavDropdown.Item onClick={() => handleLanguageChange('ar')} className={`${headerStyles["flag-item"]} d-flex `}>
+              <span className={`${headerStyles["flag-icon flag-icon-sa"]} me-2`}>
                 <Image
                   src={require('../../assets/images/flag/arabic.png').default}
                   width={32}
@@ -197,7 +197,7 @@ function Header() {
               <Link href="/contact" className={`${headerStyles['header-links']} ${isActive('/contact') ? headerStyles['active-page'] : ''} underline`}>Contact Us</Link> */}
             </Nav>
             <Nav className={`${headerStyles['rightside-links']} ms-auto align-items-center`}>
-              <NavDropdown className={`${headerStyles["flag-desktop"]} flag mx-3`} title={<span>
+              <NavDropdown className={`${headerStyles["flag-desktop"]} flag `} title={<span>
                 <Image
                   src={selectedLanguage === 'en'
                     ? require('../../assets/images/flag/English.png').default
@@ -208,7 +208,7 @@ function Header() {
                 />
               </span>}
                 id="basic-nav-dropdown">
-                <NavDropdown.Item onClick={() => handleLanguageChange('en')} className={`${headerStyles["flag-item"]}`}>
+                <NavDropdown.Item onClick={() => handleLanguageChange('en')} className={`${headerStyles["flag-item"]} d-flex `}>
                   <span className={`${headerStyles[""]} me-2`}>
                     <Image
                       src={require('../../assets/images/flag/English.png').default}
@@ -219,7 +219,7 @@ function Header() {
                   </span>
                   English
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => handleLanguageChange('ar')} className={`${headerStyles["flag-item"]}`}>
+                <NavDropdown.Item onClick={() => handleLanguageChange('ar')} className={`${headerStyles["flag-item"]}  d-flex `}>
                   <span className={`${headerStyles["flag-icon flag-icon-sa"]} me-2`}>
                     <Image
                       src={require('../../assets/images/flag/arabic.png').default}
@@ -230,7 +230,7 @@ function Header() {
                   </span>Arabic
                 </NavDropdown.Item>
               </NavDropdown>
-              <Link href="/become-creator" className={`${headerStyles['header-links']} ${isActive('/become-creator') ? headerStyles['active-page'] : ''}  underline me-3`}>Become a creator</Link>
+              <Link href="/become-creator" className={`${headerStyles['header-links']} ${isActive('/become-creator') ? headerStyles['active-page'] : ''}  underline mx-3`}>Become a creator</Link>
               <Link href="#link" className={`${headerStyles['header-links']} me-0`}>
                 <button className={`${headerStyles['primary-button']} primary-button`} variant="primary">Login</button>
               </Link>

@@ -97,6 +97,14 @@
     font-size: 14px;
 }
 
+.flag-item{
+    justify-content: start;
+}
+
+[dir="rtl"] .flag-item{
+    justify-content: space-between
+}
+
 @media screen and (max-width: 1200px) {
     .navbar-brand {
         margin-right: 40px !important;
@@ -198,11 +206,6 @@
 
 .header .navbar-toggler {
     border: none !important;
-}
-
-.flag-item {
-    display: flex;
-    justify-content: space-around;
 }
 
 .flag-icon-us {

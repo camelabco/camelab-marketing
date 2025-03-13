@@ -1,10 +1,11 @@
 "use client";
 import styles from "../page.module.css";
-import React from "react";
+import React, {useState, useEffect, useContext} from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { LanguageContext } from "../layout";
 
 
 const $ = require("jquery");
@@ -12,15 +13,26 @@ if (typeof window !== "undefined") {
   window.$ = window.jQuery = require("jquery");
 }
 
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-    ssr: false,
-});
 
 const ReviewSlider = () => {
+    const { selectedLanguage } = useContext(LanguageContext);
+    const [OwlCarouselComponent, setOwlCarouselComponent] = useState(null);
+    const isRTL = selectedLanguage === "ar"; 
+    useEffect(() => {
+        const loadOwlCarousel = async () => {
+            const module = isRTL
+                ? await import("react-owl-carousel-rtl")
+                : await import("react-owl-carousel");
+            setOwlCarouselComponent(() => module.default);
+        };
+
+        loadOwlCarousel();
+    }, [isRTL]);
+
     const options = {
         margin: 20,
         loop:true,
-        rtl:true,
+        rtl: isRTL,
         responsiveClass: true,
         nav: true,
         navClass: [`${styles['circle-btn']} ${styles['left-btn']}`, `${styles['circle-btn']} ${styles['right-btn']}`],
@@ -48,7 +60,8 @@ const ReviewSlider = () => {
 
     return (
         <div>
-            <OwlCarousel className={`${styles['owlcarousel']} ${styles['review-owlcarousel']}`} rtl={true}  navText={["", ""]} loop  {...options}>
+            {OwlCarouselComponent && (
+            <OwlCarouselComponent className={`${styles['owlcarousel']} ${styles['review-owlcarousel']}`} navText={["", ""]} rtlClass="owl-rtl" loop  {...options}>
                 <div className={`${styles['item']}`}>
                     <div className={`${styles['cliet-photo']}`}>
                         <Image src={require('../../assets/images/landing/client-photo.png').default} loading="eager"  width="100%" alt="create-video-img" />
@@ -81,7 +94,8 @@ const ReviewSlider = () => {
                         </div>
                     </div>
                 </div>
-            </OwlCarousel>
+            </OwlCarouselComponent>
+)}
         </div>
     );
 };

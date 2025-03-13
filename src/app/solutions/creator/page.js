@@ -37,6 +37,7 @@ export default function page() {
   const options = {
     loop: true,
     margin: 24,
+    rtl: true,
     nav: false,
     dots: false,
     center: true,

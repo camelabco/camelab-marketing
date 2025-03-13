@@ -36,6 +36,10 @@
   .banner-section {
     padding:200px 0;
   }
+
+  .next-section .text-content .note-text {
+    text-align:center;
+  }
 }
 
 @media screen and (max-width: 520px) {
